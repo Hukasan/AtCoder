@@ -1,0 +1,18 @@
+{
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true,
+        ".vs": true,
+        "**/bin": true,
+        "**/obj": true,
+        "**/**.csproj": false,
+        "**/package.json": true,
+        "**/**.sln": false,
+        "ARC076/C/test/bin": true,
+        "**/__pycache__": true
+    }
+}
