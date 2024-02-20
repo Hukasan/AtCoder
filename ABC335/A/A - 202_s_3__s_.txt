@@ -1,0 +1,260 @@
+A - 202<s>3</s>
+×
+コンテスト開始
+AtCoder Beginner Contest 335（Sponsored by Mynavi）が開始されました。
+閉じる
+×
+コンテスト終了
+AtCoder Beginner Contest 335（Sponsored by Mynavi）は終了しました。
+閉じる
+AtCoder Beginner Contest 335（Sponsored by Mynavi）
+日本語
+日本語
+English
+新規登録
+ログイン
+コンテスト時間:
+2024-01-06(土) 21:00
+~
+2024-01-06(土) 22:40
+(100分)
+AtCoderホームへ戻る
+トップ
+問題
+質問
+提出結果
+すべての提出
+順位表
+バーチャル順位表
+解説
+A - 202<s>3</s>
+解説
+/
+実行時間制限: 2 sec / メモリ制限: 1024 MB
+配点 :
+100
+100
+1
+0
+0
+点
+問題文
+英小文字と数字からなる文字列
+S
+S
+S
+が入力されます。
+S
+S
+S
+は
+2023
+で終わることが保証されます。
+S
+S
+S
+の最後の文字を
+4
+に変更し、変更後の文字列を出力してください。
+制約
+S
+S
+S
+は英小文字と数字からなる長さ
+4
+4
+4
+以上
+100
+100
+1
+0
+0
+以下の文字列
+S
+S
+S
+は
+2023
+で終わる。
+入力
+入力は以下の形式で標準入力から与えられる。
+S
+S
+S
+出力
+答えを出力せよ。
+入力例 1
+Copy
+Copy
+hello2023
+出力例 1
+Copy
+Copy
+hello2024
+hello2023
+の最後の文字を
+4
+に変更すると、
+hello2024
+となります。
+入力例 2
+Copy
+Copy
+worldtourfinals2023
+出力例 2
+Copy
+Copy
+worldtourfinals2024
+入力例 3
+Copy
+Copy
+2023
+出力例 3
+Copy
+Copy
+2024
+S
+S
+S
+が
+2023
+で終わることが保証されていますが、
+S
+S
+S
+が
+2023
+そのものである場合もあります。
+入力例 4
+Copy
+Copy
+20232023
+出力例 4
+Copy
+Copy
+20232024
+Score :
+100
+100
+1
+0
+0
+points
+Problem Statement
+You are given a string
+S
+S
+S
+consisting of lowercase English letters and digits.
+S
+S
+S
+is guaranteed to end with
+2023
+.
+Change the last character of
+S
+S
+S
+to
+4
+and print the modified string.
+Constraints
+S
+S
+S
+is a string of length between
+4
+4
+4
+and
+100
+100
+1
+0
+0
+, inclusive, consisting of lowercase English letters and digits.
+S
+S
+S
+ends with
+2023
+.
+Input
+The input is given from Standard Input in the following format:
+S
+S
+S
+Output
+Print the answer.
+Sample Input 1
+Copy
+Copy
+hello2023
+Sample Output 1
+Copy
+Copy
+hello2024
+Changing the last character of
+hello2023
+to
+4
+yields
+hello2024
+.
+Sample Input 2
+Copy
+Copy
+worldtourfinals2023
+Sample Output 2
+Copy
+Copy
+worldtourfinals2024
+Sample Input 3
+Copy
+Copy
+2023
+Sample Output 3
+Copy
+Copy
+2024
+S
+S
+S
+is guaranteed to end with
+2023
+, possibly being
+2023
+itself.
+Sample Input 4
+Copy
+Copy
+20232023
+Sample Output 4
+Copy
+Copy
+20232024
+Facebook
+Twitter
+Hatena
+共有
+ルール
+用語集
+利用規約
+プライバシーポリシー
+個人情報保護方針
+企業情報
+よくある質問
+お問い合わせ
+資料請求
+Copyright Since 2012 ©
+AtCoder Inc.
+All rights reserved.
+2024-02-04 (日)
+10:43:48 +09:00
+ページトップ
+✓
+共有ありがとう
+AddToAny
+もっと

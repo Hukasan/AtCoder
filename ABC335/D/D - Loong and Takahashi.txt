@@ -1,0 +1,709 @@
+D - Loong and Takahashi
+×
+コンテスト開始
+AtCoder Beginner Contest 335（Sponsored by Mynavi）が開始されました。
+閉じる
+×
+コンテスト終了
+AtCoder Beginner Contest 335（Sponsored by Mynavi）は終了しました。
+閉じる
+AtCoder Beginner Contest 335（Sponsored by Mynavi）
+日本語
+日本語
+English
+新規登録
+ログイン
+コンテスト時間:
+2024-01-06(土) 21:00
+~
+2024-01-06(土) 22:40
+(100分)
+AtCoderホームへ戻る
+トップ
+問題
+質問
+提出結果
+すべての提出
+順位表
+バーチャル順位表
+解説
+D - Loong and Takahashi
+解説
+/
+実行時間制限: 2 sec / メモリ制限: 1024 MB
+配点 :
+350
+350
+3
+5
+0
+点
+問題文
+縦
+N
+N
+N
+行 横
+N
+N
+N
+列のマスからなるグリッドがあります。ここで、
+N
+N
+N
+は
+45
+45
+4
+5
+以下の奇数です。
+上から
+i
+i
+i
+行目、左から
+j
+j
+j
+列目のマスをマス
+(
+i
+,
+j
+)
+(i,j)
+(
+i
+,
+j
+)
+と表します。
+このグリッドに、以下の条件を満たすように高橋君と
+1
+1
+1
+から
+N
+2
+−
+1
+N^2-1
+N
+2
+−
+1
+までの番号がついた
+N
+2
+−
+1
+N^2-1
+N
+2
+−
+1
+個のパーツからなる
+1
+1
+1
+匹の龍を配置します。
+高橋君はグリッドの中央、すなわちマス
+(
+N
++
+1
+2
+,
+N
++
+1
+2
+)
+(frac{N+1}{2},frac{N+1}{2})
+(
+2
+N
++
+1
+​
+,
+2
+N
++
+1
+​
+)
+に配置しなければならない。
+高橋君がいるマスを除く各マスには龍のパーツをちょうど
+1
+1
+1
+つ配置しなければならない。
+2
+≤
+x
+≤
+N
+2
+−
+1
+2 leq x leq N^2-1
+2
+≤
+x
+≤
+N
+2
+−
+1
+を満たす全ての整数
+x
+x
+x
+について、龍のパーツ
+x
+x
+x
+はパーツ
+x
+−
+1
+x-1
+x
+−
+1
+があるマスと辺で隣接するマスに配置しなければならない。
+マス
+(
+i
+,
+j
+)
+(i,j)
+(
+i
+,
+j
+)
+とマス
+(
+k
+,
+l
+)
+(k,l)
+(
+k
+,
+l
+)
+が辺で隣接するとは、
+∣
+i
+−
+k
+∣
++
+∣
+j
+−
+l
+∣
+=
+1
+|i-k|+|j-l|=1
+∣
+i
+−
+k
+∣
++
+∣
+j
+−
+l
+∣
+=
+1
+であることを意味します。
+条件を満たす配置方法を
+1
+1
+1
+つ出力してください。なお、条件を満たす配置は必ず存在します。
+制約
+3
+≤
+N
+≤
+45
+3 leq N leq 45
+3
+≤
+N
+≤
+4
+5
+N
+N
+N
+は奇数である
+入力
+入力は以下の形式で標準入力から与えられる。
+N
+N
+N
+出力
+N
+N
+N
+行出力せよ。
+X
+i
+,
+j
+X_{i,j}
+X
+i
+,
+j
+​
+を、マス
+(
+i
+,
+j
+)
+(i,j)
+(
+i
+,
+j
+)
+に高橋君を配置するとき
+T
+、パーツ
+x
+x
+x
+を配置するとき
+x
+x
+x
+とし、
+i
+i
+i
+行目には
+X
+i
+,
+1
+,
+…
+,
+X
+i
+,
+N
+X_{i,1},ldots,X_{i,N}
+X
+i
+,
+1
+​
+,
+…
+,
+X
+i
+,
+N
+​
+を空白区切りで出力せよ。
+入力例 1
+Copy
+Copy
+5
+出力例 1
+Copy
+Copy
+1 2 3 4 5
+16 17 18 19 6
+15 24 T 20 7
+14 23 22 21 8
+13 12 11 10 9
+この他、以下の出力も条件をすべて満たすため正解となります。
+9 10 11 14 15
+8 7 12 13 16
+5 6 T 18 17
+4 3 24 19 20 
+1 2 23 22 21
+一方、以下の出力はそれぞれ不正解となります。
+高橋君が中央にいない。
+1 2 3 4 5
+10 9 8 7 6
+11 12 13 14 15
+20 19 18 17 16
+21 22 23 24 T
+パーツ
+23
+23
+2
+3
+とパーツ
+24
+24
+2
+4
+のあるマスが辺で隣接していない。
+1 2 3 4 5
+10 9 8 7 6
+11 12 24 22 23
+14 13 T 21 20
+15 16 17 18 19
+Score :
+350
+350
+3
+5
+0
+points
+Problem Statement
+There is a grid with
+N
+N
+N
+rows and
+N
+N
+N
+columns, where
+N
+N
+N
+is an odd number at most
+45
+45
+4
+5
+.
+Let
+(
+i
+,
+j
+)
+(i,j)
+(
+i
+,
+j
+)
+denote the cell at the
+i
+i
+i
+-th row from the top and
+j
+j
+j
+-th column from the left.
+In this grid, you will place Takahashi and a dragon consisting of
+N
+2
+−
+1
+N^2-1
+N
+2
+−
+1
+parts numbered
+1
+1
+1
+to
+N
+2
+−
+1
+N^2-1
+N
+2
+−
+1
+in such a way that satisfies the following conditions:
+Takahashi must be placed at the center of the grid, that is, in cell
+(
+N
++
+1
+2
+,
+N
++
+1
+2
+)
+(frac{N+1}{2},frac{N+1}{2})
+(
+2
+N
++
+1
+​
+,
+2
+N
++
+1
+​
+)
+.
+Except for the cell where Takahashi is, exactly one dragon part must be placed in each cell.
+For every integer
+x
+x
+x
+satisfying
+2
+≤
+x
+≤
+N
+2
+−
+1
+2 leq x leq N^2-1
+2
+≤
+x
+≤
+N
+2
+−
+1
+, the dragon part
+x
+x
+x
+must be placed in a cell adjacent by an edge to the cell containing part
+x
+−
+1
+x-1
+x
+−
+1
+.
+Cells
+(
+i
+,
+j
+)
+(i,j)
+(
+i
+,
+j
+)
+and
+(
+k
+,
+l
+)
+(k,l)
+(
+k
+,
+l
+)
+are said to be adjacent by an edge if and only if
+∣
+i
+−
+k
+∣
++
+∣
+j
+−
+l
+∣
+=
+1
+|i-k|+|j-l|=1
+∣
+i
+−
+k
+∣
++
+∣
+j
+−
+l
+∣
+=
+1
+.
+Print one way to arrange the parts to satisfy the conditions. It is guaranteed that there is at least one arrangement that satisfies the conditions.
+Constraints
+3
+≤
+N
+≤
+45
+3 leq N leq 45
+3
+≤
+N
+≤
+4
+5
+N
+N
+N
+is odd.
+Input
+The input is given from Standard Input in the following format:
+N
+N
+N
+Output
+Print
+N
+N
+N
+lines.
+The
+i
+i
+i
+-th line should contain
+X
+i
+,
+1
+,
+…
+,
+X
+i
+,
+N
+X_{i,1},ldots,X_{i,N}
+X
+i
+,
+1
+​
+,
+…
+,
+X
+i
+,
+N
+​
+separated by spaces, where
+X
+i
+,
+j
+X_{i,j}
+X
+i
+,
+j
+​
+is
+T
+when placing Takahashi in cell
+(
+i
+,
+j
+)
+(i,j)
+(
+i
+,
+j
+)
+and
+x
+x
+x
+when placing part
+x
+x
+x
+there.
+Sample Input 1
+Copy
+Copy
+5
+Sample Output 1
+Copy
+Copy
+1 2 3 4 5
+16 17 18 19 6
+15 24 T 20 7
+14 23 22 21 8
+13 12 11 10 9
+The following output also satisfies all the conditions and is correct.
+9 10 11 14 15
+8 7 12 13 16
+5 6 T 18 17
+4 3 24 19 20 
+1 2 23 22 21
+On the other hand, the following outputs are incorrect for the reasons given.
+Takahashi is not at the center.
+1 2 3 4 5
+10 9 8 7 6
+11 12 13 14 15
+20 19 18 17 16
+21 22 23 24 T
+The cells containing parts
+23
+23
+2
+3
+and
+24
+24
+2
+4
+are not adjacent by an edge.
+1 2 3 4 5
+10 9 8 7 6
+11 12 24 22 23
+14 13 T 21 20
+15 16 17 18 19
+Facebook
+Twitter
+Hatena
+共有
+ルール
+用語集
+利用規約
+プライバシーポリシー
+個人情報保護方針
+企業情報
+よくある質問
+お問い合わせ
+資料請求
+Copyright Since 2012 ©
+AtCoder Inc.
+All rights reserved.
+2024-02-04 (日)
+10:43:55 +09:00
+ページトップ
+✓
+共有ありがとう
+AddToAny
+もっと

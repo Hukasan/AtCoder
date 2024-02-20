@@ -1,0 +1,661 @@
+C - Loong Tracking
+×
+コンテスト開始
+AtCoder Beginner Contest 335（Sponsored by Mynavi）が開始されました。
+閉じる
+×
+コンテスト終了
+AtCoder Beginner Contest 335（Sponsored by Mynavi）は終了しました。
+閉じる
+AtCoder Beginner Contest 335（Sponsored by Mynavi）
+日本語
+日本語
+English
+新規登録
+ログイン
+コンテスト時間:
+2024-01-06(土) 21:00
+~
+2024-01-06(土) 22:40
+(100分)
+AtCoderホームへ戻る
+トップ
+問題
+質問
+提出結果
+すべての提出
+順位表
+バーチャル順位表
+解説
+C - Loong Tracking
+解説
+/
+実行時間制限: 2 sec / メモリ制限: 1024 MB
+配点 :
+300
+300
+3
+0
+0
+点
+問題文
+高橋君は座標平面上で龍を操作するゲームを作成しました。
+龍は
+1
+1
+1
+から
+N
+N
+N
+までの番号がついた
+N
+N
+N
+個のパーツからなり、パーツ
+1
+1
+1
+を
+頭
+と呼びます。
+最初パーツ
+i
+i
+i
+は座標
+(
+i
+,
+0
+)
+(i,0)
+(
+i
+,
+0
+)
+にあります。以下のクエリを
+Q
+Q
+Q
+個処理してください。
+1 C
+: 頭を方向
+C
+C
+C
+に
+1
+1
+1
+移動させる。ここで、
+C
+C
+C
+は
+R
+,
+L
+,
+U
+,
+D
+のいずれかであり、それぞれ
+x
+x
+x
+軸正方向、
+x
+x
+x
+軸負方向、
+y
+y
+y
+軸正方向、
+y
+y
+y
+軸負方向を意味する。頭以外の全てのパーツは前のパーツに追従するように動く。すなわち、パーツ
+i
+(
+2
+≤
+i
+≤
+N
+)
+i  (2leq i leq N)
+i
+(
+2
+≤
+i
+≤
+N
+)
+は移動前にパーツ
+i
+−
+1
+i-1
+i
+−
+1
+があった座標に移動する。
+2 p
+: パーツ
+p
+p
+p
+のある座標を求める。
+制約
+2
+≤
+N
+≤
+1
+0
+6
+2 leq N leq 10^6
+2
+≤
+N
+≤
+1
+0
+6
+1
+≤
+Q
+≤
+2
+×
+1
+0
+5
+1 leq Q leq 2times 10^5
+1
+≤
+Q
+≤
+2
+×
+1
+0
+5
+1
+1
+1
+種類目のクエリにおいて、
+C
+C
+C
+は
+R
+,
+L
+,
+U
+,
+D
+のいずれか
+2
+2
+2
+種類目のクエリにおいて、
+1
+≤
+p
+≤
+N
+1leq p leq N
+1
+≤
+p
+≤
+N
+入力に含まれる数値は全て整数
+入力
+入力は以下の形式で標準入力から与えられる。
+N
+N
+N
+Q
+Q
+Q
+q
+u
+e
+r
+y
+1
+mathrm{query}_1
+q
+u
+e
+r
+y
+1
+​
+⋮
+vdots
+⋮
+q
+u
+e
+r
+y
+Q
+mathrm{query}_Q
+q
+u
+e
+r
+y
+Q
+​
+各クエリは以下の
+2
+2
+2
+種類のいずれかの形式である。
+1
+1
+1
+C
+C
+C
+2
+2
+2
+p
+p
+p
+出力
+2
+2
+2
+種類目のクエリの回数を
+q
+q
+q
+として
+q
+q
+q
+行出力せよ。
+i
+i
+i
+行目には、
+i
+i
+i
+番目のそのようなクエリに対する答えの座標を
+(
+x
+,
+y
+)
+(x,y)
+(
+x
+,
+y
+)
+としたとき、
+x
+,
+y
+x,y
+x
+,
+y
+を空白区切りで出力せよ。
+入力例 1
+Copy
+Copy
+5 9
+2 3
+1 U
+2 3
+1 R
+1 D
+2 3
+1 L
+2 1
+2 5
+出力例 1
+Copy
+Copy
+3 0
+2 0
+1 1
+1 0
+1 0
+2
+2
+2
+種類目のクエリを処理する各タイミングにおいて、パーツの位置は次のようになっています。
+複数のパーツが同じ座標に存在しうることに注意してください。
+Score :
+300
+300
+3
+0
+0
+points
+Problem Statement
+Takahashi has created a game where the player controls a dragon on a coordinate plane.
+The dragon consists of
+N
+N
+N
+parts numbered
+1
+1
+1
+to
+N
+N
+N
+, with part
+1
+1
+1
+being called the
+head
+.
+Initially, part
+i
+i
+i
+is located at the coordinates
+(
+i
+,
+0
+)
+(i,0)
+(
+i
+,
+0
+)
+. Process
+Q
+Q
+Q
+queries as follows.
+1 C
+: Move the head by
+1
+1
+1
+in direction
+C
+C
+C
+. Here,
+C
+C
+C
+is one of
+R
+,
+L
+,
+U
+, and
+D
+, which represent the positive
+x
+x
+x
+-direction, negative
+x
+x
+x
+-direction, positive
+y
+y
+y
+-direction, and negative
+y
+y
+y
+-direction, respectively. Each part other than the head moves to follow the part in front of it. That is, part
+i
+i
+i
+(
+2
+≤
+i
+≤
+N
+)
+(2leq i leq N)
+(
+2
+≤
+i
+≤
+N
+)
+moves to the coordinates where part
+i
+−
+1
+i-1
+i
+−
+1
+was before the move.
+2 p
+: Find the coordinates of part
+p
+p
+p
+.
+Constraints
+2
+≤
+N
+≤
+1
+0
+6
+2 leq N leq 10^6
+2
+≤
+N
+≤
+1
+0
+6
+1
+≤
+Q
+≤
+2
+×
+1
+0
+5
+1 leq Q leq 2times 10^5
+1
+≤
+Q
+≤
+2
+×
+1
+0
+5
+For the first type of query,
+C
+C
+C
+is one of
+R
+,
+L
+,
+U
+, and
+D
+.
+For the second type of query,
+1
+≤
+p
+≤
+N
+1leq p leq N
+1
+≤
+p
+≤
+N
+.
+All numerical input values are integers.
+Input
+The input is given from Standard Input in the following format:
+N
+N
+N
+Q
+Q
+Q
+q
+u
+e
+r
+y
+1
+mathrm{query}_1
+q
+u
+e
+r
+y
+1
+​
+⋮
+vdots
+⋮
+q
+u
+e
+r
+y
+Q
+mathrm{query}_Q
+q
+u
+e
+r
+y
+Q
+​
+Each query is in one of the following two formats:
+1
+1
+1
+C
+C
+C
+2
+2
+2
+p
+p
+p
+Output
+Print
+q
+q
+q
+lines, where
+q
+q
+q
+is the number of queries of the second type.
+The
+i
+i
+i
+-th line should contain
+x
+x
+x
+and
+y
+y
+y
+separated by a space, where
+(
+x
+,
+y
+)
+(x,y)
+(
+x
+,
+y
+)
+are the answer to the
+i
+i
+i
+-th such query.
+Sample Input 1
+Copy
+Copy
+5 9
+2 3
+1 U
+2 3
+1 R
+1 D
+2 3
+1 L
+2 1
+2 5
+Sample Output 1
+Copy
+Copy
+3 0
+2 0
+1 1
+1 0
+1 0
+At each time when processing the second type of query, the parts are at the following positions:
+Note that multiple parts may exist at the same coordinates.
+Facebook
+Twitter
+Hatena
+共有
+ルール
+用語集
+利用規約
+プライバシーポリシー
+個人情報保護方針
+企業情報
+よくある質問
+お問い合わせ
+資料請求
+Copyright Since 2012 ©
+AtCoder Inc.
+All rights reserved.
+2024-02-04 (日)
+10:43:53 +09:00
+ページトップ
+✓
+共有ありがとう
+AddToAny
+もっと

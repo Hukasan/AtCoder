@@ -1,5 +1,7 @@
 using System;
 using System.Linq;
+using System.Collections.Generic;
+using System.Diagnostics;
 
 namespace AtCorder
 {
@@ -48,10 +50,34 @@ namespace AtCorder
         public static void Out(object? output) => Console.WriteLine(output);
 
         /// <summary>
+        /// 出力します。
+        /// </summary>
+        /// <param name="output">数字または文字列。</param>
+        public static void Write(object? output) => Out(output);
+
+        /// <summary>
+        /// 出力します。
+        /// </summary>
+        /// <param name="output">数字または文字列。</param>
+        public static void ConWrite(object? output) => Out(output);
+
+        /// <summary>
         /// 文字の列挙を1行で出力します。
         /// </summary>
         /// <param name="words">単語群。</param>
-        public static void OutLine(IEnumerable<string> words) => Console.WriteLine(string.Join(" ", words));
+        public static void Out(IEnumerable<string> words) => Console.WriteLine(string.Join(" ", words));
+
+        /// <summary>
+        /// 文字の列挙を1行で出力します。
+        /// </summary>
+        /// <param name="words">単語群。</param>
+        public static void Write(IEnumerable<string> words) => Out(words);
+
+        /// <summary>
+        /// 文字の列挙を1行で出力します。
+        /// </summary>
+        /// <param name="words">単語群。</param>
+        public static void ConWrite(IEnumerable<string> words) => Out(words);
 
         #endregion
     }

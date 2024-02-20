@@ -1,0 +1,634 @@
+B - Tetrahedral Number
+×
+コンテスト開始
+AtCoder Beginner Contest 335（Sponsored by Mynavi）が開始されました。
+閉じる
+×
+コンテスト終了
+AtCoder Beginner Contest 335（Sponsored by Mynavi）は終了しました。
+閉じる
+AtCoder Beginner Contest 335（Sponsored by Mynavi）
+日本語
+日本語
+English
+新規登録
+ログイン
+コンテスト時間:
+2024-01-06(土) 21:00
+~
+2024-01-06(土) 22:40
+(100分)
+AtCoderホームへ戻る
+トップ
+問題
+質問
+提出結果
+すべての提出
+順位表
+バーチャル順位表
+解説
+B - Tetrahedral Number
+解説
+/
+実行時間制限: 2 sec / メモリ制限: 1024 MB
+配点 :
+150
+150
+1
+5
+0
+点
+問題文
+整数
+N
+N
+N
+が与えられます。
+非負整数の組
+(
+x
+,
+y
+,
+z
+)
+(x,y,z)
+(
+x
+,
+y
+,
+z
+)
+であって
+x
++
+y
++
+z
+≤
+N
+x+y+zleq N
+x
++
+y
++
+z
+≤
+N
+を満たすものを辞書順で小さい方から順に全て出力してください。
+非負整数の組の辞書順とは？
+非負整数の組
+(
+x
+,
+y
+,
+z
+)
+(x,y,z)
+(
+x
+,
+y
+,
+z
+)
+が
+(
+x
+′
+,
+y
+′
+,
+z
+′
+)
+(x',y',z')
+(
+x
+′
+,
+y
+′
+,
+z
+′
+)
+より
+辞書順で小さい
+とは、下記のいずれかが成り立つことを言います。
+x
+<
+x
+′
+x < x'
+x
+<
+x
+′
+である
+x
+=
+x
+′
+x=x'
+x
+=
+x
+′
+かつ
+y
+<
+y
+′
+y< y'
+y
+<
+y
+′
+である
+x
+=
+x
+′
+x=x'
+x
+=
+x
+′
+かつ
+y
+=
+y
+′
+y=y'
+y
+=
+y
+′
+かつ
+z
+<
+z
+′
+z< z'
+z
+<
+z
+′
+である
+制約
+0
+≤
+N
+≤
+21
+0 leq N leq 21
+0
+≤
+N
+≤
+2
+1
+N
+N
+N
+は整数である
+入力
+入力は以下の形式で標準入力から与えられる。
+N
+N
+N
+出力
+非負整数の組
+(
+x
+,
+y
+,
+z
+)
+(x,y,z)
+(
+x
+,
+y
+,
+z
+)
+であって
+x
++
+y
++
+z
+≤
+N
+x+y+zleq N
+x
++
+y
++
+z
+≤
+N
+を満たすものを、
+1
+1
+1
+行に
+1
+1
+1
+組ずつ
+x
+,
+y
+,
+z
+x,y,z
+x
+,
+y
+,
+z
+を空白区切りで、辞書順で小さい方から順に全て出力せよ。
+入力例 1
+Copy
+Copy
+3
+出力例 1
+Copy
+Copy
+0 0 0
+0 0 1
+0 0 2
+0 0 3
+0 1 0
+0 1 1
+0 1 2
+0 2 0
+0 2 1
+0 3 0
+1 0 0
+1 0 1
+1 0 2
+1 1 0
+1 1 1
+1 2 0
+2 0 0
+2 0 1
+2 1 0
+3 0 0
+入力例 2
+Copy
+Copy
+4
+出力例 2
+Copy
+Copy
+0 0 0
+0 0 1
+0 0 2
+0 0 3
+0 0 4
+0 1 0
+0 1 1
+0 1 2
+0 1 3
+0 2 0
+0 2 1
+0 2 2
+0 3 0
+0 3 1
+0 4 0
+1 0 0
+1 0 1
+1 0 2
+1 0 3
+1 1 0
+1 1 1
+1 1 2
+1 2 0
+1 2 1
+1 3 0
+2 0 0
+2 0 1
+2 0 2
+2 1 0
+2 1 1
+2 2 0
+3 0 0
+3 0 1
+3 1 0
+4 0 0
+Score :
+150
+150
+1
+5
+0
+points
+Problem Statement
+You are given an integer
+N
+N
+N
+.
+Print all triples of non-negative integers
+(
+x
+,
+y
+,
+z
+)
+(x,y,z)
+(
+x
+,
+y
+,
+z
+)
+such that
+x
++
+y
++
+z
+≤
+N
+x+y+zleq N
+x
++
+y
++
+z
+≤
+N
+in ascending lexicographical order.
+What is lexicographical order for non-negative integer triples?
+A triple of non-negative integers
+(
+x
+,
+y
+,
+z
+)
+(x,y,z)
+(
+x
+,
+y
+,
+z
+)
+is said to be
+lexicographically smaller
+than
+(
+x
+′
+,
+y
+′
+,
+z
+′
+)
+(x',y',z')
+(
+x
+′
+,
+y
+′
+,
+z
+′
+)
+if and only if one of the following holds:
+x
+<
+x
+′
+x < x'
+x
+<
+x
+′
+;
+x
+=
+x
+′
+x=x'
+x
+=
+x
+′
+and
+y
+<
+y
+′
+y< y'
+y
+<
+y
+′
+;
+x
+=
+x
+′
+x=x'
+x
+=
+x
+′
+and
+y
+=
+y
+′
+y=y'
+y
+=
+y
+′
+and
+z
+<
+z
+′
+z< z'
+z
+<
+z
+′
+.
+Constraints
+0
+≤
+N
+≤
+21
+0 leq N leq 21
+0
+≤
+N
+≤
+2
+1
+N
+N
+N
+is an integer.
+Input
+The input is given from Standard Input in the following format:
+N
+N
+N
+Output
+Print all triples of non-negative integers
+(
+x
+,
+y
+,
+z
+)
+(x,y,z)
+(
+x
+,
+y
+,
+z
+)
+such that
+x
++
+y
++
+z
+≤
+N
+x+y+zleq N
+x
++
+y
++
+z
+≤
+N
+in ascending lexicographical order, with
+x
+,
+y
+,
+z
+x,y,z
+x
+,
+y
+,
+z
+separated by spaces, one triple per line.
+Sample Input 1
+Copy
+Copy
+3
+Sample Output 1
+Copy
+Copy
+0 0 0
+0 0 1
+0 0 2
+0 0 3
+0 1 0
+0 1 1
+0 1 2
+0 2 0
+0 2 1
+0 3 0
+1 0 0
+1 0 1
+1 0 2
+1 1 0
+1 1 1
+1 2 0
+2 0 0
+2 0 1
+2 1 0
+3 0 0
+Sample Input 2
+Copy
+Copy
+4
+Sample Output 2
+Copy
+Copy
+0 0 0
+0 0 1
+0 0 2
+0 0 3
+0 0 4
+0 1 0
+0 1 1
+0 1 2
+0 1 3
+0 2 0
+0 2 1
+0 2 2
+0 3 0
+0 3 1
+0 4 0
+1 0 0
+1 0 1
+1 0 2
+1 0 3
+1 1 0
+1 1 1
+1 1 2
+1 2 0
+1 2 1
+1 3 0
+2 0 0
+2 0 1
+2 0 2
+2 1 0
+2 1 1
+2 2 0
+3 0 0
+3 0 1
+3 1 0
+4 0 0
+Facebook
+Twitter
+Hatena
+共有
+ルール
+用語集
+利用規約
+プライバシーポリシー
+個人情報保護方針
+企業情報
+よくある質問
+お問い合わせ
+資料請求
+Copyright Since 2012 ©
+AtCoder Inc.
+All rights reserved.
+2024-02-04 (日)
+10:43:50 +09:00
+ページトップ
+✓
+共有ありがとう
+AddToAny
+もっと

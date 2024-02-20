@@ -9,10 +9,13 @@
         ".vs": true,
         "**/bin": true,
         "**/obj": true,
-        "**/**.csproj": false,
+        "**/**.csproj": true,
         "**/package.json": true,
         "**/**.sln": false,
         "ARC076/C/test/bin": true,
         "**/__pycache__": true
-    }
+    },
+    "cSpell.words": [
+        "atcoder"
+    ]
 }
