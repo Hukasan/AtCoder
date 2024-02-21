@@ -1,0 +1,678 @@
+F - S = 1
+×
+コンテスト開始
+鹿島建設プログラミングコンテスト2024（AtCoder Beginner Contest 340）が開始されました。
+閉じる
+×
+コンテスト終了
+鹿島建設プログラミングコンテスト2024（AtCoder Beginner Contest 340）は終了しました。
+閉じる
+鹿島建設プログラミングコンテスト2024（AtCoder Beginner Contest 340）
+日本語
+日本語
+English
+新規登録
+ログイン
+コンテスト時間:
+2024-02-10(土) 21:00
+~
+2024-02-10(土) 22:40
+(100分)
+AtCoderホームへ戻る
+トップ
+問題
+質問
+提出結果
+すべての提出
+順位表
+バーチャル順位表
+解説
+F - S = 1
+解説
+/
+実行時間制限: 2 sec / メモリ制限: 1024 MB
+配点 :
+525
+525
+5
+2
+5
+点
+問題文
+整数
+X
+,
+Y
+X, Y
+X
+,
+Y
+が与えられます。
+X
+,
+Y
+X, Y
+X
+,
+Y
+は
+X
+≠
+0
+X neq 0
+X
+
+=
+0
+と
+Y
+≠
+0
+Y neq 0
+Y
+
+=
+0
+の少なくとも一方を満たします。
+次の条件を全て満たす整数の組
+(
+A
+,
+B
+)
+(A, B)
+(
+A
+,
+B
+)
+を発見してください。そのような整数の組が存在しない場合はそれを報告してください。
+−
+1
+0
+18
+≤
+A
+,
+B
+≤
+1
+0
+18
+-10^{18} leq A, B leq 10^{18}
+−
+1
+0
+1
+8
+≤
+A
+,
+B
+≤
+1
+0
+1
+8
+x
+y
+xy
+x
+y
+平面上の点
+(
+0
+,
+0
+)
+,
+(
+X
+,
+Y
+)
+,
+(
+A
+,
+B
+)
+(0, 0), (X, Y), (A, B)
+(
+0
+,
+0
+)
+,
+(
+X
+,
+Y
+)
+,
+(
+A
+,
+B
+)
+を頂点とする三角形の面積は
+1
+1
+1
+制約
+−
+1
+0
+17
+≤
+X
+,
+Y
+≤
+1
+0
+17
+-10^{17} leq X, Y leq 10^{17}
+−
+1
+0
+1
+7
+≤
+X
+,
+Y
+≤
+1
+0
+1
+7
+(
+X
+,
+Y
+)
+≠
+(
+0
+,
+0
+)
+(X, Y) neq (0, 0)
+(
+X
+,
+Y
+)
+
+=
+(
+0
+,
+0
+)
+X
+,
+Y
+X, Y
+X
+,
+Y
+は整数
+入力
+入力は以下の形式で標準入力から与えられる。
+X
+X
+X
+Y
+Y
+Y
+出力
+条件を満たす整数の組
+(
+A
+,
+B
+)
+(A, B)
+(
+A
+,
+B
+)
+が存在する場合は以下の形式で出力せよ。
+A
+A
+A
+B
+B
+B
+条件を満たす整数の組
+(
+A
+,
+B
+)
+(A, B)
+(
+A
+,
+B
+)
+が存在しない場合は
+-1
+を出力せよ。
+入力例 1
+Copy
+Copy
+3 5
+出力例 1
+Copy
+Copy
+1 1
+点
+(
+0
+,
+0
+)
+,
+(
+3
+,
+5
+)
+,
+(
+1
+,
+1
+)
+(0, 0), (3, 5), (1, 1)
+(
+0
+,
+0
+)
+,
+(
+3
+,
+5
+)
+,
+(
+1
+,
+1
+)
+を頂点とする三角形の面積は
+1
+1
+1
+です。よって
+(
+A
+,
+B
+)
+=
+(
+1
+,
+1
+)
+(A, B) = (1, 1)
+(
+A
+,
+B
+)
+=
+(
+1
+,
+1
+)
+は条件を満たします。
+入力例 2
+Copy
+Copy
+-2 0
+出力例 2
+Copy
+Copy
+0 1
+入力例 3
+Copy
+Copy
+8752654402832944 -6857065241301125
+出力例 3
+Copy
+Copy
+-1
+Score:
+525
+525
+5
+2
+5
+points
+Problem Statement
+You are given integers
+X
+X
+X
+and
+Y
+Y
+Y
+, which satisfy at least one of
+X
+≠
+0
+X neq 0
+X
+
+=
+0
+and
+Y
+≠
+0
+Y neq 0
+Y
+
+=
+0
+.
+Find a pair of integers
+(
+A
+,
+B
+)
+(A, B)
+(
+A
+,
+B
+)
+that satisfies all of the following conditions. If no such pair exists, report so.
+−
+1
+0
+18
+≤
+A
+,
+B
+≤
+1
+0
+18
+-10^{18} leq A, B leq 10^{18}
+−
+1
+0
+1
+8
+≤
+A
+,
+B
+≤
+1
+0
+1
+8
+The area of the triangle with vertices at points
+(
+0
+,
+0
+)
+,
+(
+X
+,
+Y
+)
+,
+(
+A
+,
+B
+)
+(0, 0), (X, Y), (A, B)
+(
+0
+,
+0
+)
+,
+(
+X
+,
+Y
+)
+,
+(
+A
+,
+B
+)
+on the
+x
+y
+xy
+x
+y
+-plane is
+1
+1
+1
+.
+Constraints
+−
+1
+0
+17
+≤
+X
+,
+Y
+≤
+1
+0
+17
+-10^{17} leq X, Y leq 10^{17}
+−
+1
+0
+1
+7
+≤
+X
+,
+Y
+≤
+1
+0
+1
+7
+(
+X
+,
+Y
+)
+≠
+(
+0
+,
+0
+)
+(X, Y) neq (0, 0)
+(
+X
+,
+Y
+)
+
+=
+(
+0
+,
+0
+)
+X
+X
+X
+and
+Y
+Y
+Y
+are integers.
+Input
+The input is given from Standard Input in the following format:
+X
+X
+X
+Y
+Y
+Y
+Output
+If there is a pair of integers
+(
+A
+,
+B
+)
+(A, B)
+(
+A
+,
+B
+)
+that satisfies the conditions, print it in the following format:
+A
+A
+A
+B
+B
+B
+Otherwise, print
+-1
+.
+Sample Input 1
+Copy
+Copy
+3 5
+Sample Output 1
+Copy
+Copy
+1 1
+The area of the triangle with vertices at points
+(
+0
+,
+0
+)
+,
+(
+3
+,
+5
+)
+,
+(
+1
+,
+1
+)
+(0, 0), (3, 5), (1, 1)
+(
+0
+,
+0
+)
+,
+(
+3
+,
+5
+)
+,
+(
+1
+,
+1
+)
+is
+1
+1
+1
+. Thus,
+(
+A
+,
+B
+)
+=
+(
+1
+,
+1
+)
+(A, B) = (1, 1)
+(
+A
+,
+B
+)
+=
+(
+1
+,
+1
+)
+satisfies the conditions.
+Sample Input 2
+Copy
+Copy
+-2 0
+Sample Output 2
+Copy
+Copy
+0 1
+Sample Input 3
+Copy
+Copy
+8752654402832944 -6857065241301125
+Sample Output 3
+Copy
+Copy
+-1
+Facebook
+Twitter
+Hatena
+共有
+ルール
+用語集
+利用規約
+プライバシーポリシー
+個人情報保護方針
+企業情報
+よくある質問
+お問い合わせ
+資料請求
+Copyright Since 2012 ©
+AtCoder Inc.
+All rights reserved.
+2024-02-21 (水)
+14:52:24 +09:00
+ページトップ
+✓
+共有ありがとう
+AddToAny
+もっと

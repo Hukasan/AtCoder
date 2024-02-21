@@ -1,0 +1,620 @@
+C - Divide and Divide
+×
+コンテスト開始
+鹿島建設プログラミングコンテスト2024（AtCoder Beginner Contest 340）が開始されました。
+閉じる
+×
+コンテスト終了
+鹿島建設プログラミングコンテスト2024（AtCoder Beginner Contest 340）は終了しました。
+閉じる
+鹿島建設プログラミングコンテスト2024（AtCoder Beginner Contest 340）
+日本語
+日本語
+English
+新規登録
+ログイン
+コンテスト時間:
+2024-02-10(土) 21:00
+~
+2024-02-10(土) 22:40
+(100分)
+AtCoderホームへ戻る
+トップ
+問題
+質問
+提出結果
+すべての提出
+順位表
+バーチャル順位表
+解説
+C - Divide and Divide
+解説
+/
+実行時間制限: 2 sec / メモリ制限: 1024 MB
+配点 :
+300
+300
+3
+0
+0
+点
+問題文
+黒板に整数
+N
+N
+N
+が
+1
+1
+1
+個書かれています。
+高橋君は黒板に書かれている
+2
+2
+2
+以上の整数が全て無くなるまで以下の一連の操作を繰り返します。
+黒板に書かれている
+2
+2
+2
+以上の整数を
+1
+1
+1
+つ選び
+x
+x
+x
+とする。
+黒板から
+x
+x
+x
+を
+1
+1
+1
+個消す。そして、
+2
+2
+2
+個の整数
+⌊
+x
+2
+⌋
+,
+⌈
+x
+2
+⌉
+left lfloor dfrac{x}{2} rightrfloor, leftlceil dfrac{x}{2} rightrceil
+⌊
+2
+x
+​
+⌋
+,
+⌈
+2
+x
+​
+⌉
+を新たに黒板に書く。
+この一連の操作を行うために高橋君は
+x
+x
+x
+円払う必要がある。
+ここで
+⌊
+a
+⌋
+lfloor a rfloor
+⌊
+a
+⌋
+は
+a
+a
+a
+以下の整数のうち最大のものを、
+⌈
+a
+⌉
+lceil a rceil
+⌈
+a
+⌉
+は
+a
+a
+a
+以上の整数のうち最小のものを意味します。
+操作を行えなくなった時点で高橋君が払った金額の総和は何円ですか？
+なお、どのような順番で操作を行っても高橋君が払う金額の総和は一定であることが証明できます。
+制約
+2
+≤
+N
+≤
+1
+0
+17
+2 leq N leq 10^{17}
+2
+≤
+N
+≤
+1
+0
+1
+7
+入力
+入力は以下の形式で標準入力から与えられる。
+N
+N
+N
+出力
+高橋君が払った金額の総和が何円であるかを出力せよ。
+入力例 1
+Copy
+Copy
+3
+出力例 1
+Copy
+Copy
+5
+高橋君が行う操作の一例を挙げると次のようになります。
+はじめ、黒板には
+3
+3
+3
+が
+1
+1
+1
+個書かれている。
+高橋君は
+3
+3
+3
+を選ぶ。高橋君は
+3
+3
+3
+円を払い、黒板から
+3
+3
+3
+を
+1
+1
+1
+個消して
+⌊
+3
+2
+⌋
+=
+1
+,
+⌈
+3
+2
+⌉
+=
+2
+left lfloor dfrac{3}{2} rightrfloor = 1, leftlceil dfrac{3}{2} rightrceil = 2
+⌊
+2
+3
+​
+⌋
+=
+1
+,
+⌈
+2
+3
+​
+⌉
+=
+2
+を新たに黒板に書く。
+黒板には
+2
+2
+2
+が
+1
+1
+1
+個と
+1
+1
+1
+が
+1
+1
+1
+個書かれている。
+高橋君は
+2
+2
+2
+を選ぶ。高橋君は
+2
+2
+2
+円を払い、黒板から
+2
+2
+2
+を
+1
+1
+1
+個消して
+⌊
+2
+2
+⌋
+=
+1
+,
+⌈
+2
+2
+⌉
+=
+1
+left lfloor dfrac{2}{2} rightrfloor = 1, leftlceil dfrac{2}{2} rightrceil = 1
+⌊
+2
+2
+​
+⌋
+=
+1
+,
+⌈
+2
+2
+​
+⌉
+=
+1
+を新たに黒板に書く。
+黒板には
+1
+1
+1
+が
+3
+3
+3
+個書かれている。
+黒板から
+2
+2
+2
+以上の整数が全て無くなったので操作を終了する。
+操作全体で高橋君は
+3
++
+2
+=
+5
+3 + 2 = 5
+3
++
+2
+=
+5
+円払ったので、
+5
+5
+5
+を出力します。
+入力例 2
+Copy
+Copy
+340
+出力例 2
+Copy
+Copy
+2888
+入力例 3
+Copy
+Copy
+100000000000000000
+出力例 3
+Copy
+Copy
+5655884811924144128
+Score:
+300
+300
+3
+0
+0
+points
+Problem Statement
+There is a single integer
+N
+N
+N
+written on a blackboard.
+Takahashi will repeat the following series of operations until all integers not less than
+2
+2
+2
+are removed from the blackboard:
+Choose one integer
+x
+x
+x
+not less than
+2
+2
+2
+written on the blackboard.
+Erase one occurrence of
+x
+x
+x
+from the blackboard. Then, write two new integers
+⌊
+x
+2
+⌋
+left lfloor dfrac{x}{2} rightrfloor
+⌊
+2
+x
+​
+⌋
+and
+⌈
+x
+2
+⌉
+leftlceil dfrac{x}{2} rightrceil
+⌈
+2
+x
+​
+⌉
+on the blackboard.
+Takahashi must pay
+x
+x
+x
+yen to perform this series of operations.
+Here,
+⌊
+a
+⌋
+lfloor a rfloor
+⌊
+a
+⌋
+denotes the largest integer not greater than
+a
+a
+a
+, and
+⌈
+a
+⌉
+lceil a rceil
+⌈
+a
+⌉
+denotes the smallest integer not less than
+a
+a
+a
+.
+What is the total amount of money Takahashi will have paid when no more operations can be performed?
+It can be proved that the total amount he will pay is constant regardless of the order in which the operations are performed.
+Constraints
+2
+≤
+N
+≤
+1
+0
+17
+2 leq N leq 10^{17}
+2
+≤
+N
+≤
+1
+0
+1
+7
+Input
+The input is given from Standard Input in the following format:
+N
+N
+N
+Output
+Print the total amount of money Takahashi will have paid, in yen.
+Sample Input 1
+Copy
+Copy
+3
+Sample Output 1
+Copy
+Copy
+5
+Here is an example of how Takahashi performs the operations:
+Initially, there is one
+3
+3
+3
+written on the blackboard.
+He chooses
+3
+3
+3
+. He pays
+3
+3
+3
+yen, erases one
+3
+3
+3
+from the blackboard, and writes
+⌊
+3
+2
+⌋
+=
+1
+left lfloor dfrac{3}{2} rightrfloor = 1
+⌊
+2
+3
+​
+⌋
+=
+1
+and
+⌈
+3
+2
+⌉
+=
+2
+leftlceil dfrac{3}{2} rightrceil = 2
+⌈
+2
+3
+​
+⌉
+=
+2
+on the blackboard.
+There is one
+2
+2
+2
+and one
+1
+1
+1
+written on the blackboard.
+He chooses
+2
+2
+2
+. He pays
+2
+2
+2
+yen, erases one
+2
+2
+2
+from the blackboard, and writes
+⌊
+2
+2
+⌋
+=
+1
+left lfloor dfrac{2}{2} rightrfloor = 1
+⌊
+2
+2
+​
+⌋
+=
+1
+and
+⌈
+2
+2
+⌉
+=
+1
+leftlceil dfrac{2}{2} rightrceil = 1
+⌈
+2
+2
+​
+⌉
+=
+1
+on the blackboard.
+There are three
+1
+1
+1
+s written on the blackboard.
+Since all integers not less than
+2
+2
+2
+have been removed from the blackboard, the process is finished.
+Takahashi has paid a total of
+3
++
+2
+=
+5
+3 + 2 = 5
+3
++
+2
+=
+5
+yen for the entire process, so print
+5
+5
+5
+.
+Sample Input 2
+Copy
+Copy
+340
+Sample Output 2
+Copy
+Copy
+2888
+Sample Input 3
+Copy
+Copy
+100000000000000000
+Sample Output 3
+Copy
+Copy
+5655884811924144128
+Facebook
+Twitter
+Hatena
+共有
+ルール
+用語集
+利用規約
+プライバシーポリシー
+個人情報保護方針
+企業情報
+よくある質問
+お問い合わせ
+資料請求
+Copyright Since 2012 ©
+AtCoder Inc.
+All rights reserved.
+2024-02-21 (水)
+14:52:17 +09:00
+ページトップ
+✓
+共有ありがとう
+AddToAny
+もっと

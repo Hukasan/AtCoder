@@ -1,0 +1,1134 @@
+E - Alternating String
+×
+コンテスト開始
+トヨタ自動車プログラミングコンテスト2024#2（AtCoder Beginner Contest 341）が開始されました。
+閉じる
+×
+コンテスト終了
+トヨタ自動車プログラミングコンテスト2024#2（AtCoder Beginner Contest 341）は終了しました。
+閉じる
+トヨタ自動車プログラミングコンテスト2024#2（AtCoder Beginner Contest 341）
+日本語
+日本語
+English
+新規登録
+ログイン
+コンテスト時間:
+2024-02-17(土) 21:00
+~
+2024-02-17(土) 22:40
+(100分)
+AtCoderホームへ戻る
+トップ
+問題
+質問
+提出結果
+すべての提出
+順位表
+バーチャル順位表
+解説
+E - Alternating String
+解説
+/
+実行時間制限: 3 sec / メモリ制限: 1024 MB
+配点 :
+450
+450
+4
+5
+0
+点
+問題文
+0
+と
+1
+のみからなる文字列であって、文字列中のどの連続する
+2
+2
+2
+文字も異なるようなものを
+良い文字列
+とよびます。
+0
+と
+1
+のみからなる長さ
+N
+N
+N
+の文字列
+S
+S
+S
+が与えられます。
+Q
+Q
+Q
+個のクエリが与えられるので、順に処理してください。
+クエリは次の
+2
+2
+2
+種類です。
+1 L R
+:
+S
+S
+S
+の
+L
+L
+L
+文字目から
+R
+R
+R
+文字目までの
+0
+と
+1
+を反転させる。すなわち、
+L
+≤
+i
+≤
+R
+Lleq ileq R
+L
+≤
+i
+≤
+R
+をみたす整数
+i
+i
+i
+について、
+S
+S
+S
+の
+i
+i
+i
+文字目が
+0
+ならば
+1
+に、
+1
+ならば
+0
+に変更する。
+2 L R
+:
+S
+S
+S
+の
+L
+L
+L
+文字目から
+R
+R
+R
+文字目までを（順番を変えずに）抜き出した長さ
+(
+R
+−
+L
++
+1
+)
+(R-L+1)
+(
+R
+−
+L
++
+1
+)
+の文字列を
+S
+′
+S'
+S
+′
+とする。
+S
+′
+S'
+S
+′
+が良い文字列ならば
+Yes
+を、そうでないならば
+No
+を出力する。
+制約
+1
+≤
+N
+,
+Q
+≤
+5
+×
+1
+0
+5
+1leq N, Qleq 5times 10^5
+1
+≤
+N
+,
+Q
+≤
+5
+×
+1
+0
+5
+S
+S
+S
+は
+0
+と
+1
+のみからなる長さ
+N
+N
+N
+の文字列
+1
+,
+2
+1,2
+1
+,
+2
+種類目のクエリについて、
+1
+≤
+L
+≤
+R
+≤
+N
+1leq Lleq Rleq N
+1
+≤
+L
+≤
+R
+≤
+N
+2
+2
+2
+種類目のクエリが少なくとも
+1
+1
+1
+つ存在する。
+N
+N
+N
+,
+Q
+Q
+Q
+,
+L
+L
+L
+,
+R
+R
+R
+は整数
+入力
+入力は以下の形式で標準入力から与えられる。
+N
+N
+N
+Q
+Q
+Q
+S
+S
+S
+q
+u
+e
+r
+y
+1
+query_1
+q
+u
+e
+r
+y
+1
+​
+q
+u
+e
+r
+y
+2
+query_2
+q
+u
+e
+r
+y
+2
+​
+⋮
+vdots
+⋮
+q
+u
+e
+r
+y
+Q
+query_Q
+q
+u
+e
+r
+y
+Q
+​
+各クエリ
+q
+u
+e
+r
+y
+i
+query_i
+q
+u
+e
+r
+y
+i
+​
+(
+1
+≤
+i
+≤
+Q
+)
+(1leq ileq Q)
+(
+1
+≤
+i
+≤
+Q
+)
+は、
+1
+1
+1
+L
+L
+L
+R
+R
+R
+または、
+2
+2
+2
+L
+L
+L
+R
+R
+R
+の形で与えられる。
+出力
+2
+2
+2
+種類目のクエリの数を
+K
+K
+K
+個として、
+K
+K
+K
+行出力せよ。
+i
+i
+i
+行目には
+i
+i
+i
+個目の
+2
+2
+2
+種類目のクエリに対する出力を出力せよ。
+入力例 1
+Copy
+Copy
+5 6
+10100
+2 1 3
+2 1 5
+1 1 4
+2 1 5
+1 3 3
+2 2 4
+出力例 1
+Copy
+Copy
+Yes
+No
+Yes
+No
+最初、
+S
+=
+S=
+S
+=
+10100
+です。このとき、クエリを与えられた順に処理すると以下のようになります。
+1
+1
+1
+番目のクエリについて、
+S
+S
+S
+の
+1
+1
+1
+文字目から
+3
+3
+3
+文字目までを抜き出した文字列は
+S
+′
+=
+S'=
+S
+′
+=
+101
+です。これは良い文字列なので
+Yes
+を出力します。
+2
+2
+2
+番目のクエリについて、
+S
+S
+S
+の
+1
+1
+1
+文字目から
+5
+5
+5
+文字目までを抜き出した文字列は
+S
+′
+=
+S'=
+S
+′
+=
+10100
+です。これは良い文字列でないので
+No
+を出力します。
+3
+3
+3
+番目のクエリについて、
+S
+S
+S
+の
+1
+1
+1
+文字目から
+4
+4
+4
+文字目までの
+0
+と
+1
+を反転させます。文字列
+S
+S
+S
+は
+S
+=
+S=
+S
+=
+01010
+となります。
+4
+4
+4
+番目のクエリについて、
+S
+S
+S
+の
+1
+1
+1
+文字目から
+5
+5
+5
+文字目までを抜き出した文字列は
+S
+′
+=
+S'=
+S
+′
+=
+01010
+です。これは良い文字列なので
+Yes
+を出力します。
+5
+5
+5
+番目のクエリについて、
+S
+S
+S
+の
+3
+3
+3
+文字目の
+0
+と
+1
+を反転させます。文字列
+S
+S
+S
+は
+S
+=
+S=
+S
+=
+01110
+となります。
+6
+6
+6
+番目のクエリについて、
+S
+S
+S
+の
+2
+2
+2
+文字目から
+4
+4
+4
+文字目までを抜き出した文字列は
+S
+′
+=
+S'=
+S
+′
+=
+111
+です。これは良い文字列でないので
+No
+を出力します。
+入力例 2
+Copy
+Copy
+1 2
+1
+1 1 1
+2 1 1
+出力例 2
+Copy
+Copy
+Yes
+0
+または
+1
+の
+1
+1
+1
+文字からなる文字列は良い文字列の条件をみたすことに注意してください。
+Score:
+450
+450
+4
+5
+0
+points
+Problem Statement
+A string consisting of
+0
+and
+1
+is called a
+good string
+if two consecutive characters in the string are always different.
+You are given a string
+S
+S
+S
+of length
+N
+N
+N
+consisting of
+0
+and
+1
+.
+Q
+Q
+Q
+queries will be given and must be processed in order.
+There are two types of queries:
+1 L R
+: Flip each of the
+L
+L
+L
+-th to
+R
+R
+R
+-th characters of
+S
+S
+S
+. That is, for each integer
+i
+i
+i
+satisfying
+L
+≤
+i
+≤
+R
+Lleq ileq R
+L
+≤
+i
+≤
+R
+, change the
+i
+i
+i
+-th character of
+S
+S
+S
+to
+0
+if it is
+1
+, and vice versa.
+2 L R
+: Let
+S
+′
+S'
+S
+′
+be the string of length
+(
+R
+−
+L
++
+1
+)
+(R-L+1)
+(
+R
+−
+L
++
+1
+)
+obtained by extracting the
+L
+L
+L
+-th to
+R
+R
+R
+-th characters of
+S
+S
+S
+(without changing the order). Print
+Yes
+if
+S
+′
+S'
+S
+′
+is a good string and
+No
+otherwise.
+Constraints
+1
+≤
+N
+,
+Q
+≤
+5
+×
+1
+0
+5
+1leq N, Qleq 5times 10^5
+1
+≤
+N
+,
+Q
+≤
+5
+×
+1
+0
+5
+S
+S
+S
+is a string of length
+N
+N
+N
+consisting of
+0
+and
+1
+.
+1
+≤
+L
+≤
+R
+≤
+N
+1leq Lleq Rleq N
+1
+≤
+L
+≤
+R
+≤
+N
+for queries of types
+1
+1
+1
+and
+2
+2
+2
+.
+There is at least one query of type
+2
+2
+2
+.
+N
+N
+N
+,
+Q
+Q
+Q
+,
+L
+L
+L
+, and
+R
+R
+R
+are integers.
+Input
+The input is given from Standard Input in the following format:
+N
+N
+N
+Q
+Q
+Q
+S
+S
+S
+q
+u
+e
+r
+y
+1
+query_1
+q
+u
+e
+r
+y
+1
+​
+q
+u
+e
+r
+y
+2
+query_2
+q
+u
+e
+r
+y
+2
+​
+⋮
+vdots
+⋮
+q
+u
+e
+r
+y
+Q
+query_Q
+q
+u
+e
+r
+y
+Q
+​
+Each query
+q
+u
+e
+r
+y
+i
+query_i
+q
+u
+e
+r
+y
+i
+​
+(
+1
+≤
+i
+≤
+Q
+)
+(1leq ileq Q)
+(
+1
+≤
+i
+≤
+Q
+)
+is given in the form:
+1
+1
+1
+L
+L
+L
+R
+R
+R
+or:
+2
+2
+2
+L
+L
+L
+R
+R
+R
+Output
+Let
+K
+K
+K
+be the number of queries of type
+2
+2
+2
+. Print
+K
+K
+K
+lines.
+The
+i
+i
+i
+-th line should contain the response to the
+i
+i
+i
+-th query of type
+2
+2
+2
+.
+Sample Input 1
+Copy
+Copy
+5 6
+10100
+2 1 3
+2 1 5
+1 1 4
+2 1 5
+1 3 3
+2 2 4
+Sample Output 1
+Copy
+Copy
+Yes
+No
+Yes
+No
+Initially,
+S
+=
+S=
+S
+=
+10100
+. When processing the queries in the order they are given, the following occurs:
+For the first query, the string obtained by extracting the
+1
+1
+1
+-st to
+3
+3
+3
+-rd characters of
+S
+S
+S
+is
+S
+′
+=
+S'=
+S
+′
+=
+101
+. This is a good string, so print
+Yes
+.
+For the second query, the string obtained by extracting the
+1
+1
+1
+-st to
+5
+5
+5
+-th characters of
+S
+S
+S
+is
+S
+′
+=
+S'=
+S
+′
+=
+10100
+. This is not a good string, so print
+No
+.
+For the third query, flip each of the
+1
+1
+1
+-st to
+4
+4
+4
+-th characters of
+S
+S
+S
+. The string
+S
+S
+S
+becomes
+S
+=
+S=
+S
+=
+01010
+.
+For the fourth query, the string obtained by extracting the
+1
+1
+1
+-st to
+5
+5
+5
+-th character of
+S
+S
+S
+is
+S
+′
+=
+S'=
+S
+′
+=
+01010
+. This is a good string, so print
+Yes
+.
+For the fifth query, flip the
+3
+3
+3
+-rd character of
+S
+S
+S
+. The string
+S
+S
+S
+becomes
+S
+=
+S=
+S
+=
+01110
+.
+For the sixth query, the string obtained by extracting the
+2
+2
+2
+-nd to
+4
+4
+4
+-th character of
+S
+S
+S
+is
+S
+′
+=
+S'=
+S
+′
+=
+111
+. This is not a good string, so print
+No
+.
+Sample Input 2
+Copy
+Copy
+1 2
+1
+1 1 1
+2 1 1
+Sample Output 2
+Copy
+Copy
+Yes
+Note that a string of a single character
+0
+or
+1
+satisfies the condition of being a good string.
+Facebook
+Twitter
+Hatena
+共有
+ルール
+用語集
+利用規約
+プライバシーポリシー
+個人情報保護方針
+企業情報
+よくある質問
+お問い合わせ
+資料請求
+Copyright Since 2012 ©
+AtCoder Inc.
+All rights reserved.
+2024-02-20 (火)
+23:02:25 +09:00
+ページトップ
+✓
+共有ありがとう
+AddToAny
+もっと

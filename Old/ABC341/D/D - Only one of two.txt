@@ -1,0 +1,518 @@
+D - Only one of two
+×
+コンテスト開始
+トヨタ自動車プログラミングコンテスト2024#2（AtCoder Beginner Contest 341）が開始されました。
+閉じる
+×
+コンテスト終了
+トヨタ自動車プログラミングコンテスト2024#2（AtCoder Beginner Contest 341）は終了しました。
+閉じる
+トヨタ自動車プログラミングコンテスト2024#2（AtCoder Beginner Contest 341）
+日本語
+日本語
+English
+新規登録
+ログイン
+コンテスト時間:
+2024-02-17(土) 21:00
+~
+2024-02-17(土) 22:40
+(100分)
+AtCoderホームへ戻る
+トップ
+問題
+質問
+提出結果
+すべての提出
+順位表
+バーチャル順位表
+解説
+D - Only one of two
+解説
+/
+実行時間制限: 2 sec / メモリ制限: 1024 MB
+配点 :
+400
+400
+4
+0
+0
+点
+問題文
+正整数
+N
+N
+N
+,
+M
+M
+M
+,
+K
+K
+K
+が与えられます。ここで、
+N
+N
+N
+と
+M
+M
+M
+は異なります。
+正の整数であって、
+N
+N
+N
+と
+M
+M
+M
+のうち
+ちょうど一方のみ
+で割り切れる数のうち小さい方から
+K
+K
+K
+番目のものを出力してください。
+制約
+1
+≤
+N
+,
+M
+≤
+1
+0
+8
+1leq N, Mleq 10^8
+1
+≤
+N
+,
+M
+≤
+1
+0
+8
+1
+≤
+K
+≤
+1
+0
+10
+1leq Kleq 10^{10}
+1
+≤
+K
+≤
+1
+0
+1
+0
+N
+≠
+M
+Nneq M
+N
+
+=
+M
+N
+N
+N
+,
+M
+M
+M
+,
+K
+K
+K
+は整数
+入力
+入力は以下の形式で標準入力から与えられる。
+N
+N
+N
+M
+M
+M
+K
+K
+K
+出力
+N
+N
+N
+と
+M
+M
+M
+のうちちょうど一方のみで割り切れる正整数のうち小さい方から
+K
+K
+K
+番目のものを出力せよ。
+入力例 1
+Copy
+Copy
+2 3 5
+出力例 1
+Copy
+Copy
+9
+2
+2
+2
+と
+3
+3
+3
+のうちちょうど一方のみで割り切れる正整数は小さい方から順に
+2
+,
+3
+,
+4
+,
+8
+,
+9
+,
+10
+,
+…
+2,3,4,8,9,10,ldots
+2
+,
+3
+,
+4
+,
+8
+,
+9
+,
+1
+0
+,
+…
+です。
+ここで、
+6
+6
+6
+は
+2
+2
+2
+と
+3
+3
+3
+の両方で割り切れるため条件をみたさないことに注意してください。
+条件をみたす正整数のうち小さい方から
+5
+5
+5
+番目の数は
+9
+9
+9
+であるため、
+9
+9
+9
+を出力します。
+入力例 2
+Copy
+Copy
+1 2 3
+出力例 2
+Copy
+Copy
+5
+条件をみたす数は小さい方から順に
+1
+,
+3
+,
+5
+,
+7
+,
+…
+1,3,5,7,ldots
+1
+,
+3
+,
+5
+,
+7
+,
+…
+です。
+入力例 3
+Copy
+Copy
+100000000 99999999 10000000000
+出力例 3
+Copy
+Copy
+500000002500000000
+Score:
+400
+400
+4
+0
+0
+points
+Problem Statement
+You are given three positive integers
+N
+N
+N
+,
+M
+M
+M
+, and
+K
+K
+K
+. Here,
+N
+N
+N
+and
+M
+M
+M
+are different.
+Print the
+K
+K
+K
+-th smallest positive integer divisible by
+exactly one
+of
+N
+N
+N
+and
+M
+M
+M
+.
+Constraints
+1
+≤
+N
+,
+M
+≤
+1
+0
+8
+1 leq N, M leq 10^8
+1
+≤
+N
+,
+M
+≤
+1
+0
+8
+1
+≤
+K
+≤
+1
+0
+10
+1 leq K leq 10^{10}
+1
+≤
+K
+≤
+1
+0
+1
+0
+N
+≠
+M
+N neq M
+N
+
+=
+M
+N
+N
+N
+,
+M
+M
+M
+, and
+K
+K
+K
+are integers.
+Input
+The input is given from Standard Input in the following format:
+N
+N
+N
+M
+M
+M
+K
+K
+K
+Output
+Print the
+K
+K
+K
+-th smallest positive integer divisible by exactly one of
+N
+N
+N
+and
+M
+M
+M
+.
+Sample Input 1
+Copy
+Copy
+2 3 5
+Sample Output 1
+Copy
+Copy
+9
+The positive integers divisible by exactly one of
+2
+2
+2
+and
+3
+3
+3
+are
+2
+,
+3
+,
+4
+,
+8
+,
+9
+,
+10
+,
+…
+2, 3, 4, 8, 9, 10, ldots
+2
+,
+3
+,
+4
+,
+8
+,
+9
+,
+1
+0
+,
+…
+in ascending order.
+Note that
+6
+6
+6
+is not included because it is divisible by both
+2
+2
+2
+and
+3
+3
+3
+.
+The fifth smallest positive integer that satisfies the condition is
+9
+9
+9
+, so we print
+9
+9
+9
+.
+Sample Input 2
+Copy
+Copy
+1 2 3
+Sample Output 2
+Copy
+Copy
+5
+The numbers that satisfy the condition are
+1
+,
+3
+,
+5
+,
+7
+,
+…
+1, 3, 5, 7, ldots
+1
+,
+3
+,
+5
+,
+7
+,
+…
+in ascending order.
+Sample Input 3
+Copy
+Copy
+100000000 99999999 10000000000
+Sample Output 3
+Copy
+Copy
+500000002500000000
+Facebook
+Twitter
+Hatena
+共有
+ルール
+用語集
+利用規約
+プライバシーポリシー
+個人情報保護方針
+企業情報
+よくある質問
+お問い合わせ
+資料請求
+Copyright Since 2012 ©
+AtCoder Inc.
+All rights reserved.
+2024-02-20 (火)
+23:02:23 +09:00
+ページトップ
+✓
+共有ありがとう
+AddToAny
+もっと

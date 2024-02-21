@@ -1,0 +1,678 @@
+E - Mancala 2
+×
+コンテスト開始
+鹿島建設プログラミングコンテスト2024（AtCoder Beginner Contest 340）が開始されました。
+閉じる
+×
+コンテスト終了
+鹿島建設プログラミングコンテスト2024（AtCoder Beginner Contest 340）は終了しました。
+閉じる
+鹿島建設プログラミングコンテスト2024（AtCoder Beginner Contest 340）
+日本語
+日本語
+English
+新規登録
+ログイン
+コンテスト時間:
+2024-02-10(土) 21:00
+~
+2024-02-10(土) 22:40
+(100分)
+AtCoderホームへ戻る
+トップ
+問題
+質問
+提出結果
+すべての提出
+順位表
+バーチャル順位表
+解説
+E - Mancala 2
+解説
+/
+実行時間制限: 2 sec / メモリ制限: 1024 MB
+配点 :
+475
+475
+4
+7
+5
+点
+問題文
+0
+0
+0
+から
+N
+−
+1
+N-1
+N
+−
+1
+の番号がついた
+N
+N
+N
+個の箱があります。最初、箱
+i
+i
+i
+には
+A
+i
+A_i
+A
+i
+​
+個のボールが入っています。
+高橋君は
+i
+=
+1
+,
+2
+,
+…
+,
+M
+i=1,2,ldots,M
+i
+=
+1
+,
+2
+,
+…
+,
+M
+の順に以下の操作を行います。
+変数
+C
+C
+C
+を
+0
+0
+0
+とする。
+箱
+B
+i
+B_i
+B
+i
+​
+の中のボールを全て取り出し、手に持つ。
+手にボールを
+1
+1
+1
+個以上持っている間、次の処理を繰り返す：
+C
+C
+C
+の値を
+1
+1
+1
+増やす。
+手に持っているボールを
+1
+1
+1
+個、箱
+(
+B
+i
++
+C
+)
+m
+o
+d
+N
+(B_i+C) bmod N
+(
+B
+i
+​
++
+C
+)
+m
+o
+d
+N
+に入れる。
+全ての操作を終えた後、各箱に入っているボールの個数を求めてください。
+制約
+1
+≤
+N
+≤
+2
+×
+1
+0
+5
+1 leq N leq 2times 10^5
+1
+≤
+N
+≤
+2
+×
+1
+0
+5
+1
+≤
+M
+≤
+2
+×
+1
+0
+5
+1 leq M leq 2times 10^5
+1
+≤
+M
+≤
+2
+×
+1
+0
+5
+0
+≤
+A
+i
+≤
+1
+0
+9
+0 leq A_i leq 10^9
+0
+≤
+A
+i
+​
+≤
+1
+0
+9
+0
+≤
+B
+i
+<
+N
+0 leq B_i < N
+0
+≤
+B
+i
+​
+<
+N
+入力は全て整数
+入力
+入力は以下の形式で標準入力から与えられる。
+N
+N
+N
+M
+M
+M
+A
+0
+A_0
+A
+0
+​
+A
+1
+A_1
+A
+1
+​
+…
+ldots
+…
+A
+N
+−
+1
+A_{N-1}
+A
+N
+−
+1
+​
+B
+1
+B_1
+B
+1
+​
+B
+2
+B_2
+B
+2
+​
+…
+ldots
+…
+B
+M
+B_M
+B
+M
+​
+出力
+全ての操作を終えた後、箱
+i
+i
+i
+に入っているボールの個数を
+X
+i
+X_i
+X
+i
+​
+とする。
+X
+0
+,
+X
+1
+,
+…
+,
+X
+N
+−
+1
+X_0,X_1,ldots,X_{N-1}
+X
+0
+​
+,
+X
+1
+​
+,
+…
+,
+X
+N
+−
+1
+​
+をこの順に空白区切りで出力せよ。
+入力例 1
+Copy
+Copy
+5 3
+1 2 3 4 5
+2 4 0
+出力例 1
+Copy
+Copy
+0 4 2 7 2
+操作は次のように進行します。
+入力例 2
+Copy
+Copy
+3 10
+1000000000 1000000000 1000000000
+0 1 0 1 0 1 0 1 0 1
+出力例 2
+Copy
+Copy
+104320141 45436840 2850243019
+入力例 3
+Copy
+Copy
+1 4
+1
+0 0 0 0
+出力例 3
+Copy
+Copy
+1
+Score:
+475
+475
+4
+7
+5
+points
+Problem Statement
+There are
+N
+N
+N
+boxes numbered
+0
+0
+0
+to
+N
+−
+1
+N-1
+N
+−
+1
+. Initially, box
+i
+i
+i
+contains
+A
+i
+A_i
+A
+i
+​
+balls.
+Takahashi will perform the following operations for
+i
+=
+1
+,
+2
+,
+…
+,
+M
+i=1,2,ldots,M
+i
+=
+1
+,
+2
+,
+…
+,
+M
+in order:
+Set a variable
+C
+C
+C
+to
+0
+0
+0
+.
+Take out all the balls from box
+B
+i
+B_i
+B
+i
+​
+and hold them in hand.
+While holding at least one ball in hand, repeat the following process:
+Increase the value of
+C
+C
+C
+by
+1
+1
+1
+.
+Put one ball from hand into box
+(
+B
+i
++
+C
+)
+m
+o
+d
+N
+(B_i+C) bmod N
+(
+B
+i
+​
++
+C
+)
+m
+o
+d
+N
+.
+Determine the number of balls in each box after completing all operations.
+Constraints
+1
+≤
+N
+≤
+2
+×
+1
+0
+5
+1 leq N leq 2times 10^5
+1
+≤
+N
+≤
+2
+×
+1
+0
+5
+1
+≤
+M
+≤
+2
+×
+1
+0
+5
+1 leq M leq 2times 10^5
+1
+≤
+M
+≤
+2
+×
+1
+0
+5
+0
+≤
+A
+i
+≤
+1
+0
+9
+0 leq A_i leq 10^9
+0
+≤
+A
+i
+​
+≤
+1
+0
+9
+0
+≤
+B
+i
+<
+N
+0 leq B_i < N
+0
+≤
+B
+i
+​
+<
+N
+All input values are integers.
+Input
+The input is given from Standard Input in the following format:
+N
+N
+N
+M
+M
+M
+A
+0
+A_0
+A
+0
+​
+A
+1
+A_1
+A
+1
+​
+…
+ldots
+…
+A
+N
+−
+1
+A_{N-1}
+A
+N
+−
+1
+​
+B
+1
+B_1
+B
+1
+​
+B
+2
+B_2
+B
+2
+​
+…
+ldots
+…
+B
+M
+B_M
+B
+M
+​
+Output
+Let
+X
+i
+X_i
+X
+i
+​
+be the number of balls in box
+i
+i
+i
+after completing all operations. Print
+X
+0
+,
+X
+1
+,
+…
+,
+X
+N
+−
+1
+X_0,X_1,ldots,X_{N-1}
+X
+0
+​
+,
+X
+1
+​
+,
+…
+,
+X
+N
+−
+1
+​
+in this order, separated by spaces.
+Sample Input 1
+Copy
+Copy
+5 3
+1 2 3 4 5
+2 4 0
+Sample Output 1
+Copy
+Copy
+0 4 2 7 2
+The operations proceed as follows:
+Sample Input 2
+Copy
+Copy
+3 10
+1000000000 1000000000 1000000000
+0 1 0 1 0 1 0 1 0 1
+Sample Output 2
+Copy
+Copy
+104320141 45436840 2850243019
+Sample Input 3
+Copy
+Copy
+1 4
+1
+0 0 0 0
+Sample Output 3
+Copy
+Copy
+1
+Facebook
+Twitter
+Hatena
+共有
+ルール
+用語集
+利用規約
+プライバシーポリシー
+個人情報保護方針
+企業情報
+よくある質問
+お問い合わせ
+資料請求
+Copyright Since 2012 ©
+AtCoder Inc.
+All rights reserved.
+2024-02-21 (水)
+14:52:22 +09:00
+ページトップ
+✓
+共有ありがとう
+AddToAny
+もっと

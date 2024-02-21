@@ -1,0 +1,386 @@
+A - Arithmetic Progression
+×
+コンテスト開始
+鹿島建設プログラミングコンテスト2024（AtCoder Beginner Contest 340）が開始されました。
+閉じる
+×
+コンテスト終了
+鹿島建設プログラミングコンテスト2024（AtCoder Beginner Contest 340）は終了しました。
+閉じる
+鹿島建設プログラミングコンテスト2024（AtCoder Beginner Contest 340）
+日本語
+日本語
+English
+新規登録
+ログイン
+コンテスト時間:
+2024-02-10(土) 21:00
+~
+2024-02-10(土) 22:40
+(100分)
+AtCoderホームへ戻る
+トップ
+問題
+質問
+提出結果
+すべての提出
+順位表
+バーチャル順位表
+解説
+A - Arithmetic Progression
+解説
+/
+実行時間制限: 2 sec / メモリ制限: 1024 MB
+配点 :
+100
+100
+1
+0
+0
+点
+問題文
+初項が
+A
+A
+A
+、末項が
+B
+B
+B
+、公差が
+D
+D
+D
+であるような等差数列を出力してください。
+なお、そのような等差数列が存在する入力のみが与えられます。
+制約
+1
+≤
+A
+≤
+B
+≤
+100
+1 leq A leq B leq 100
+1
+≤
+A
+≤
+B
+≤
+1
+0
+0
+1
+≤
+D
+≤
+100
+1leq D leq 100
+1
+≤
+D
+≤
+1
+0
+0
+初項が
+A
+A
+A
+、末項が
+B
+B
+B
+、公差が
+D
+D
+D
+であるような等差数列が存在する
+入力は全て整数
+入力
+入力は以下の形式で標準入力から与えられる。
+A
+A
+A
+B
+B
+B
+D
+D
+D
+出力
+初項が
+A
+A
+A
+、末項が
+B
+B
+B
+、公差が
+D
+D
+D
+であるような等差数列の項を順に空白区切りで出力せよ。
+入力例 1
+Copy
+Copy
+3 9 2
+出力例 1
+Copy
+Copy
+3 5 7 9
+初項が
+3
+3
+3
+、末項が
+9
+9
+9
+、公差が
+2
+2
+2
+であるような等差数列は
+(
+3
+,
+5
+,
+7
+,
+9
+)
+(3,5,7,9)
+(
+3
+,
+5
+,
+7
+,
+9
+)
+です。
+入力例 2
+Copy
+Copy
+10 10 1
+出力例 2
+Copy
+Copy
+10
+初項が
+10
+10
+1
+0
+、末項が
+10
+10
+1
+0
+、公差が
+1
+1
+1
+であるような等差数列は
+(
+10
+)
+(10)
+(
+1
+0
+)
+です。
+Score:
+100
+100
+1
+0
+0
+points
+Problem Statement
+Print an arithmetic sequence with first term
+A
+A
+A
+, last term
+B
+B
+B
+, and common difference
+D
+D
+D
+.
+You are only given inputs for which such an arithmetic sequence exists.
+Constraints
+1
+≤
+A
+≤
+B
+≤
+100
+1 leq A leq B leq 100
+1
+≤
+A
+≤
+B
+≤
+1
+0
+0
+1
+≤
+D
+≤
+100
+1 leq D leq 100
+1
+≤
+D
+≤
+1
+0
+0
+There is an arithmetic sequence with first term
+A
+A
+A
+, last term
+B
+B
+B
+, and common difference
+D
+D
+D
+.
+All input values are integers.
+Input
+The input is given from Standard Input in the following format:
+A
+A
+A
+B
+B
+B
+D
+D
+D
+Output
+Print the terms of the arithmetic sequence with first term
+A
+A
+A
+, last term
+B
+B
+B
+, and common difference
+D
+D
+D
+, in order, separated by spaces.
+Sample Input 1
+Copy
+Copy
+3 9 2
+Sample Output 1
+Copy
+Copy
+3 5 7 9
+The arithmetic sequence with first term
+3
+3
+3
+, last term
+9
+9
+9
+, and common difference
+2
+2
+2
+is
+(
+3
+,
+5
+,
+7
+,
+9
+)
+(3,5,7,9)
+(
+3
+,
+5
+,
+7
+,
+9
+)
+.
+Sample Input 2
+Copy
+Copy
+10 10 1
+Sample Output 2
+Copy
+Copy
+10
+The arithmetic sequence with first term
+10
+10
+1
+0
+, last term
+10
+10
+1
+0
+, and common difference
+1
+1
+1
+is
+(
+10
+)
+(10)
+(
+1
+0
+)
+.
+Facebook
+Twitter
+Hatena
+共有
+ルール
+用語集
+利用規約
+プライバシーポリシー
+個人情報保護方針
+企業情報
+よくある質問
+お問い合わせ
+資料請求
+Copyright Since 2012 ©
+AtCoder Inc.
+All rights reserved.
+2024-02-21 (水)
+14:52:12 +09:00
+ページトップ
+✓
+共有ありがとう
+AddToAny
+もっと

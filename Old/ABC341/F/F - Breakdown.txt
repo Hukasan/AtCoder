@@ -1,0 +1,1541 @@
+F - Breakdown
+×
+コンテスト開始
+トヨタ自動車プログラミングコンテスト2024#2（AtCoder Beginner Contest 341）が開始されました。
+閉じる
+×
+コンテスト終了
+トヨタ自動車プログラミングコンテスト2024#2（AtCoder Beginner Contest 341）は終了しました。
+閉じる
+トヨタ自動車プログラミングコンテスト2024#2（AtCoder Beginner Contest 341）
+日本語
+日本語
+English
+新規登録
+ログイン
+コンテスト時間:
+2024-02-17(土) 21:00
+~
+2024-02-17(土) 22:40
+(100分)
+AtCoderホームへ戻る
+トップ
+問題
+質問
+提出結果
+すべての提出
+順位表
+バーチャル順位表
+解説
+F - Breakdown
+解説
+/
+実行時間制限: 2 sec / メモリ制限: 1024 MB
+配点 :
+475
+475
+4
+7
+5
+点
+問題文
+N
+N
+N
+個の頂点と
+M
+M
+M
+本の辺からなる単純な無向グラフが与えられます。
+i
+=
+1
+,
+2
+,
+…
+,
+M
+i = 1, 2, ldots, M
+i
+=
+1
+,
+2
+,
+…
+,
+M
+について、
+i
+i
+i
+番目の辺は頂点
+u
+i
+u_i
+u
+i
+​
+と頂点
+v
+i
+v_i
+v
+i
+​
+を結ぶ辺です。
+また、
+i
+=
+1
+,
+2
+,
+…
+,
+N
+i = 1, 2, ldots, N
+i
+=
+1
+,
+2
+,
+…
+,
+N
+について、頂点
+i
+i
+i
+には正整数
+W
+i
+W_i
+W
+i
+​
+が割り当てられており、
+A
+i
+A_i
+A
+i
+​
+個のコマが置かれています。
+グラフ上にコマが存在する限り、下記の操作を繰り返します。
+まず、グラフ上のコマを
+1
+1
+1
+個選んで取り除き、そのコマが置かれていた頂点を
+x
+x
+x
+とおく。
+x
+x
+x
+に隣接するいくつかの頂点からなる（空でも良い）集合
+S
+S
+S
+であって、
+∑
+y
+∈
+S
+W
+y
+<
+W
+x
+sum_{y in S} W_y lt W_x
+∑
+y
+∈
+S
+​
+W
+y
+​
+<
+W
+x
+​
+であるものを選び、
+S
+S
+S
+に含まれる頂点それぞれに
+1
+1
+1
+個ずつコマを置く。
+操作を行う回数としてあり得る最大値を出力してください。
+なお、どのように操作を行っても、有限回の操作の後にはグラフ上にコマが存在しない状態に至ることが証明出来ます。
+制約
+入力される値はすべて整数
+2
+≤
+N
+≤
+5000
+2 leq N leq 5000
+2
+≤
+N
+≤
+5
+0
+0
+0
+1
+≤
+M
+≤
+min
+⁡
+{
+N
+(
+N
+−
+1
+)
+/
+2
+,
+5000
+}
+1 leq M leq min lbrace N(N-1)/2, 5000 rbrace
+1
+≤
+M
+≤
+min
+{
+N
+(
+N
+−
+1
+)
+/
+2
+,
+5
+0
+0
+0
+}
+1
+≤
+u
+i
+,
+v
+i
+≤
+N
+1 leq u_i, v_i leq N
+1
+≤
+u
+i
+​
+,
+v
+i
+​
+≤
+N
+u
+i
+≠
+v
+i
+u_i neq v_i
+u
+i
+​
+
+=
+v
+i
+​
+i
+≠
+j
+⟹
+{
+u
+i
+,
+v
+i
+}
+≠
+{
+u
+j
+,
+v
+j
+}
+i neq j implies lbrace u_i, v_i rbrace neq lbrace u_j, v_j rbrace
+i
+
+=
+j
+⟹
+{
+u
+i
+​
+,
+v
+i
+​
+}
+
+=
+{
+u
+j
+​
+,
+v
+j
+​
+}
+1
+≤
+W
+i
+≤
+5000
+1 leq W_i leq 5000
+1
+≤
+W
+i
+​
+≤
+5
+0
+0
+0
+0
+≤
+A
+i
+≤
+1
+0
+9
+0 leq A_i leq 10^9
+0
+≤
+A
+i
+​
+≤
+1
+0
+9
+入力
+入力は以下の形式で標準入力から与えられる。
+N
+N
+N
+M
+M
+M
+u
+1
+u_1
+u
+1
+​
+v
+1
+v_1
+v
+1
+​
+u
+2
+u_2
+u
+2
+​
+v
+2
+v_2
+v
+2
+​
+⋮
+vdots
+⋮
+u
+M
+u_M
+u
+M
+​
+v
+M
+v_M
+v
+M
+​
+W
+1
+W_1
+W
+1
+​
+W
+2
+W_2
+W
+2
+​
+…
+ldots
+…
+W
+N
+W_N
+W
+N
+​
+A
+1
+A_1
+A
+1
+​
+A
+2
+A_2
+A
+2
+​
+…
+ldots
+…
+A
+N
+A_N
+A
+N
+​
+出力
+答えを出力せよ。
+入力例 1
+Copy
+Copy
+6 6
+1 2
+2 3
+3 1
+3 4
+1 5
+5 6
+9 2 3 1 4 4
+1 0 0 0 0 1
+出力例 1
+Copy
+Copy
+5
+以下の説明では、各頂点にあるコマの個数を、数列
+A
+=
+(
+A
+1
+,
+A
+2
+,
+…
+,
+A
+N
+)
+A = (A_1, A_2, ldots, A_N)
+A
+=
+(
+A
+1
+​
+,
+A
+2
+​
+,
+…
+,
+A
+N
+​
+)
+として表します。
+はじめ、
+A
+=
+(
+1
+,
+0
+,
+0
+,
+0
+,
+0
+,
+1
+)
+A = (1, 0, 0, 0, 0, 1)
+A
+=
+(
+1
+,
+0
+,
+0
+,
+0
+,
+0
+,
+1
+)
+です。
+下記の手順で操作を行うことを考えます。
+頂点
+1
+1
+1
+にあるコマを
+1
+1
+1
+個取り除き、頂点
+2
+,
+3
+2, 3
+2
+,
+3
+にコマを
+1
+1
+1
+個ずつ置く。その結果、
+A
+=
+(
+0
+,
+1
+,
+1
+,
+0
+,
+0
+,
+1
+)
+A = (0, 1, 1, 0, 0, 1)
+A
+=
+(
+0
+,
+1
+,
+1
+,
+0
+,
+0
+,
+1
+)
+となる。
+頂点
+2
+2
+2
+にあるコマを
+1
+1
+1
+個取り除く。その結果、
+A
+=
+(
+0
+,
+0
+,
+1
+,
+0
+,
+0
+,
+1
+)
+A = (0, 0, 1, 0, 0, 1)
+A
+=
+(
+0
+,
+0
+,
+1
+,
+0
+,
+0
+,
+1
+)
+となる。
+頂点
+6
+6
+6
+にあるコマを
+1
+1
+1
+個取り除く。その結果、
+A
+=
+(
+0
+,
+0
+,
+1
+,
+0
+,
+0
+,
+0
+)
+A = (0, 0, 1, 0, 0, 0)
+A
+=
+(
+0
+,
+0
+,
+1
+,
+0
+,
+0
+,
+0
+)
+となる。
+頂点
+3
+3
+3
+にあるコマを
+1
+1
+1
+個取り除き、頂点
+2
+2
+2
+にコマを
+1
+1
+1
+個置く。その結果、
+A
+=
+(
+0
+,
+1
+,
+0
+,
+0
+,
+0
+,
+0
+)
+A = (0, 1, 0, 0, 0, 0)
+A
+=
+(
+0
+,
+1
+,
+0
+,
+0
+,
+0
+,
+0
+)
+となる。
+頂点
+2
+2
+2
+にあるコマを
+1
+1
+1
+個取り除く。その結果、
+A
+=
+(
+0
+,
+0
+,
+0
+,
+0
+,
+0
+,
+0
+)
+A = (0, 0, 0, 0, 0, 0)
+A
+=
+(
+0
+,
+0
+,
+0
+,
+0
+,
+0
+,
+0
+)
+となる。
+上記の手順で操作を行う回数は
+5
+5
+5
+回であり、これが操作を行う回数としてあり得る最大値です。
+入力例 2
+Copy
+Copy
+2 1
+1 2
+1 2
+0 0
+出力例 2
+Copy
+Copy
+0
+この入力例では、はじめからグラフ上にコマが存在しません。
+入力例 3
+Copy
+Copy
+10 20
+4 8
+1 10
+1 7
+5 9
+9 10
+8 10
+7 5
+1 4
+7 3
+8 7
+2 8
+5 8
+4 2
+5 1
+7 2
+8 3
+3 4
+8 9
+7 10
+2 3
+25 5 1 1 16 5 98 3 21 1
+35 39 32 11 35 37 14 29 36 1
+出力例 3
+Copy
+Copy
+1380
+Score:
+475
+475
+4
+7
+5
+points
+Problem Statement
+You are given a simple undirected graph consisting of
+N
+N
+N
+vertices and
+M
+M
+M
+edges.
+For
+i
+=
+1
+,
+2
+,
+…
+,
+M
+i = 1, 2, ldots, M
+i
+=
+1
+,
+2
+,
+…
+,
+M
+, the
+i
+i
+i
+-th edge connects vertices
+u
+i
+u_i
+u
+i
+​
+and
+v
+i
+v_i
+v
+i
+​
+.
+Also, for
+i
+=
+1
+,
+2
+,
+…
+,
+N
+i = 1, 2, ldots, N
+i
+=
+1
+,
+2
+,
+…
+,
+N
+, vertex
+i
+i
+i
+is assigned a positive integer
+W
+i
+W_i
+W
+i
+​
+, and there are
+A
+i
+A_i
+A
+i
+​
+pieces placed on it.
+As long as there are pieces on the graph, repeat the following operation:
+First, choose and remove one piece from the graph, and let
+x
+x
+x
+be the vertex on which the piece was placed.
+Choose a (possibly empty) set
+S
+S
+S
+of vertices adjacent to
+x
+x
+x
+such that
+∑
+y
+∈
+S
+W
+y
+<
+W
+x
+sum_{y in S} W_y lt W_x
+∑
+y
+∈
+S
+​
+W
+y
+​
+<
+W
+x
+​
+, and place one piece on each vertex in
+S
+S
+S
+.
+Print the maximum number of times the operation can be performed.
+It can be proved that, regardless of how the operation is performed, there will be no pieces on the graph after a finite number of iterations.
+Constraints
+All input values are integers.
+2
+≤
+N
+≤
+5000
+2 leq N leq 5000
+2
+≤
+N
+≤
+5
+0
+0
+0
+1
+≤
+M
+≤
+min
+⁡
+{
+N
+(
+N
+−
+1
+)
+/
+2
+,
+5000
+}
+1 leq M leq min lbrace N(N-1)/2, 5000 rbrace
+1
+≤
+M
+≤
+min
+{
+N
+(
+N
+−
+1
+)
+/
+2
+,
+5
+0
+0
+0
+}
+1
+≤
+u
+i
+,
+v
+i
+≤
+N
+1 leq u_i, v_i leq N
+1
+≤
+u
+i
+​
+,
+v
+i
+​
+≤
+N
+u
+i
+≠
+v
+i
+u_i neq v_i
+u
+i
+​
+
+=
+v
+i
+​
+i
+≠
+j
+⟹
+{
+u
+i
+,
+v
+i
+}
+≠
+{
+u
+j
+,
+v
+j
+}
+i neq j implies lbrace u_i, v_i rbrace neq lbrace u_j, v_j rbrace
+i
+
+=
+j
+⟹
+{
+u
+i
+​
+,
+v
+i
+​
+}
+
+=
+{
+u
+j
+​
+,
+v
+j
+​
+}
+1
+≤
+W
+i
+≤
+5000
+1 leq W_i leq 5000
+1
+≤
+W
+i
+​
+≤
+5
+0
+0
+0
+0
+≤
+A
+i
+≤
+1
+0
+9
+0 leq A_i leq 10^9
+0
+≤
+A
+i
+​
+≤
+1
+0
+9
+Input
+The input is given from Standard Input in the following format:
+N
+N
+N
+M
+M
+M
+u
+1
+u_1
+u
+1
+​
+v
+1
+v_1
+v
+1
+​
+u
+2
+u_2
+u
+2
+​
+v
+2
+v_2
+v
+2
+​
+⋮
+vdots
+⋮
+u
+M
+u_M
+u
+M
+​
+v
+M
+v_M
+v
+M
+​
+W
+1
+W_1
+W
+1
+​
+W
+2
+W_2
+W
+2
+​
+…
+ldots
+…
+W
+N
+W_N
+W
+N
+​
+A
+1
+A_1
+A
+1
+​
+A
+2
+A_2
+A
+2
+​
+…
+ldots
+…
+A
+N
+A_N
+A
+N
+​
+Output
+Print the answer.
+Sample Input 1
+Copy
+Copy
+6 6
+1 2
+2 3
+3 1
+3 4
+1 5
+5 6
+9 2 3 1 4 4
+1 0 0 0 0 1
+Sample Output 1
+Copy
+Copy
+5
+In the following explanation, let
+A
+=
+(
+A
+1
+,
+A
+2
+,
+…
+,
+A
+N
+)
+A = (A_1, A_2, ldots, A_N)
+A
+=
+(
+A
+1
+​
+,
+A
+2
+​
+,
+…
+,
+A
+N
+​
+)
+represent the numbers of pieces on the vertices.
+Initially,
+A
+=
+(
+1
+,
+0
+,
+0
+,
+0
+,
+0
+,
+1
+)
+A = (1, 0, 0, 0, 0, 1)
+A
+=
+(
+1
+,
+0
+,
+0
+,
+0
+,
+0
+,
+1
+)
+.
+Consider performing the operation as follows:
+Remove one piece from vertex
+1
+1
+1
+and place one piece each on vertices
+2
+2
+2
+and
+3
+3
+3
+. Now,
+A
+=
+(
+0
+,
+1
+,
+1
+,
+0
+,
+0
+,
+1
+)
+A = (0, 1, 1, 0, 0, 1)
+A
+=
+(
+0
+,
+1
+,
+1
+,
+0
+,
+0
+,
+1
+)
+.
+Remove one piece from vertex
+2
+2
+2
+. Now,
+A
+=
+(
+0
+,
+0
+,
+1
+,
+0
+,
+0
+,
+1
+)
+A = (0, 0, 1, 0, 0, 1)
+A
+=
+(
+0
+,
+0
+,
+1
+,
+0
+,
+0
+,
+1
+)
+.
+Remove one piece from vertex
+6
+6
+6
+. Now,
+A
+=
+(
+0
+,
+0
+,
+1
+,
+0
+,
+0
+,
+0
+)
+A = (0, 0, 1, 0, 0, 0)
+A
+=
+(
+0
+,
+0
+,
+1
+,
+0
+,
+0
+,
+0
+)
+.
+Remove one piece from vertex
+3
+3
+3
+and place one piece on vertex
+2
+2
+2
+. Now,
+A
+=
+(
+0
+,
+1
+,
+0
+,
+0
+,
+0
+,
+0
+)
+A = (0, 1, 0, 0, 0, 0)
+A
+=
+(
+0
+,
+1
+,
+0
+,
+0
+,
+0
+,
+0
+)
+.
+Remove one piece from vertex
+2
+2
+2
+. Now,
+A
+=
+(
+0
+,
+0
+,
+0
+,
+0
+,
+0
+,
+0
+)
+A = (0, 0, 0, 0, 0, 0)
+A
+=
+(
+0
+,
+0
+,
+0
+,
+0
+,
+0
+,
+0
+)
+.
+In this procedure, the operation is performed five times, which is the maximum possible number of times.
+Sample Input 2
+Copy
+Copy
+2 1
+1 2
+1 2
+0 0
+Sample Output 2
+Copy
+Copy
+0
+In this sample input, there are no pieces on the graph from the beginning.
+Sample Input 3
+Copy
+Copy
+10 20
+4 8
+1 10
+1 7
+5 9
+9 10
+8 10
+7 5
+1 4
+7 3
+8 7
+2 8
+5 8
+4 2
+5 1
+7 2
+8 3
+3 4
+8 9
+7 10
+2 3
+25 5 1 1 16 5 98 3 21 1
+35 39 32 11 35 37 14 29 36 1
+Sample Output 3
+Copy
+Copy
+1380
+Facebook
+Twitter
+Hatena
+共有
+ルール
+用語集
+利用規約
+プライバシーポリシー
+個人情報保護方針
+企業情報
+よくある質問
+お問い合わせ
+資料請求
+Copyright Since 2012 ©
+AtCoder Inc.
+All rights reserved.
+2024-02-20 (火)
+23:02:28 +09:00
+ページトップ
+✓
+共有ありがとう
+AddToAny
+もっと

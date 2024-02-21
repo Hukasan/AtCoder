@@ -1,0 +1,39 @@
+{
+  "contest": {
+    "id": "denso2023-02",
+    "title": "Denso 9th Code Contest",
+    "url": "https://atcoder.jp/contests/denso2023-02"
+  },
+  "tasks": [
+    {
+      "id": "denso2023_02_a",
+      "label": "A",
+      "title": "Doubling Age",
+      "url": "https://atcoder.jp/contests/denso2023-02/tasks/denso2023_02_a"
+    },
+    {
+      "id": "denso2023_02_b",
+      "label": "B",
+      "title": "Restaurant",
+      "url": "https://atcoder.jp/contests/denso2023-02/tasks/denso2023_02_b"
+    },
+    {
+      "id": "denso2023_02_c",
+      "label": "C",
+      "title": "Umbrella",
+      "url": "https://atcoder.jp/contests/denso2023-02/tasks/denso2023_02_c"
+    },
+    {
+      "id": "denso2023_02_d",
+      "label": "D",
+      "title": "Reduce Salt",
+      "url": "https://atcoder.jp/contests/denso2023-02/tasks/denso2023_02_d"
+    },
+    {
+      "id": "denso2023_02_e",
+      "label": "E",
+      "title": "Busy Queen",
+      "url": "https://atcoder.jp/contests/denso2023-02/tasks/denso2023_02_e"
+    }
+  ]
+}
