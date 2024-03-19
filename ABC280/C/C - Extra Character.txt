@@ -1,0 +1,376 @@
+C - Extra Character
+×
+コンテスト開始
+デンソークリエイトプログラミングコンテスト2022 Winter(AtCoder Beginner Contest 280)が開始されました。
+閉じる
+×
+コンテスト終了
+デンソークリエイトプログラミングコンテスト2022 Winter(AtCoder Beginner Contest 280)は終了しました。
+閉じる
+デンソークリエイトプログラミングコンテスト2022 Winter(AtCoder Beginner Contest 280)
+日本語
+日本語
+English
+新規登録
+ログイン
+コンテスト時間:
+2022-12-03(土) 21:00
+~
+2022-12-03(土) 22:40
+(100分)
+AtCoderホームへ戻る
+トップ
+問題
+質問
+提出結果
+すべての提出
+順位表
+バーチャル順位表
+解説
+C - Extra Character
+解説
+/
+実行時間制限: 2 sec / メモリ制限: 1024 MB
+配点 :
+300
+300
+3
+0
+0
+点
+問題文
+文字列
+S
+,
+T
+S,T
+S
+,
+T
+が与えられます。
+S
+S
+S
+は英小文字からなり、
+T
+T
+T
+は
+S
+S
+S
+に英小文字を
+1
+1
+1
+つ挿入して作られたことがわかっています。
+挿入された文字は
+T
+T
+T
+の先頭から何番目の文字であるか求めてください。
+複数の候補が考えられる場合はいずれか
+1
+1
+1
+つを求めてください。
+制約
+1
+≤
+∣
+S
+∣
+≤
+5
+×
+1
+0
+5
+1 leq |S| leq 5times 10^5
+1
+≤
+∣
+S
+∣
+≤
+5
+×
+1
+0
+5
+S
+S
+S
+は英小文字からなる
+T
+T
+T
+は
+S
+S
+S
+に英小文字を
+1
+1
+1
+つ挿入して作られた文字列である
+入力
+入力は以下の形式で標準入力から与えられる。
+S
+S
+S
+T
+T
+T
+出力
+答えを出力せよ。なお、答えが複数考えられる場合はどれを出力しても正解となる。
+入力例 1
+Copy
+Copy
+atcoder
+atcorder
+出力例 1
+Copy
+Copy
+5
+T
+T
+T
+の先頭から
+5
+5
+5
+番目の文字
+r
+が挿入された文字です。
+入力例 2
+Copy
+Copy
+million
+milllion
+出力例 2
+Copy
+Copy
+5
+T
+T
+T
+の先頭から
+3
+,
+4
+,
+5
+3,4,5
+3
+,
+4
+,
+5
+番目の文字のいずれかが挿入された文字です。
+よって、
+3
+,
+4
+,
+5
+3,4,5
+3
+,
+4
+,
+5
+のいずれかを出力すると正解となります。
+入力例 3
+Copy
+Copy
+vvwvw
+vvvwvw
+出力例 3
+Copy
+Copy
+3
+Score :
+300
+300
+3
+0
+0
+points
+Problem Statement
+You are given strings
+S
+S
+S
+and
+T
+T
+T
+.
+S
+S
+S
+consists of lowercase English letters, and
+T
+T
+T
+is obtained by inserting a lowercase English letter into
+S
+S
+S
+.
+Find the position of the inserted character in
+T
+T
+T
+.
+If there are multiple candidates, find any of them.
+Constraints
+1
+≤
+∣
+S
+∣
+≤
+5
+×
+1
+0
+5
+1 leq |S| leq 5times 10^5
+1
+≤
+∣
+S
+∣
+≤
+5
+×
+1
+0
+5
+S
+S
+S
+consists of lowercase English letters.
+T
+T
+T
+is obtained by inserting a lowercase English letter into
+S
+S
+S
+.
+Input
+The input is given from Standard Input in the following format:
+S
+S
+S
+T
+T
+T
+Output
+Print an integer
+i
+i
+i
+, representing that the inserted character is the
+i
+i
+i
+-th character from the beginning of
+T
+T
+T
+.  If there are multiple possible answers, printing any of them is accepted.
+Sample Input 1
+Copy
+Copy
+atcoder
+atcorder
+Sample Output 1
+Copy
+Copy
+5
+The
+5
+5
+5
+-th character from the beginning of
+T
+T
+T
+,
+r
+, is inserted.
+Sample Input 2
+Copy
+Copy
+million
+milllion
+Sample Output 2
+Copy
+Copy
+5
+One of the
+3
+3
+3
+-rd,
+4
+4
+4
+-th, and
+5
+5
+5
+-th characters from the beginning of
+T
+T
+T
+is inserted.
+Thus, printing any one of
+3
+3
+3
+,
+4
+4
+4
+, and
+5
+5
+5
+is accepted.
+Sample Input 3
+Copy
+Copy
+vvwvw
+vvvwvw
+Sample Output 3
+Copy
+Copy
+3
+Facebook
+Twitter
+Hatena
+共有
+ルール
+用語集
+利用規約
+プライバシーポリシー
+個人情報保護方針
+企業情報
+よくある質問
+お問い合わせ
+資料請求
+Copyright Since 2012 ©
+AtCoder Inc.
+All rights reserved.
+2024-03-19 (火)
+18:05:40 +09:00
+ページトップ
+✓
+共有ありがとう
+AddToAny
+もっと

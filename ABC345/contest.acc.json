@@ -1,0 +1,86 @@
+{
+  "contest": {
+    "id": "abc345",
+    "title": "Monoxer Programming Contest 2024（AtCoder Beginner Contest 345）",
+    "url": "https://atcoder.jp/contests/abc345"
+  },
+  "tasks": [
+    {
+      "id": "abc345_a",
+      "label": "A",
+      "title": "Leftrightarrow",
+      "url": "https://atcoder.jp/contests/abc345/tasks/abc345_a",
+      "directory": {
+        "path": "A",
+        "testdir": "test\\TestData",
+        "submit": "_generated.cs"
+      }
+    },
+    {
+      "id": "abc345_b",
+      "label": "B",
+      "title": "Integer Division Returns",
+      "url": "https://atcoder.jp/contests/abc345/tasks/abc345_b",
+      "directory": {
+        "path": "B",
+        "testdir": "test\\TestData",
+        "submit": "_generated.cs"
+      }
+    },
+    {
+      "id": "abc345_c",
+      "label": "C",
+      "title": "One Time Swap",
+      "url": "https://atcoder.jp/contests/abc345/tasks/abc345_c",
+      "directory": {
+        "path": "C",
+        "testdir": "test\\TestData",
+        "submit": "_generated.cs"
+      }
+    },
+    {
+      "id": "abc345_d",
+      "label": "D",
+      "title": "Tiling",
+      "url": "https://atcoder.jp/contests/abc345/tasks/abc345_d",
+      "directory": {
+        "path": "D",
+        "testdir": "test\\TestData",
+        "submit": "_generated.cs"
+      }
+    },
+    {
+      "id": "abc345_e",
+      "label": "E",
+      "title": "Colorful Subsequence",
+      "url": "https://atcoder.jp/contests/abc345/tasks/abc345_e",
+      "directory": {
+        "path": "E",
+        "testdir": "test\\TestData",
+        "submit": "_generated.cs"
+      }
+    },
+    {
+      "id": "abc345_f",
+      "label": "F",
+      "title": "Many Lamps",
+      "url": "https://atcoder.jp/contests/abc345/tasks/abc345_f",
+      "directory": {
+        "path": "F",
+        "testdir": "test\\TestData",
+        "submit": "_generated.cs"
+      }
+    },
+    {
+      "id": "abc345_g",
+      "label": "G",
+      "title": "Sugoroku 5",
+      "url": "https://atcoder.jp/contests/abc345/tasks/abc345_g",
+      "directory": {
+        "path": "G",
+        "testdir": "test\\TestData",
+        "submit": "_generated.cs"
+      }
+    }
+  ]
+}

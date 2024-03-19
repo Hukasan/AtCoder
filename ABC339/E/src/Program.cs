@@ -14,10 +14,12 @@ namespace AtCorder
             var N = Line(true)[0].ToInt();
             var queries = GetLines(N).Select(q => (q[0].ToInt(), q[1].ToInt())).ToList();
             var sum = 0;
-            foreach ((var start, var idx) in queries.Select((q, idx) => (q, idx)))
+            for (int i = 0; i < queries.Count; i++)
             {
-                foreach (var target in queries.Skip(idx))
+                var start = queries[i];
+                for (int j = i + 1; j < queries.Count; j++)
                 {
+                    var target = queries[j];
                     CalcSum(start, target);
                 }
             }

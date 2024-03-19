@@ -1,0 +1,530 @@
+D - Digit vs Square Root
+×
+コンテスト開始
+AtCoder Regular Contest 174が開始されました。
+閉じる
+×
+コンテスト終了
+AtCoder Regular Contest 174は終了しました。
+閉じる
+AtCoder Regular Contest 174
+日本語
+日本語
+English
+新規登録
+ログイン
+コンテスト時間:
+2024-03-17(日) 21:00
+~
+2024-03-17(日) 23:00
+(120分)
+AtCoderホームへ戻る
+トップ
+問題
+質問
+提出結果
+すべての提出
+順位表
+バーチャル順位表
+解説
+D - Digit vs Square Root
+解説
+/
+実行時間制限: 2 sec / メモリ制限: 1024 MB
+配点 :
+500
+500
+5
+0
+0
+点
+問題文
+T
+T
+T
+個のテストケースについて、以下の問題に答えてください。
+整数
+N
+N
+N
+が与えられるので、以下の条件を全て満たす整数
+x
+x
+x
+の個数を求めてください。
+1
+≤
+x
+≤
+N
+1 le x le N
+1
+≤
+x
+≤
+N
+y
+=
+⌊
+x
+⌋
+y = lfloor sqrt{x} rfloor
+y
+=
+⌊
+x
+​
+⌋
+とする。このとき、
+x
+,
+y
+x,y
+x
+,
+y
+双方を (先頭に
+0
+0
+0
+を含まずに) 十進法で書き下した場合、
+y
+y
+y
+が
+x
+x
+x
+の接頭辞になる。
+制約
+T
+T
+T
+は
+1
+≤
+T
+≤
+1
+0
+5
+1 le T le 10^5
+1
+≤
+T
+≤
+1
+0
+5
+を満たす整数
+N
+N
+N
+は
+1
+≤
+N
+≤
+1
+0
+18
+1 le N le 10^{18}
+1
+≤
+N
+≤
+1
+0
+1
+8
+を満たす整数
+入力
+入力は以下の形式で標準入力から与えられる。
+T
+T
+T
+N
+1
+N_1
+N
+1
+​
+N
+2
+N_2
+N
+2
+​
+⋮
+vdots
+⋮
+N
+T
+N_T
+N
+T
+​
+但し、
+N
+i
+N_i
+N
+i
+​
+は
+i
+i
+i
+個目のテストケースにおける整数
+N
+N
+N
+を表す。
+出力
+全体で
+T
+T
+T
+行出力せよ。
+そのうち
+i
+i
+i
+行目には、
+i
+i
+i
+個目のテストケースに対する答えを整数として出力せよ。
+入力例 1
+Copy
+Copy
+2
+1
+174
+出力例 1
+Copy
+Copy
+1
+22
+この入力には、
+2
+2
+2
+個のテストケースが含まれます。
+1
+1
+1
+つ目のテストケースについて、
+x
+=
+1
+x=1
+x
+=
+1
+は
+y
+=
+⌊
+1
+⌋
+=
+1
+y = lfloor sqrt{1} rfloor = 1
+y
+=
+⌊
+1
+​
+⌋
+=
+1
+となり問題文中の条件を満たします。
+2
+2
+2
+つ目のテストケースについて、例えば
+x
+=
+100
+x=100
+x
+=
+1
+0
+0
+は
+y
+=
+⌊
+100
+⌋
+=
+10
+y = lfloor sqrt{100} rfloor = 10
+y
+=
+⌊
+1
+0
+0
+​
+⌋
+=
+1
+0
+となり問題文中の条件を満たします。
+Score:
+500
+500
+5
+0
+0
+points
+Problem Statement
+Solve the following problem for
+T
+T
+T
+test cases.
+Given an integer
+N
+N
+N
+, find the number of integers
+x
+x
+x
+that satisfy all of the following conditions:
+1
+≤
+x
+≤
+N
+1 le x le N
+1
+≤
+x
+≤
+N
+Let
+y
+=
+⌊
+x
+⌋
+y = lfloor sqrt{x} rfloor
+y
+=
+⌊
+x
+​
+⌋
+. When
+x
+x
+x
+and
+y
+y
+y
+are written in decimal notation (without leading zeros),
+y
+y
+y
+is a prefix of
+x
+x
+x
+.
+Constraints
+T
+T
+T
+is an integer such that
+1
+≤
+T
+≤
+1
+0
+5
+1 le T le 10^5
+1
+≤
+T
+≤
+1
+0
+5
+.
+N
+N
+N
+is an integer such that
+1
+≤
+N
+≤
+1
+0
+18
+1 le N le 10^{18}
+1
+≤
+N
+≤
+1
+0
+1
+8
+.
+Input
+The input is given from Standard Input in the following format:
+T
+T
+T
+N
+1
+N_1
+N
+1
+​
+N
+2
+N_2
+N
+2
+​
+⋮
+vdots
+⋮
+N
+T
+N_T
+N
+T
+​
+Here,
+N
+i
+N_i
+N
+i
+​
+represents the integer
+N
+N
+N
+for the
+i
+i
+i
+-th test case.
+Output
+Print
+T
+T
+T
+lines in total.
+The
+i
+i
+i
+-th line should contain the answer for the
+i
+i
+i
+-th test case as an integer.
+Sample Input 1
+Copy
+Copy
+2
+1
+174
+Sample Output 1
+Copy
+Copy
+1
+22
+This input contains two test cases.
+For the first test case,
+x
+=
+1
+x=1
+x
+=
+1
+satisfies the conditions since
+y
+=
+⌊
+1
+⌋
+=
+1
+y = lfloor sqrt{1} rfloor = 1
+y
+=
+⌊
+1
+​
+⌋
+=
+1
+.
+For the second test case, for example,
+x
+=
+100
+x=100
+x
+=
+1
+0
+0
+satisfies the conditions since
+y
+=
+⌊
+100
+⌋
+=
+10
+y = lfloor sqrt{100} rfloor = 10
+y
+=
+⌊
+1
+0
+0
+​
+⌋
+=
+1
+0
+.
+Facebook
+Twitter
+Hatena
+共有
+ルール
+用語集
+利用規約
+プライバシーポリシー
+個人情報保護方針
+企業情報
+よくある質問
+お問い合わせ
+資料請求
+Copyright Since 2012 ©
+AtCoder Inc.
+All rights reserved.
+2024-03-18 (月)
+00:26:40 +09:00
+ページトップ
+✓
+共有ありがとう
+AddToAny
+もっと

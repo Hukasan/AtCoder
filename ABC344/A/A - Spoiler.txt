@@ -1,0 +1,240 @@
+A - Spoiler
+×
+コンテスト開始
+トヨタ自動車プログラミングコンテスト2024#3（AtCoder Beginner Contest 344）が開始されました。
+閉じる
+×
+コンテスト終了
+トヨタ自動車プログラミングコンテスト2024#3（AtCoder Beginner Contest 344）は終了しました。
+閉じる
+トヨタ自動車プログラミングコンテスト2024#3（AtCoder Beginner Contest 344）
+日本語
+日本語
+English
+新規登録
+ログイン
+コンテスト時間:
+2024-03-09(土) 21:00
+~
+2024-03-09(土) 22:40
+(100分)
+AtCoderホームへ戻る
+トップ
+問題
+質問
+提出結果
+すべての提出
+順位表
+バーチャル順位表
+解説
+A - Spoiler
+解説
+/
+実行時間制限: 2 sec / メモリ制限: 1024 MB
+配点 :
+150
+150
+1
+5
+0
+点
+問題文
+英小文字と
+|
+のみからなる文字列
+S
+S
+S
+が与えられます。
+S
+S
+S
+は
+|
+をちょうど
+2
+2
+2
+個含むことが保証されます。
+2
+2
+2
+つの
+|
+の間にある文字および
+|
+を
+S
+S
+S
+から削除した文字列を出力してください。
+制約
+S
+S
+S
+は英小文字および
+|
+のみからなる長さ
+2
+2
+2
+以上
+100
+100
+1
+0
+0
+以下の文字列
+S
+S
+S
+は
+|
+をちょうど
+2
+2
+2
+個含む
+入力
+入力は以下の形式で標準入力から与えられる。
+S
+S
+S
+出力
+答えを出力せよ。
+入力例 1
+Copy
+Copy
+atcoder|beginner|contest
+出力例 1
+Copy
+Copy
+atcodercontest
+2
+2
+2
+つの
+|
+に挟まれた文字を全て削除して出力してください。
+入力例 2
+Copy
+Copy
+|spoiler|
+出力例 2
+Copy
+Copy
+全ての文字が削除されることもあります。
+入力例 3
+Copy
+Copy
+||xyz
+出力例 3
+Copy
+Copy
+xyz
+Score:
+150
+150
+1
+5
+0
+points
+Problem Statement
+You are given a string
+S
+S
+S
+consisting of lowercase English letters and
+|
+.
+S
+S
+S
+is guaranteed to contain exactly two
+|
+s.
+Remove the characters between the two
+|
+s, including the
+|
+s themselves, and print the resulting string.
+Constraints
+S
+S
+S
+is a string of length between
+2
+2
+2
+and
+100
+100
+1
+0
+0
+, inclusive, consisting of lowercase English letters and
+|
+.
+S
+S
+S
+contains exactly two
+|
+s.
+Input
+The input is given from Standard Input in the following format:
+S
+S
+S
+Output
+Print the answer.
+Sample Input 1
+Copy
+Copy
+atcoder|beginner|contest
+Sample Output 1
+Copy
+Copy
+atcodercontest
+Remove all the characters between the two
+|
+s and print the result.
+Sample Input 2
+Copy
+Copy
+|spoiler|
+Sample Output 2
+Copy
+Copy
+It is possible that all characters are removed.
+Sample Input 3
+Copy
+Copy
+||xyz
+Sample Output 3
+Copy
+Copy
+xyz
+Facebook
+Twitter
+Hatena
+共有
+ルール
+用語集
+利用規約
+プライバシーポリシー
+個人情報保護方針
+企業情報
+よくある質問
+お問い合わせ
+資料請求
+Copyright Since 2012 ©
+AtCoder Inc.
+All rights reserved.
+2024-03-18 (月)
+00:22:23 +09:00
+ページトップ
+✓
+共有ありがとう
+AddToAny
+もっと

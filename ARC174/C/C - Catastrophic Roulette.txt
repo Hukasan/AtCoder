@@ -1,0 +1,680 @@
+C - Catastrophic Roulette
+×
+コンテスト開始
+AtCoder Regular Contest 174が開始されました。
+閉じる
+×
+コンテスト終了
+AtCoder Regular Contest 174は終了しました。
+閉じる
+AtCoder Regular Contest 174
+日本語
+日本語
+English
+新規登録
+ログイン
+コンテスト時間:
+2024-03-17(日) 21:00
+~
+2024-03-17(日) 23:00
+(120分)
+AtCoderホームへ戻る
+トップ
+問題
+質問
+提出結果
+すべての提出
+順位表
+バーチャル順位表
+解説
+C - Catastrophic Roulette
+解説
+/
+実行時間制限: 2 sec / メモリ制限: 1024 MB
+配点 :
+500
+500
+5
+0
+0
+点
+問題文
+整数
+1
+,
+2
+,
+…
+,
+N
+1,2,dots,N
+1
+,
+2
+,
+…
+,
+N
+が均等な確率で出るルーレットがあります。
+これを使って
+2
+2
+2
+人で以下のゲームを行います。
+先攻と後攻が交互にルーレットを回す。
+出た整数が今までに出ていないものであった場合、何も起こらない。
+そうでない場合、ルーレットを回したプレイヤーが罰金
+1
+1
+1
+円を支払う。
+N
+N
+N
+個の整数全てが少なくとも
+1
+1
+1
+度出たとき、直ちにゲームが終了する。
+先攻後攻それぞれについて、ゲームが終了するまでに支払う罰金の期待値を
+mod
+998244353
+text{mod}  998244353
+mod
+9
+9
+8
+2
+4
+4
+3
+5
+3
+で求めてください。
+期待値
+mod
+998244353
+text{mod } 998244353
+mod
+9
+9
+8
+2
+4
+4
+3
+5
+3
+の定義
+この問題で求める期待値は必ず有理数になることが証明できます。
+また、この問題の制約下では、求める期待値を既約分数
+y
+x
+frac{y}{x}
+x
+y
+​
+で表したときに
+x
+x
+x
+が
+998244353
+998244353
+9
+9
+8
+2
+4
+4
+3
+5
+3
+で割り切れないことが保証されます。
+このとき
+x
+z
+≡
+y
+(
+m
+o
+d
+998244353
+)
+xz equiv y pmod{998244353}
+x
+z
+≡
+y
+(
+m
+o
+d
+9
+9
+8
+2
+4
+4
+3
+5
+3
+)
+を満たすような
+0
+0
+0
+以上
+998244352
+998244352
+9
+9
+8
+2
+4
+4
+3
+5
+2
+以下の整数
+z
+z
+z
+が一意に定まります。この
+z
+z
+z
+を答えてください。
+制約
+N
+N
+N
+は
+1
+≤
+N
+≤
+1
+0
+6
+1 le N le 10^6
+1
+≤
+N
+≤
+1
+0
+6
+を満たす整数
+入力
+入力は以下の形式で標準入力から与えられる。
+N
+N
+N
+出力
+答えとして
+2
+2
+2
+つの整数を出力せよ。
+そのうち
+1
+1
+1
+つ目は先攻が支払う罰金の期待値、
+2
+2
+2
+つ目は後攻が支払う罰金の期待値をそれぞれ
+mod
+998244353
+text{mod}  998244353
+mod
+9
+9
+8
+2
+4
+4
+3
+5
+3
+で表現した整数である。
+入力例 1
+Copy
+Copy
+1
+出力例 1
+Copy
+Copy
+0 0
+この入力では
+N
+=
+1
+N=1
+N
+=
+1
+です。
+先攻がルーレットを回すと必ず
+1
+1
+1
+が出て、直ちにゲームが終了します。
+よって、支払う罰金の期待値は先攻後攻ともに
+0
+0
+0
+です。
+入力例 2
+Copy
+Copy
+2
+出力例 2
+Copy
+Copy
+332748118 665496236
+この入力では
+N
+=
+2
+N=2
+N
+=
+2
+です。ゲームの進行の一例は以下の通りです。
+先攻がルーレットを回し、
+2
+2
+2
+が出た。この時、何も起こらない。
+後攻がルーレットを回し、
+2
+2
+2
+が出た。この時、後攻は罰金
+1
+1
+1
+円を支払う。
+先攻がルーレットを回し、
+2
+2
+2
+が出た。この時、先攻は罰金
+1
+1
+1
+円を支払う。
+後攻がルーレットを回し、
+1
+1
+1
+が出た。この時、何も起こらない。
+この時点で
+1
+,
+2
+1,2
+1
+,
+2
+が少なくとも
+1
+1
+1
+度出たので、直ちにゲームが終了する。
+このようにゲームが進行した場合、先攻が支払う罰金は
+1
+1
+1
+円、後攻が支払う罰金も
+1
+1
+1
+円となります。
+先攻が支払う罰金の期待値は
+1
+3
+frac{1}{3}
+3
+1
+​
+円、後攻が支払う罰金の期待値は
+2
+3
+frac{2}{3}
+3
+2
+​
+円であることが示せます。
+入力例 3
+Copy
+Copy
+3
+出力例 3
+Copy
+Copy
+174692763 324429416
+Points:
+500
+500
+5
+0
+0
+points
+Problem Statement
+There is a roulette that produces an integer from
+1
+,
+2
+,
+…
+,
+N
+1,2,dots,N
+1
+,
+2
+,
+…
+,
+N
+with equal probability.
+Two players use it to play the following game:
+The players take turns spinning the roulette.
+If the produced integer has not appeared before, nothing happens.
+Otherwise, the player who spun the roulette pays a fine of
+1
+1
+1
+yen.
+The game immediately ends when all of the
+N
+N
+N
+integers have appeared at least once.
+For each of the first and second players, find the expected value of the amount of the fine paid before the game ends, modulo
+998244353
+998244353
+9
+9
+8
+2
+4
+4
+3
+5
+3
+.
+On expected values modulo
+998244353
+998244353
+9
+9
+8
+2
+4
+4
+3
+5
+3
+It can be proved that the expected values sought in this problem are always rational numbers.
+Furthermore, under the constraints of this problem, when the expected values are expressed as irreducible fractions
+y
+x
+frac{y}{x}
+x
+y
+​
+, it is guaranteed that
+x
+x
+x
+is not divisible by
+998244353
+998244353
+9
+9
+8
+2
+4
+4
+3
+5
+3
+.
+Now, there is a unique integer
+z
+z
+z
+between
+0
+0
+0
+and
+998244352
+998244352
+9
+9
+8
+2
+4
+4
+3
+5
+2
+, inclusive, such that
+x
+z
+≡
+y
+(
+m
+o
+d
+998244353
+)
+xz equiv y pmod{998244353}
+x
+z
+≡
+y
+(
+m
+o
+d
+9
+9
+8
+2
+4
+4
+3
+5
+3
+)
+. Provide this
+z
+z
+z
+as the answer.
+Constraints
+N
+N
+N
+is an integer such that
+1
+≤
+N
+≤
+1
+0
+6
+1 le N le 10^6
+1
+≤
+N
+≤
+1
+0
+6
+.
+Input
+The input is given from Standard Input in the following format:
+N
+N
+N
+Output
+Print two integers as the answer.
+The first is the expected value of the amount of the fine paid by the first player, and the second is the expected value of the amount of the fine paid by the second player, represented as integers modulo
+998244353
+998244353
+9
+9
+8
+2
+4
+4
+3
+5
+3
+.
+Sample Input 1
+Copy
+Copy
+1
+Sample Output 1
+Copy
+Copy
+0 0
+In this input,
+N
+=
+1
+N=1
+N
+=
+1
+.
+When the first player spins the roulette, it always produces
+1
+1
+1
+, ending the game immediately.
+Thus, the expected values of the amounts of the fines paid by the first and second players are both
+0
+0
+0
+.
+Sample Input 2
+Copy
+Copy
+2
+Sample Output 2
+Copy
+Copy
+332748118 665496236
+In this input,
+N
+=
+2
+N=2
+N
+=
+2
+. Here is a possible progression of the game:
+The first player spins the roulette, and it produces
+2
+2
+2
+. Nothing happens.
+The second player spins the roulette, and it produces
+2
+2
+2
+. The second player pays a fine of
+1
+1
+1
+yen.
+The first player spins the roulette, and it produces
+2
+2
+2
+. The first player pays a fine of
+1
+1
+1
+yen.
+The second player spins the roulette, and it produces
+1
+1
+1
+. Nothing happens.
+At this point, both
+1
+1
+1
+and
+2
+2
+2
+have appeared at least once, so the game immediately ends.
+In this progression, the amount of the fine paid by the first player is
+1
+1
+1
+yen, and the amount of the fine paid by the second player is also
+1
+1
+1
+yen.
+It can be shown that the expected value of the amount of the fine paid by the first player is
+1
+3
+frac{1}{3}
+3
+1
+​
+yen, and the expected value of the amount of the fine paid by the second player is
+2
+3
+frac{2}{3}
+3
+2
+​
+yen.
+Sample Input 3
+Copy
+Copy
+3
+Sample Output 3
+Copy
+Copy
+174692763 324429416
+Facebook
+Twitter
+Hatena
+共有
+ルール
+用語集
+利用規約
+プライバシーポリシー
+個人情報保護方針
+企業情報
+よくある質問
+お問い合わせ
+資料請求
+Copyright Since 2012 ©
+AtCoder Inc.
+All rights reserved.
+2024-03-18 (月)
+00:26:23 +09:00
+ページトップ
+✓
+共有ありがとう
+AddToAny
+もっと

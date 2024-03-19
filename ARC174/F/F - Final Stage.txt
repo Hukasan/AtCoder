@@ -1,0 +1,1100 @@
+F - Final Stage
+×
+コンテスト開始
+AtCoder Regular Contest 174が開始されました。
+閉じる
+×
+コンテスト終了
+AtCoder Regular Contest 174は終了しました。
+閉じる
+AtCoder Regular Contest 174
+日本語
+日本語
+English
+新規登録
+ログイン
+コンテスト時間:
+2024-03-17(日) 21:00
+~
+2024-03-17(日) 23:00
+(120分)
+AtCoderホームへ戻る
+トップ
+問題
+質問
+提出結果
+すべての提出
+順位表
+バーチャル順位表
+解説
+F - Final Stage
+解説
+/
+実行時間制限: 4 sec / メモリ制限: 1024 MB
+配点 :
+900
+900
+9
+0
+0
+点
+問題文
+プレイヤーである Alice と Bob は、長さ
+N
+N
+N
+の数列
+L
+,
+R
+L,R
+L
+,
+R
+を用いて以下のゲームを行います。
+ゲームは
+N
+N
+N
+ターンからなる。
+i
+i
+i
+が奇数のとき
+i
+i
+i
+ターン目は Alice の手番であり、
+i
+i
+i
+が偶数の時
+i
+i
+i
+ターン目は Bob の手番である。
+最初、いくつかの石を積んだ山をひとつ用意する。
+i
+=
+1
+,
+2
+,
+…
+,
+N
+i=1,2,dots,N
+i
+=
+1
+,
+2
+,
+…
+,
+N
+の順に以下の操作 (
+i
+i
+i
+ターン目と呼ぶ ) を行う。
+i
+i
+i
+ターン目に手番のプレイヤーは、山から
+L
+i
+L_i
+L
+i
+​
+個以上
+R
+i
+R_i
+R
+i
+​
+個以下の整数個の石を取る。
+もし上記を満たすように石を取ることができない場合、手番のプレイヤーは敗北し、もう片方のプレイヤーが勝利する。
+N
+N
+N
+ターン目を終えた時点でどちらのプレイヤーも敗北していない場合、ゲームは引き分けで終了する。
+ゲーム開始前に、両プレイヤーに対して 数列
+L
+,
+R
+L,R
+L
+,
+R
+とゲーム開始時点で山にある石の個数 は知らされています。
+このとき、このゲームは以下の
+3
+3
+3
+通りの
+解析結果
+のうち丁度ひとつに当てはまることが証明できます。
+Alice
+... Alice に必勝法が存在する。
+Bob
+... Bob に必勝法が存在する。
+Draw
+... どちらのプレイヤーにも必勝法は存在しない。
+このゲームについて、
+Q
+Q
+Q
+個の質問に答えてください。
+i
+i
+i
+個目の質問は以下の通りです。
+ゲーム開始時点で山に
+C
+i
+C_i
+C
+i
+​
+個の石がある場合を考えます。ゲームの解析結果を
+Alice
+,
+Bob
+,
+Draw
+のいずれかで答えてください。
+制約
+N
+,
+L
+i
+,
+R
+i
+,
+Q
+,
+C
+i
+N,L_i,R_i,Q,C_i
+N
+,
+L
+i
+​
+,
+R
+i
+​
+,
+Q
+,
+C
+i
+​
+は整数
+1
+≤
+N
+≤
+3
+×
+1
+0
+5
+1 le N le 3 times 10^5
+1
+≤
+N
+≤
+3
+×
+1
+0
+5
+1
+≤
+L
+i
+≤
+R
+i
+≤
+1
+0
+9
+1 le L_i le R_i le 10^9
+1
+≤
+L
+i
+​
+≤
+R
+i
+​
+≤
+1
+0
+9
+1
+≤
+Q
+≤
+3
+×
+1
+0
+5
+1 le Q le 3 times 10^5
+1
+≤
+Q
+≤
+3
+×
+1
+0
+5
+1
+≤
+C
+i
+≤
+∑
+i
+=
+1
+N
+R
+i
+1 le C_i le sum_{i=1}^{N} R_i
+1
+≤
+C
+i
+​
+≤
+∑
+i
+=
+1
+N
+​
+R
+i
+​
+入力
+入力は以下の形式で標準入力から与えられる。
+N
+N
+N
+L
+1
+L_1
+L
+1
+​
+R
+1
+R_1
+R
+1
+​
+L
+2
+L_2
+L
+2
+​
+R
+2
+R_2
+R
+2
+​
+⋮
+vdots
+⋮
+L
+N
+L_N
+L
+N
+​
+R
+N
+R_N
+R
+N
+​
+Q
+Q
+Q
+C
+1
+C_1
+C
+1
+​
+C
+2
+C_2
+C
+2
+​
+⋮
+vdots
+⋮
+C
+Q
+C_Q
+C
+Q
+​
+出力
+全体で
+Q
+Q
+Q
+行出力せよ。
+そのうち
+i
+i
+i
+行目には、
+i
+i
+i
+個目の質問に対する答えを出力せよ。
+入力例 1
+Copy
+Copy
+4
+1 3
+1 2
+3 4
+1 2
+11
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+出力例 1
+Copy
+Copy
+Alice
+Alice
+Alice
+Bob
+Bob
+Alice
+Alice
+Alice
+Draw
+Draw
+Draw
+この入力には
+11
+11
+1
+1
+個の質問が含まれます。
+C
+i
+≤
+3
+C_i le 3
+C
+i
+​
+≤
+3
+のとき、
+1
+1
+1
+ターン目で Alice が
+C
+i
+C_i
+C
+i
+​
+個の石を取って山に残る石を
+0
+0
+0
+個にできるので、 Alice に必勝法が存在します。
+4
+≤
+C
+i
+≤
+5
+4 le C_i le 5
+4
+≤
+C
+i
+​
+≤
+5
+のとき、 Bob に必勝法が存在します。
+6
+≤
+C
+i
+≤
+8
+6 le C_i le 8
+6
+≤
+C
+i
+​
+≤
+8
+のとき、 Alice に必勝法が存在します。
+9
+≤
+C
+i
+9 le C_i
+9
+≤
+C
+i
+​
+のとき、どちらにも必勝法は存在しません。
+C
+i
+=
+9
+C_i=9
+C
+i
+​
+=
+9
+である場合のゲームの進行の一例を示します。
+1
+1
+1
+ターン目で Alice が
+3
+3
+3
+個の石を取る。山に残る石は
+6
+6
+6
+個である。
+2
+2
+2
+ターン目で Bob が
+1
+1
+1
+個の石を取る。山に残る石は
+5
+5
+5
+個である。
+3
+3
+3
+ターン目で Alice が
+4
+4
+4
+個の石を取る。山に残る石は
+1
+1
+1
+個である。
+4
+4
+4
+ターン目で Bob が
+1
+1
+1
+個の石を取る。山に残る石は
+0
+0
+0
+個である。
+4
+4
+4
+ターン目を終えた時点でどちらのプレイヤーも敗北していないので、ゲームは引き分けで終了する。
+他にも様々な進行が考えられますが、
+C
+i
+=
+9
+C_i=9
+C
+i
+​
+=
+9
+のときどちらにも必勝法が無い (両者が勝利に対し最善を尽くした場合、ゲームは引き分けで終了する) ことが示せます。
+Points:
+900
+900
+9
+0
+0
+points
+Problem Statement
+Players Alice and Bob play a game using sequences
+L
+L
+L
+and
+R
+R
+R
+of length
+N
+N
+N
+, as follows.
+The game consists of
+N
+N
+N
+turns.
+If
+i
+i
+i
+is odd, turn
+i
+i
+i
+is played by Alice; if
+i
+i
+i
+is even, turn
+i
+i
+i
+is played by Bob.
+Initially, there is a pile with some number of stones.
+For
+i
+=
+1
+,
+2
+,
+…
+,
+N
+i=1,2,dots,N
+i
+=
+1
+,
+2
+,
+…
+,
+N
+in this order, they perform the following operation (called turn
+i
+i
+i
+):
+The player who plays turn
+i
+i
+i
+takes an integer number of stones between
+L
+i
+L_i
+L
+i
+​
+and
+R
+i
+R_i
+R
+i
+​
+, inclusive, from the pile.
+If the player cannot take stones satisfying the above, they lose, and the other player wins.
+If neither player has lost by the end of turn
+N
+N
+N
+, the game ends in a draw.
+Before the game starts, both players are informed of the sequences
+L
+L
+L
+and
+R
+R
+R
+and the number of stones in the pile at the start of the game.
+It can be proved that the game has exactly one of the following three
+consequences
+:
+Alice
+... Alice has a winning strategy.
+Bob
+... Bob has a winning strategy.
+Draw
+... Neither player has a winning strategy.
+Answer
+Q
+Q
+Q
+queries about this game. The
+i
+i
+i
+-th query is as follows:
+Assume that the pile contains
+C
+i
+C_i
+C
+i
+​
+stones at the start of the game. Report the consequence of the game:
+Alice
+,
+Bob
+, or
+Draw
+.
+Constraints
+N
+N
+N
+,
+L
+i
+L_i
+L
+i
+​
+,
+R
+i
+R_i
+R
+i
+​
+,
+Q
+Q
+Q
+, and
+C
+i
+C_i
+C
+i
+​
+are integers.
+1
+≤
+N
+≤
+3
+×
+1
+0
+5
+1 le N le 3 times 10^5
+1
+≤
+N
+≤
+3
+×
+1
+0
+5
+1
+≤
+L
+i
+≤
+R
+i
+≤
+1
+0
+9
+1 le L_i le R_i le 10^9
+1
+≤
+L
+i
+​
+≤
+R
+i
+​
+≤
+1
+0
+9
+1
+≤
+Q
+≤
+3
+×
+1
+0
+5
+1 le Q le 3 times 10^5
+1
+≤
+Q
+≤
+3
+×
+1
+0
+5
+1
+≤
+C
+i
+≤
+∑
+i
+=
+1
+N
+R
+i
+1 le C_i le sum_{i=1}^{N} R_i
+1
+≤
+C
+i
+​
+≤
+∑
+i
+=
+1
+N
+​
+R
+i
+​
+Input
+The input is given from Standard Input in the following format:
+N
+N
+N
+L
+1
+L_1
+L
+1
+​
+R
+1
+R_1
+R
+1
+​
+L
+2
+L_2
+L
+2
+​
+R
+2
+R_2
+R
+2
+​
+⋮
+vdots
+⋮
+L
+N
+L_N
+L
+N
+​
+R
+N
+R_N
+R
+N
+​
+Q
+Q
+Q
+C
+1
+C_1
+C
+1
+​
+C
+2
+C_2
+C
+2
+​
+⋮
+vdots
+⋮
+C
+Q
+C_Q
+C
+Q
+​
+Output
+Print
+Q
+Q
+Q
+lines.
+The
+i
+i
+i
+-th line should contain the answer to the
+i
+i
+i
+-th query.
+Sample Input 1
+Copy
+Copy
+4
+1 3
+1 2
+3 4
+1 2
+11
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+Sample Output 1
+Copy
+Copy
+Alice
+Alice
+Alice
+Bob
+Bob
+Alice
+Alice
+Alice
+Draw
+Draw
+Draw
+This input contains
+11
+11
+1
+1
+queries.
+When
+C
+i
+≤
+3
+C_i le 3
+C
+i
+​
+≤
+3
+, Alice can take all
+C
+i
+C_i
+C
+i
+​
+stones on turn
+1
+1
+1
+, leaving no stones in the pile, so Alice has a winning strategy.
+When
+4
+≤
+C
+i
+≤
+5
+4 le C_i le 5
+4
+≤
+C
+i
+​
+≤
+5
+, Bob has a winning strategy.
+When
+6
+≤
+C
+i
+≤
+8
+6 le C_i le 8
+6
+≤
+C
+i
+​
+≤
+8
+, Alice has a winning strategy.
+When
+C
+i
+≥
+9
+C_i ge 9
+C
+i
+​
+≥
+9
+, neither player has a winning strategy.
+For example, if
+C
+i
+=
+9
+C_i=9
+C
+i
+​
+=
+9
+, the game could proceed as follows:
+On turn
+1
+1
+1
+, Alice takes
+3
+3
+3
+stones.
+6
+6
+6
+stones remain.
+On turn
+2
+2
+2
+, Bob takes
+1
+1
+1
+stone.
+5
+5
+5
+stones remain.
+On turn
+3
+3
+3
+, Alice takes
+4
+4
+4
+stones.
+1
+1
+1
+stone remains.
+On turn
+4
+4
+4
+, Bob takes
+1
+1
+1
+stone. No stones remain.
+Since neither player has lost by the end of turn
+4
+4
+4
+, the game ends in a draw.
+Various other progressions are possible, but it can be shown that when
+C
+i
+=
+9
+C_i=9
+C
+i
+​
+=
+9
+, neither player has a winning strategy (if both players play optimally, the game will end in a draw).
+Facebook
+Twitter
+Hatena
+共有
+ルール
+用語集
+利用規約
+プライバシーポリシー
+個人情報保護方針
+企業情報
+よくある質問
+お問い合わせ
+資料請求
+Copyright Since 2012 ©
+AtCoder Inc.
+All rights reserved.
+2024-03-18 (月)
+00:27:24 +09:00
+ページトップ
+✓
+共有ありがとう
+AddToAny
+もっと
