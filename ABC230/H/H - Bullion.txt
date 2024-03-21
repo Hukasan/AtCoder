@@ -1,0 +1,855 @@
+H - Bullion
+×
+コンテスト開始
+AtCoder Beginner Contest 230が開始されました。
+閉じる
+×
+コンテスト終了
+AtCoder Beginner Contest 230は終了しました。
+閉じる
+AtCoder Beginner Contest 230
+日本語
+日本語
+English
+Hukasann11 (Guest)
+マイプロフィール
+基本設定
+アイコン設定
+パスワードの変更
+お気に入り管理
+ログアウト
+コンテスト時間:
+2021-12-03(金) 21:00
+~
+2021-12-03(金) 22:40
+(100分)
+AtCoderホームへ戻る
+トップ
+問題
+質問
+提出
+提出結果
+すべての提出
+自分の提出
+自分の得点状況
+順位表
+バーチャル順位表
+コードテスト
+解説
+H - Bullion
+解説
+/
+実行時間制限: 8 sec / メモリ制限: 1024 MB
+配点 :
+600
+600
+6
+0
+0
+点
+問題文
+クレーンゲームの大会で優勝した高橋君は金塊詰め放題の権利を得ました。
+会場には
+w
+1
+[
+k
+g
+]
+,
+w
+2
+[
+k
+g
+]
+,
+…
+,
+w
+K
+[
+k
+g
+]
+w_1 lbrackmathrm{kg}rbrack, w_2 lbrackmathrm{kg}rbrack, dots, w_K lbrackmathrm{kg}rbrack
+w
+1
+​
+[
+k
+g
+]
+,
+w
+2
+​
+[
+k
+g
+]
+,
+…
+,
+w
+K
+​
+[
+k
+g
+]
+の重さの金塊、および金塊を詰める
+1
+[
+k
+g
+]
+1 lbrackmathrm{kg}rbrack
+1
+[
+k
+g
+]
+の袋が無尽蔵にあります。
+高橋君は
+1
+1
+1
+個の空でない袋を持ち帰ることができます。
+袋には
+0
+0
+0
+個以上の空でない袋と
+0
+0
+0
+個以上の金塊を入れることができます。
+耐荷重量
+W
+[
+k
+g
+]
+W lbrackmathrm{kg}rbrack
+W
+[
+k
+g
+]
+のトラックを手配した高橋君は、
+w
+=
+2
+,
+3
+,
+…
+,
+W
+w = 2, 3, dots, W
+w
+=
+2
+,
+3
+,
+…
+,
+W
+について持ち帰る袋の総重量が
+w
+[
+k
+g
+]
+w lbrackmathrm{kg}rbrack
+w
+[
+k
+g
+]
+である詰め方としてあり得る状態の数が気になりました。
+w
+=
+2
+,
+3
+,
+…
+,
+W
+w = 2, 3, dots, W
+w
+=
+2
+,
+3
+,
+…
+,
+W
+について状態数を
+998244353
+998244353
+9
+9
+8
+2
+4
+4
+3
+5
+3
+で割ったあまりを求めてください。ただし、
+2
+2
+2
+つの金塊が同じであるとは、金塊の重さが同じであることをいいます。
+2
+2
+2
+つの袋が同じ状態であるとは、袋に入っている袋および金塊からなる多重集合が一致することをいいます。
+制約
+2
+≤
+W
+≤
+2.5
+×
+1
+0
+5
+2 leq W leq 2.5 times 10^5
+2
+≤
+W
+≤
+2
+.
+5
+×
+1
+0
+5
+1
+≤
+K
+≤
+W
+1 leq K leq W
+1
+≤
+K
+≤
+W
+1
+≤
+w
+i
+≤
+W
+1 leq w_i leq W
+1
+≤
+w
+i
+​
+≤
+W
+(
+1
+≤
+i
+≤
+K
+)
+(1 leq i leq K)
+(
+1
+≤
+i
+≤
+K
+)
+i
+≠
+j
+→
+w
+i
+≠
+w
+j
+i neq j to w_i neq w_j
+i
+
+=
+j
+→
+w
+i
+​
+
+=
+w
+j
+​
+(
+1
+≤
+i
+,
+j
+≤
+K
+)
+(1 leq i,j leq K)
+(
+1
+≤
+i
+,
+j
+≤
+K
+)
+入力はすべて整数である。
+入力
+入力は以下の形式で標準入力から与えられる。
+W
+W
+W
+K
+K
+K
+w
+1
+w_1
+w
+1
+​
+w
+2
+w_2
+w
+2
+​
+…
+dots
+…
+w
+K
+w_K
+w
+K
+​
+出力
+答えを
+W
+−
+1
+W - 1
+W
+−
+1
+行出力せよ。
+i
+i
+i
+行目には
+w
+=
+i
++
+1
+w = i + 1
+w
+=
+i
++
+1
+のときの答えを出力せよ。
+入力例 1
+Copy
+Copy
+4 1
+1
+出力例 1
+Copy
+Copy
+1
+2
+4
+w
+=
+2
+,
+3
+,
+4
+w = 2, 3, 4
+w
+=
+2
+,
+3
+,
+4
+において袋の状態としてあり得るものを列挙したのが下の図になります。 (丸い線が袋を表しています。)
+入力例 2
+Copy
+Copy
+10 10
+1 2 3 4 5 6 7 8 9 10
+出力例 2
+Copy
+Copy
+1
+3
+7
+18
+45
+121
+325
+904
+2546
+Score :
+600
+600
+6
+0
+0
+points
+Problem Statement
+Takahashi won a claw machine competition and was awarded "all-you-can-stuff" gold blocks.
+There are unlimited numbers of blocks weighing
+w
+1
+,
+w
+2
+,
+…
+,
+w
+K
+w_1, w_2, dots, w_K
+w
+1
+​
+,
+w
+2
+​
+,
+…
+,
+w
+K
+​
+kilograms each, and an unlimited number of bags weighing
+1
+1
+1
+kilogram each to stuff them.
+Takahashi can bring home one non-empty bag.
+A bag can contain zero or more other non-empty bags and zero or more gold blocks.
+After arranging a truck with a load capacity of
+W
+W
+W
+kilograms, he gets interested in the number of ways to stuff gold blocks and bring home a bag that weighs
+w
+w
+w
+kilograms in total for
+w
+=
+2
+,
+3
+,
+…
+,
+W
+w = 2, 3, dots, W
+w
+=
+2
+,
+3
+,
+…
+,
+W
+.
+Find the number, modulo
+998244353
+998244353
+9
+9
+8
+2
+4
+4
+3
+5
+3
+, of possible states of the bag for each
+w
+=
+2
+,
+3
+,
+…
+,
+W
+w = 2, 3, dots, W
+w
+=
+2
+,
+3
+,
+…
+,
+W
+. Here,
+two gold blocks are said to be the same when their weights are the same;
+two bags are said to be in the same state when the two multisets whose elements are the bags and gold blocks in the two bags are the same.
+Constraints
+2
+≤
+W
+≤
+2.5
+×
+1
+0
+5
+2 leq W leq 2.5 times 10^5
+2
+≤
+W
+≤
+2
+.
+5
+×
+1
+0
+5
+1
+≤
+K
+≤
+W
+1 leq K leq W
+1
+≤
+K
+≤
+W
+1
+≤
+w
+i
+≤
+W
+1 leq w_i leq W
+1
+≤
+w
+i
+​
+≤
+W
+(
+1
+≤
+i
+≤
+K
+)
+(1 leq i leq K)
+(
+1
+≤
+i
+≤
+K
+)
+i
+≠
+j
+→
+w
+i
+≠
+w
+j
+i neq j to w_i neq w_j
+i
+
+=
+j
+→
+w
+i
+​
+
+=
+w
+j
+​
+(
+1
+≤
+i
+,
+j
+≤
+K
+)
+(1 leq i,j leq K)
+(
+1
+≤
+i
+,
+j
+≤
+K
+)
+All values in input are integers.
+Input
+Input is given from Standard Input in the following format:
+W
+W
+W
+K
+K
+K
+w
+1
+w_1
+w
+1
+​
+w
+2
+w_2
+w
+2
+​
+…
+dots
+…
+w
+K
+w_K
+w
+K
+​
+Output
+Print the answer in
+W
+−
+1
+W - 1
+W
+−
+1
+lines.
+The
+i
+i
+i
+-th line should contain the count for
+w
+=
+i
++
+1
+w = i + 1
+w
+=
+i
++
+1
+.
+Sample Input 1
+Copy
+Copy
+4 1
+1
+Sample Output 1
+Copy
+Copy
+1
+2
+4
+The figure below enumerates the possible states of the bag for
+w
+=
+2
+,
+3
+,
+4
+w = 2, 3, 4
+w
+=
+2
+,
+3
+,
+4
+. (A circle represents a bag.)
+Sample Input 2
+Copy
+Copy
+10 10
+1 2 3 4 5 6 7 8 9 10
+Sample Output 2
+Copy
+Copy
+1
+3
+7
+18
+45
+121
+325
+904
+2546
+言語
+C++ 20 (gcc 12.2)
+Go (go 1.20.6)
+C# 11.0 (.NET 7.0.7)
+Kotlin (Kotlin/JVM 1.8.20)
+Java (OpenJDK 17)
+Nim (Nim 1.6.14)
+V (V 0.4)
+Zig (Zig 0.10.1)
+JavaScript (Node.js 18.16.1)
+JavaScript (Deno 1.35.1)
+R (GNU R 4.2.1)
+D (DMD 2.104.0)
+D (LDC 1.32.2)
+Swift (swift 5.8.1)
+Dart (Dart 3.0.5)
+PHP (php 8.2.8)
+C (gcc 12.2.0)
+Ruby (ruby 3.2.2)
+Crystal (Crystal 1.9.1)
+Brainfuck (bf 20041219)
+F# 7.0 (.NET 7.0.7)
+Julia (Julia 1.9.2)
+Bash (bash 5.2.2)
+Text (cat 8.32)
+Haskell (GHC 9.4.5)
+Fortran (gfortran 12.2)
+Lua (LuaJIT 2.1.0-beta3)
+C++ 23 (gcc 12.2)
+Common Lisp (SBCL 2.3.6)
+COBOL (Free) (GnuCOBOL 3.1.2)
+C++ 23 (Clang 16.0.6)
+Zsh (Zsh 5.9)
+SageMath (SageMath 9.5)
+Sed (GNU sed 4.8)
+bc (bc 1.07.1)
+dc (dc 1.07.1)
+Perl (perl  5.34)
+AWK (GNU Awk 5.0.1)
+なでしこ (cnako3 3.4.20)
+Assembly x64 (NASM 2.15.05)
+Pascal (fpc 3.2.2)
+C# 11.0 AOT (.NET 7.0.7)
+Lua (Lua 5.4.6)
+Prolog (SWI-Prolog 9.0.4)
+PowerShell (PowerShell 7.3.1)
+Scheme (Gauche 0.9.12)
+Scala 3.3.0 (Scala Native 0.4.14)
+Visual Basic 16.9 (.NET 7.0.7)
+Forth (gforth 0.7.3)
+Clojure (babashka 1.3.181)
+Erlang (Erlang 26.0.2)
+TypeScript 5.1 (Deno 1.35.1)
+C++ 17 (gcc 12.2)
+Rust (rustc 1.70.0)
+Python (CPython 3.11.4)
+Scala (Dotty 3.3.0)
+Koka (koka 2.4.0)
+TypeScript 5.1 (Node.js 18.16.1)
+OCaml (ocamlopt 5.0.0)
+Raku (Rakudo 2023.06)
+Vim (vim 9.0.0242)
+Emacs Lisp (Native Compile) (GNU Emacs 28.2)
+Python (Mambaforge / CPython 3.10.10)
+Clojure (clojure 1.11.1)
+プロデル (mono版プロデル 1.9.1182)
+ECLiPSe (ECLiPSe 7.1_13)
+Nibbles (literate form) (nibbles 1.01)
+Ada (GNAT 12.2)
+jq (jq 1.6)
+Cyber (Cyber v0.2-Latest)
+Carp (Carp 0.5.5)
+C++ 17 (Clang 16.0.6)
+C++ 20 (Clang 16.0.6)
+LLVM IR (Clang 16.0.6)
+Emacs Lisp (Byte Compile) (GNU Emacs 28.2)
+Factor (Factor 0.98)
+D (GDC 12.2)
+Python (PyPy 3.10-v7.3.12)
+Whitespace (whitespacers 1.0.0)
+><> (fishr 0.1.0)
+ReasonML (reason 3.9.0)
+Python (Cython 0.29.34)
+Octave (GNU Octave 8.2.0)
+Haxe (JVM) (Haxe 4.3.1)
+Elixir (Elixir 1.15.2)
+Mercury (Mercury 22.01.6)
+Seed7 (Seed7 3.2.1)
+Emacs Lisp (No Compile) (GNU Emacs 28.2)
+Unison (Unison M5b)
+COBOL (GnuCOBOL(Fixed) 3.1.2)
+-
+ソースコード
+ファイルを開く
+カスタマイズ
+エディタ切り替え
+高さ自動調節
+1
+הההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההה
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+※ 512 KiB まで
+※ ソースコードは「Main.
+拡張子
+」で保存されます
+提出
+Facebook
+Twitter
+Hatena
+共有
+ルール
+用語集
+利用規約
+プライバシーポリシー
+個人情報保護方針
+企業情報
+よくある質問
+お問い合わせ
+資料請求
+Copyright Since 2012 ©
+AtCoder Inc.
+All rights reserved.
+2024-03-20 (水)
+20:37:38 +09:00
+ページトップ
+✓
+共有ありがとう
+AddToAny
+もっと

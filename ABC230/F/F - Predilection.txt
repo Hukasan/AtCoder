@@ -1,0 +1,482 @@
+F - Predilection
+×
+コンテスト開始
+AtCoder Beginner Contest 230が開始されました。
+閉じる
+×
+コンテスト終了
+AtCoder Beginner Contest 230は終了しました。
+閉じる
+AtCoder Beginner Contest 230
+日本語
+日本語
+English
+Hukasann11 (Guest)
+マイプロフィール
+基本設定
+アイコン設定
+パスワードの変更
+お気に入り管理
+ログアウト
+コンテスト時間:
+2021-12-03(金) 21:00
+~
+2021-12-03(金) 22:40
+(100分)
+AtCoderホームへ戻る
+トップ
+問題
+質問
+提出
+提出結果
+すべての提出
+自分の提出
+自分の得点状況
+順位表
+バーチャル順位表
+コードテスト
+解説
+F - Predilection
+解説
+/
+実行時間制限: 2 sec / メモリ制限: 1024 MB
+配点 :
+500
+500
+5
+0
+0
+点
+問題文
+長さ
+N
+N
+N
+の数列
+A
+A
+A
+が与えられます。
+数列の長さが
+2
+2
+2
+以上のとき、隣接する二つの値を選び、それらを削除し、それらが元にあった位置にそれらの和を挿入するという操作を好きなだけ行えます。
+0
+0
+0
+回以上の操作の後の数列として考えられるものは何通りあるか求め、
+998244353
+998244353
+9
+9
+8
+2
+4
+4
+3
+5
+3
+で割ったあまりを出力してください。
+制約
+1
+≤
+N
+≤
+2
+×
+1
+0
+5
+1 leq N leq 2times 10^5
+1
+≤
+N
+≤
+2
+×
+1
+0
+5
+∣
+A
+i
+∣
+≤
+1
+0
+9
+|A_i| leq 10^9
+∣
+A
+i
+​
+∣
+≤
+1
+0
+9
+入力はすべて整数
+入力
+入力は以下の形式で標準入力から与えられる。
+N
+N
+N
+A
+1
+A_1
+A
+1
+​
+A
+2
+A_2
+A
+2
+​
+⋯
+cdots
+⋯
+A
+N
+A_N
+A
+N
+​
+出力
+答えを出力せよ。
+入力例 1
+Copy
+Copy
+3
+1 -1 1
+出力例 1
+Copy
+Copy
+4
+0
+0
+0
+回以上の操作の後の数列として考えられるのは以下の
+4
+4
+4
+通りです。
+1
+,
+−
+1
+,
+1
+{1,-1,1}
+1
+,
+−
+1
+,
+1
+1
+,
+0
+{1,0}
+1
+,
+0
+0
+,
+1
+{0,1}
+0
+,
+1
+1
+{1}
+1
+入力例 2
+Copy
+Copy
+10
+377914575 -275478149 0 -444175904 719654053 -254224494 -123690081 377914575 -254224494 -21253655
+出力例 2
+Copy
+Copy
+321
+Score :
+500
+500
+5
+0
+0
+points
+Problem Statement
+Given is a sequence
+A
+A
+A
+of length
+N
+N
+N
+.
+You can do this operation any number of times: when the length of the sequence is at least
+2
+2
+2
+, choose two adjacent values, delete them, and insert their sum where they were.
+How many sequences can result from zero or more operations? Find the count modulo
+998244353
+998244353
+9
+9
+8
+2
+4
+4
+3
+5
+3
+.
+Constraints
+1
+≤
+N
+≤
+2
+×
+1
+0
+5
+1 leq N leq 2times 10^5
+1
+≤
+N
+≤
+2
+×
+1
+0
+5
+∣
+A
+i
+∣
+≤
+1
+0
+9
+|A_i| leq 10^9
+∣
+A
+i
+​
+∣
+≤
+1
+0
+9
+All values in input are integers.
+Input
+Input is given from Standard Input in the following format:
+N
+N
+N
+A
+1
+A_1
+A
+1
+​
+A
+2
+A_2
+A
+2
+​
+⋯
+cdots
+⋯
+A
+N
+A_N
+A
+N
+​
+Output
+Print the answer.
+Sample Input 1
+Copy
+Copy
+3
+1 -1 1
+Sample Output 1
+Copy
+Copy
+4
+The following four sequences can result from zero or more operations.
+1
+,
+−
+1
+,
+1
+{1,-1,1}
+1
+,
+−
+1
+,
+1
+1
+,
+0
+{1,0}
+1
+,
+0
+0
+,
+1
+{0,1}
+0
+,
+1
+1
+{1}
+1
+Sample Input 2
+Copy
+Copy
+10
+377914575 -275478149 0 -444175904 719654053 -254224494 -123690081 377914575 -254224494 -21253655
+Sample Output 2
+Copy
+Copy
+321
+言語
+C++ 20 (gcc 12.2)
+Go (go 1.20.6)
+C# 11.0 (.NET 7.0.7)
+Kotlin (Kotlin/JVM 1.8.20)
+Java (OpenJDK 17)
+Nim (Nim 1.6.14)
+V (V 0.4)
+Zig (Zig 0.10.1)
+JavaScript (Node.js 18.16.1)
+JavaScript (Deno 1.35.1)
+R (GNU R 4.2.1)
+D (DMD 2.104.0)
+D (LDC 1.32.2)
+Swift (swift 5.8.1)
+Dart (Dart 3.0.5)
+PHP (php 8.2.8)
+C (gcc 12.2.0)
+Ruby (ruby 3.2.2)
+Crystal (Crystal 1.9.1)
+Brainfuck (bf 20041219)
+F# 7.0 (.NET 7.0.7)
+Julia (Julia 1.9.2)
+Bash (bash 5.2.2)
+Text (cat 8.32)
+Haskell (GHC 9.4.5)
+Fortran (gfortran 12.2)
+Lua (LuaJIT 2.1.0-beta3)
+C++ 23 (gcc 12.2)
+Common Lisp (SBCL 2.3.6)
+COBOL (Free) (GnuCOBOL 3.1.2)
+C++ 23 (Clang 16.0.6)
+Zsh (Zsh 5.9)
+SageMath (SageMath 9.5)
+Sed (GNU sed 4.8)
+bc (bc 1.07.1)
+dc (dc 1.07.1)
+Perl (perl  5.34)
+AWK (GNU Awk 5.0.1)
+なでしこ (cnako3 3.4.20)
+Assembly x64 (NASM 2.15.05)
+Pascal (fpc 3.2.2)
+C# 11.0 AOT (.NET 7.0.7)
+Lua (Lua 5.4.6)
+Prolog (SWI-Prolog 9.0.4)
+PowerShell (PowerShell 7.3.1)
+Scheme (Gauche 0.9.12)
+Scala 3.3.0 (Scala Native 0.4.14)
+Visual Basic 16.9 (.NET 7.0.7)
+Forth (gforth 0.7.3)
+Clojure (babashka 1.3.181)
+Erlang (Erlang 26.0.2)
+TypeScript 5.1 (Deno 1.35.1)
+C++ 17 (gcc 12.2)
+Rust (rustc 1.70.0)
+Python (CPython 3.11.4)
+Scala (Dotty 3.3.0)
+Koka (koka 2.4.0)
+TypeScript 5.1 (Node.js 18.16.1)
+OCaml (ocamlopt 5.0.0)
+Raku (Rakudo 2023.06)
+Vim (vim 9.0.0242)
+Emacs Lisp (Native Compile) (GNU Emacs 28.2)
+Python (Mambaforge / CPython 3.10.10)
+Clojure (clojure 1.11.1)
+プロデル (mono版プロデル 1.9.1182)
+ECLiPSe (ECLiPSe 7.1_13)
+Nibbles (literate form) (nibbles 1.01)
+Ada (GNAT 12.2)
+jq (jq 1.6)
+Cyber (Cyber v0.2-Latest)
+Carp (Carp 0.5.5)
+C++ 17 (Clang 16.0.6)
+C++ 20 (Clang 16.0.6)
+LLVM IR (Clang 16.0.6)
+Emacs Lisp (Byte Compile) (GNU Emacs 28.2)
+Factor (Factor 0.98)
+D (GDC 12.2)
+Python (PyPy 3.10-v7.3.12)
+Whitespace (whitespacers 1.0.0)
+><> (fishr 0.1.0)
+ReasonML (reason 3.9.0)
+Python (Cython 0.29.34)
+Octave (GNU Octave 8.2.0)
+Haxe (JVM) (Haxe 4.3.1)
+Elixir (Elixir 1.15.2)
+Mercury (Mercury 22.01.6)
+Seed7 (Seed7 3.2.1)
+Emacs Lisp (No Compile) (GNU Emacs 28.2)
+Unison (Unison M5b)
+COBOL (GnuCOBOL(Fixed) 3.1.2)
+-
+ソースコード
+ファイルを開く
+カスタマイズ
+エディタ切り替え
+高さ自動調節
+1
+הההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההה
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+※ 512 KiB まで
+※ ソースコードは「Main.
+拡張子
+」で保存されます
+提出
+Facebook
+Twitter
+Hatena
+共有
+ルール
+用語集
+利用規約
+プライバシーポリシー
+個人情報保護方針
+企業情報
+よくある質問
+お問い合わせ
+資料請求
+Copyright Since 2012 ©
+AtCoder Inc.
+All rights reserved.
+2024-03-20 (水)
+20:37:16 +09:00
+ページトップ
+✓
+共有ありがとう
+AddToAny
+もっと

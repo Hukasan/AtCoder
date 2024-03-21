@@ -1,0 +1,891 @@
+G - GCD Permutation
+×
+コンテスト開始
+AtCoder Beginner Contest 230が開始されました。
+閉じる
+×
+コンテスト終了
+AtCoder Beginner Contest 230は終了しました。
+閉じる
+AtCoder Beginner Contest 230
+日本語
+日本語
+English
+Hukasann11 (Guest)
+マイプロフィール
+基本設定
+アイコン設定
+パスワードの変更
+お気に入り管理
+ログアウト
+コンテスト時間:
+2021-12-03(金) 21:00
+~
+2021-12-03(金) 22:40
+(100分)
+AtCoderホームへ戻る
+トップ
+問題
+質問
+提出
+提出結果
+すべての提出
+自分の提出
+自分の得点状況
+順位表
+バーチャル順位表
+コードテスト
+解説
+G - GCD Permutation
+解説
+/
+実行時間制限: 5 sec / メモリ制限: 1024 MB
+配点 :
+600
+600
+6
+0
+0
+点
+問題文
+1
+1
+1
+以上
+N
+N
+N
+以下の整数の並び替え
+P
+=
+(
+P
+1
+,
+P
+2
+,
+…
+,
+P
+N
+)
+P=(P_1,P_2,ldots,P_N)
+P
+=
+(
+P
+1
+​
+,
+P
+2
+​
+,
+…
+,
+P
+N
+​
+)
+が与えられます。
+1
+≤
+i
+≤
+j
+≤
+N
+1leq ileq jleq N
+1
+≤
+i
+≤
+j
+≤
+N
+をみたす整数の組
+(
+i
+,
+j
+)
+(i,j)
+(
+i
+,
+j
+)
+であって、
+G
+C
+D
+(
+i
+,
+j
+)
+≠
+1
+GCD(i,j)neq 1
+G
+C
+D
+(
+i
+,
+j
+)
+
+=
+1
+かつ
+G
+C
+D
+(
+P
+i
+,
+P
+j
+)
+≠
+1
+GCD(P_i,P_j)neq 1
+G
+C
+D
+(
+P
+i
+​
+,
+P
+j
+​
+)
+
+=
+1
+をみたすものの個数を求めてください。
+ただし、正整数
+x
+x
+x
+,
+y
+y
+y
+に対して、
+G
+C
+D
+(
+x
+,
+y
+)
+GCD(x,y)
+G
+C
+D
+(
+x
+,
+y
+)
+で
+x
+x
+x
+と
+y
+y
+y
+の最大公約数を表します。
+制約
+1
+≤
+N
+≤
+2
+×
+1
+0
+5
+1 leq N leq 2times 10^5
+1
+≤
+N
+≤
+2
+×
+1
+0
+5
+(
+P
+1
+,
+P
+2
+,
+…
+,
+P
+N
+)
+(P_1,P_2,ldots,P_N)
+(
+P
+1
+​
+,
+P
+2
+​
+,
+…
+,
+P
+N
+​
+)
+は
+(
+1
+,
+2
+,
+…
+,
+N
+)
+(1,2,ldots,N)
+(
+1
+,
+2
+,
+…
+,
+N
+)
+の並び替えである。
+入力は全て整数である。
+入力
+入力は以下の形式で標準入力から与えられる。
+N
+N
+N
+P
+1
+P_1
+P
+1
+​
+P
+2
+P_2
+P
+2
+​
+…
+ldots
+…
+P
+N
+P_N
+P
+N
+​
+出力
+答えを出力せよ。
+入力例 1
+Copy
+Copy
+6
+5 1 3 2 4 6
+出力例 1
+Copy
+Copy
+6
+条件をみたす組は
+(
+3
+,
+3
+)
+(3,3)
+(
+3
+,
+3
+)
+,
+(
+3
+,
+6
+)
+(3,6)
+(
+3
+,
+6
+)
+,
+(
+4
+,
+4
+)
+(4,4)
+(
+4
+,
+4
+)
+,
+(
+4
+,
+6
+)
+(4,6)
+(
+4
+,
+6
+)
+,
+(
+5
+,
+5
+)
+(5,5)
+(
+5
+,
+5
+)
+,
+(
+6
+,
+6
+)
+(6,6)
+(
+6
+,
+6
+)
+の
+6
+6
+6
+つです。
+よって、
+6
+6
+6
+を出力します。
+入力例 2
+Copy
+Copy
+12
+1 2 3 4 5 6 7 8 9 10 11 12
+出力例 2
+Copy
+Copy
+32
+Score :
+600
+600
+6
+0
+0
+points
+Problem Statement
+Given is a permutation
+P
+=
+(
+P
+1
+,
+P
+2
+,
+…
+,
+P
+N
+)
+P=(P_1,P_2,ldots,P_N)
+P
+=
+(
+P
+1
+​
+,
+P
+2
+​
+,
+…
+,
+P
+N
+​
+)
+of the integers from
+1
+1
+1
+through
+N
+N
+N
+.
+Find the number of pairs of integers
+(
+i
+,
+j
+)
+(i,j)
+(
+i
+,
+j
+)
+such that
+1
+≤
+i
+≤
+j
+≤
+N
+1leq ileq jleq N
+1
+≤
+i
+≤
+j
+≤
+N
+satisfying
+G
+C
+D
+(
+i
+,
+j
+)
+≠
+1
+GCD(i,j)neq 1
+G
+C
+D
+(
+i
+,
+j
+)
+
+=
+1
+and
+G
+C
+D
+(
+P
+i
+,
+P
+j
+)
+≠
+1
+GCD(P_i,P_j)neq 1
+G
+C
+D
+(
+P
+i
+​
+,
+P
+j
+​
+)
+
+=
+1
+.
+Here, for positive integers
+x
+x
+x
+and
+y
+y
+y
+,
+G
+C
+D
+(
+x
+,
+y
+)
+GCD(x,y)
+G
+C
+D
+(
+x
+,
+y
+)
+denotes the greatest common divisor of
+x
+x
+x
+and
+y
+y
+y
+.
+Constraints
+1
+≤
+N
+≤
+2
+×
+1
+0
+5
+1 leq N leq 2times 10^5
+1
+≤
+N
+≤
+2
+×
+1
+0
+5
+(
+P
+1
+,
+P
+2
+,
+…
+,
+P
+N
+)
+(P_1,P_2,ldots,P_N)
+(
+P
+1
+​
+,
+P
+2
+​
+,
+…
+,
+P
+N
+​
+)
+is a permutation of
+(
+1
+,
+2
+,
+…
+,
+N
+)
+(1,2,ldots,N)
+(
+1
+,
+2
+,
+…
+,
+N
+)
+.
+All values in input are integers.
+Input
+Input is given from Standard Input in the following format:
+N
+N
+N
+P
+1
+P_1
+P
+1
+​
+P
+2
+P_2
+P
+2
+​
+…
+ldots
+…
+P
+N
+P_N
+P
+N
+​
+Output
+Print the answer.
+Sample Input 1
+Copy
+Copy
+6
+5 1 3 2 4 6
+Sample Output 1
+Copy
+Copy
+6
+Six pairs
+(
+3
+,
+3
+)
+(3,3)
+(
+3
+,
+3
+)
+,
+(
+3
+,
+6
+)
+(3,6)
+(
+3
+,
+6
+)
+,
+(
+4
+,
+4
+)
+(4,4)
+(
+4
+,
+4
+)
+,
+(
+4
+,
+6
+)
+(4,6)
+(
+4
+,
+6
+)
+,
+(
+5
+,
+5
+)
+(5,5)
+(
+5
+,
+5
+)
+,
+(
+6
+,
+6
+)
+(6,6)
+(
+6
+,
+6
+)
+satisfy the condition, so
+6
+6
+6
+should be printed.
+Sample Input 2
+Copy
+Copy
+12
+1 2 3 4 5 6 7 8 9 10 11 12
+Sample Output 2
+Copy
+Copy
+32
+言語
+C++ 20 (gcc 12.2)
+Go (go 1.20.6)
+C# 11.0 (.NET 7.0.7)
+Kotlin (Kotlin/JVM 1.8.20)
+Java (OpenJDK 17)
+Nim (Nim 1.6.14)
+V (V 0.4)
+Zig (Zig 0.10.1)
+JavaScript (Node.js 18.16.1)
+JavaScript (Deno 1.35.1)
+R (GNU R 4.2.1)
+D (DMD 2.104.0)
+D (LDC 1.32.2)
+Swift (swift 5.8.1)
+Dart (Dart 3.0.5)
+PHP (php 8.2.8)
+C (gcc 12.2.0)
+Ruby (ruby 3.2.2)
+Crystal (Crystal 1.9.1)
+Brainfuck (bf 20041219)
+F# 7.0 (.NET 7.0.7)
+Julia (Julia 1.9.2)
+Bash (bash 5.2.2)
+Text (cat 8.32)
+Haskell (GHC 9.4.5)
+Fortran (gfortran 12.2)
+Lua (LuaJIT 2.1.0-beta3)
+C++ 23 (gcc 12.2)
+Common Lisp (SBCL 2.3.6)
+COBOL (Free) (GnuCOBOL 3.1.2)
+C++ 23 (Clang 16.0.6)
+Zsh (Zsh 5.9)
+SageMath (SageMath 9.5)
+Sed (GNU sed 4.8)
+bc (bc 1.07.1)
+dc (dc 1.07.1)
+Perl (perl  5.34)
+AWK (GNU Awk 5.0.1)
+なでしこ (cnako3 3.4.20)
+Assembly x64 (NASM 2.15.05)
+Pascal (fpc 3.2.2)
+C# 11.0 AOT (.NET 7.0.7)
+Lua (Lua 5.4.6)
+Prolog (SWI-Prolog 9.0.4)
+PowerShell (PowerShell 7.3.1)
+Scheme (Gauche 0.9.12)
+Scala 3.3.0 (Scala Native 0.4.14)
+Visual Basic 16.9 (.NET 7.0.7)
+Forth (gforth 0.7.3)
+Clojure (babashka 1.3.181)
+Erlang (Erlang 26.0.2)
+TypeScript 5.1 (Deno 1.35.1)
+C++ 17 (gcc 12.2)
+Rust (rustc 1.70.0)
+Python (CPython 3.11.4)
+Scala (Dotty 3.3.0)
+Koka (koka 2.4.0)
+TypeScript 5.1 (Node.js 18.16.1)
+OCaml (ocamlopt 5.0.0)
+Raku (Rakudo 2023.06)
+Vim (vim 9.0.0242)
+Emacs Lisp (Native Compile) (GNU Emacs 28.2)
+Python (Mambaforge / CPython 3.10.10)
+Clojure (clojure 1.11.1)
+プロデル (mono版プロデル 1.9.1182)
+ECLiPSe (ECLiPSe 7.1_13)
+Nibbles (literate form) (nibbles 1.01)
+Ada (GNAT 12.2)
+jq (jq 1.6)
+Cyber (Cyber v0.2-Latest)
+Carp (Carp 0.5.5)
+C++ 17 (Clang 16.0.6)
+C++ 20 (Clang 16.0.6)
+LLVM IR (Clang 16.0.6)
+Emacs Lisp (Byte Compile) (GNU Emacs 28.2)
+Factor (Factor 0.98)
+D (GDC 12.2)
+Python (PyPy 3.10-v7.3.12)
+Whitespace (whitespacers 1.0.0)
+><> (fishr 0.1.0)
+ReasonML (reason 3.9.0)
+Python (Cython 0.29.34)
+Octave (GNU Octave 8.2.0)
+Haxe (JVM) (Haxe 4.3.1)
+Elixir (Elixir 1.15.2)
+Mercury (Mercury 22.01.6)
+Seed7 (Seed7 3.2.1)
+Emacs Lisp (No Compile) (GNU Emacs 28.2)
+Unison (Unison M5b)
+COBOL (GnuCOBOL(Fixed) 3.1.2)
+-
+ソースコード
+ファイルを開く
+カスタマイズ
+エディタ切り替え
+高さ自動調節
+1
+הההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההה
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+※ 512 KiB まで
+※ ソースコードは「Main.
+拡張子
+」で保存されます
+提出
+Facebook
+Twitter
+Hatena
+共有
+ルール
+用語集
+利用規約
+プライバシーポリシー
+個人情報保護方針
+企業情報
+よくある質問
+お問い合わせ
+資料請求
+Copyright Since 2012 ©
+AtCoder Inc.
+All rights reserved.
+2024-03-20 (水)
+20:37:27 +09:00
+ページトップ
+✓
+共有ありがとう
+AddToAny
+もっと

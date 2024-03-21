@@ -1,0 +1,546 @@
+D - Unicyclic Components
+×
+コンテスト開始
+AtCoder Beginner Contest 292が開始されました。
+閉じる
+×
+コンテスト終了
+AtCoder Beginner Contest 292は終了しました。
+閉じる
+AtCoder Beginner Contest 292
+日本語
+日本語
+English
+新規登録
+ログイン
+コンテスト時間:
+2023-03-04(土) 21:00
+~
+2023-03-04(土) 22:40
+(100分)
+AtCoderホームへ戻る
+トップ
+問題
+質問
+提出結果
+すべての提出
+順位表
+バーチャル順位表
+解説
+D - Unicyclic Components
+解説
+/
+実行時間制限: 2 sec / メモリ制限: 1024 MB
+配点 :
+400
+400
+4
+0
+0
+点
+問題文
+頂点に
+1
+1
+1
+から
+N
+N
+N
+の番号が、辺に
+1
+1
+1
+から
+M
+M
+M
+の番号がついた
+N
+N
+N
+頂点
+M
+M
+M
+辺の無向グラフが与えられます。辺
+i
+i
+i
+は頂点
+u
+i
+u_i
+u
+i
+​
+と頂点
+v
+i
+v_i
+v
+i
+​
+を結んでいます。
+このグラフのすべての連結成分が次の条件を満たすかどうかを判定してください。
+その連結成分に含まれる頂点の個数と辺の本数が等しい。
+注釈
+無向グラフ
+とは、辺に向きの無いグラフのことをいいます。
+あるグラフの
+部分グラフ
+とは、元のグラフのいくつかの頂点といくつかの辺を選んでできるグラフのことをいいます。
+グラフが
+連結
+であるとは、グラフに含まれるすべての頂点同士が辺を経由して互いに行き来できることをいいます。
+連結成分
+とは、連結な部分グラフのうち、そのグラフを含んだより大きい連結な部分グラフが存在しないものをいいます。
+制約
+1
+≤
+N
+≤
+2
+×
+1
+0
+5
+1 leq N leq 2 times 10^5
+1
+≤
+N
+≤
+2
+×
+1
+0
+5
+0
+≤
+M
+≤
+2
+×
+1
+0
+5
+0 leq M leq 2 times 10^5
+0
+≤
+M
+≤
+2
+×
+1
+0
+5
+1
+≤
+u
+i
+≤
+v
+i
+≤
+N
+1 leq u_i leq v_i leq N
+1
+≤
+u
+i
+​
+≤
+v
+i
+​
+≤
+N
+入力はすべて整数
+入力
+入力は以下の形式で標準入力から与えられる。
+N
+N
+N
+M
+M
+M
+u
+1
+u_1
+u
+1
+​
+v
+1
+v_1
+v
+1
+​
+⋮
+vdots
+⋮
+u
+M
+u_M
+u
+M
+​
+v
+M
+v_M
+v
+M
+​
+出力
+すべての連結成分が条件を満たすならば
+Yes
+と、そうでなければ
+No
+と出力せよ。
+入力例 1
+Copy
+Copy
+3 3
+2 3
+1 1
+2 3
+出力例 1
+Copy
+Copy
+Yes
+このグラフには頂点
+1
+1
+1
+のみからなる連結成分と頂点
+2
+,
+3
+2,3
+2
+,
+3
+からなる連結成分があります。
+前者には
+1
+1
+1
+本の辺(辺
+2
+2
+2
+)が、後者には
+2
+2
+2
+本の辺(辺
+1
+,
+3
+1,3
+1
+,
+3
+)が含まれており、条件を満たします。
+入力例 2
+Copy
+Copy
+5 5
+1 2
+2 3
+3 4
+3 5
+1 5
+出力例 2
+Copy
+Copy
+Yes
+入力例 3
+Copy
+Copy
+13 16
+7 9
+7 11
+3 8
+1 13
+11 11
+6 11
+8 13
+2 11
+3 3
+8 12
+9 11
+1 11
+5 13
+3 12
+6 9
+1 10
+出力例 3
+Copy
+Copy
+No
+Score :
+400
+400
+4
+0
+0
+points
+Problem Statement
+You are given an undirected graph with
+N
+N
+N
+vertices numbered
+1
+1
+1
+to
+N
+N
+N
+and
+M
+M
+M
+edges numbered
+1
+1
+1
+to
+M
+M
+M
+. Edge
+i
+i
+i
+connects vertex
+u
+i
+u_i
+u
+i
+​
+and vertex
+v
+i
+v_i
+v
+i
+​
+.
+Determine whether every connected component in this graph satisfies the following condition.
+The connected component has the same number of vertices and edges.
+Notes
+An
+undirected graph
+is a graph with edges without direction.
+A
+subgraph
+of a graph is a graph formed from a subset of vertices and edges of that graph.
+A graph is
+connected
+when one can travel between every pair of vertices in the graph via edges.
+A
+connected component
+is a connected subgraph that is not part of any larger connected subgraph.
+Constraints
+1
+≤
+N
+≤
+2
+×
+1
+0
+5
+1 leq N leq 2 times 10^5
+1
+≤
+N
+≤
+2
+×
+1
+0
+5
+0
+≤
+M
+≤
+2
+×
+1
+0
+5
+0 leq M leq 2 times 10^5
+0
+≤
+M
+≤
+2
+×
+1
+0
+5
+1
+≤
+u
+i
+≤
+v
+i
+≤
+N
+1 leq u_i leq v_i leq N
+1
+≤
+u
+i
+​
+≤
+v
+i
+​
+≤
+N
+All values in the input are integers.
+Input
+The input is given from Standard Input in the following format:
+N
+N
+N
+M
+M
+M
+u
+1
+u_1
+u
+1
+​
+v
+1
+v_1
+v
+1
+​
+⋮
+vdots
+⋮
+u
+M
+u_M
+u
+M
+​
+v
+M
+v_M
+v
+M
+​
+Output
+If every connected component satisfies the condition, print
+Yes
+; otherwise, print
+No
+.
+Sample Input 1
+Copy
+Copy
+3 3
+2 3
+1 1
+2 3
+Sample Output 1
+Copy
+Copy
+Yes
+The graph has a connected component formed from just vertex
+1
+1
+1
+, and another formed from vertices
+2
+2
+2
+and
+3
+3
+3
+.
+The former has one edge (edge
+2
+2
+2
+), and the latter has two edges (edges
+1
+1
+1
+and
+3
+3
+3
+), satisfying the condition.
+Sample Input 2
+Copy
+Copy
+5 5
+1 2
+2 3
+3 4
+3 5
+1 5
+Sample Output 2
+Copy
+Copy
+Yes
+Sample Input 3
+Copy
+Copy
+13 16
+7 9
+7 11
+3 8
+1 13
+11 11
+6 11
+8 13
+2 11
+3 3
+8 12
+9 11
+1 11
+5 13
+3 12
+6 9
+1 10
+Sample Output 3
+Copy
+Copy
+No
+Facebook
+Twitter
+Hatena
+共有
+ルール
+用語集
+利用規約
+プライバシーポリシー
+個人情報保護方針
+企業情報
+よくある質問
+お問い合わせ
+資料請求
+Copyright Since 2012 ©
+AtCoder Inc.
+All rights reserved.
+2024-03-20 (水)
+01:08:30 +09:00
+ページトップ
+✓
+共有ありがとう
+AddToAny
+もっと

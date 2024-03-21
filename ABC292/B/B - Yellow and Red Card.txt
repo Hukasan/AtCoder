@@ -1,0 +1,725 @@
+B - Yellow and Red Card
+×
+コンテスト開始
+AtCoder Beginner Contest 292が開始されました。
+閉じる
+×
+コンテスト終了
+AtCoder Beginner Contest 292は終了しました。
+閉じる
+AtCoder Beginner Contest 292
+日本語
+日本語
+English
+新規登録
+ログイン
+コンテスト時間:
+2023-03-04(土) 21:00
+~
+2023-03-04(土) 22:40
+(100分)
+AtCoderホームへ戻る
+トップ
+問題
+質問
+提出結果
+すべての提出
+順位表
+バーチャル順位表
+解説
+B - Yellow and Red Card
+解説
+/
+実行時間制限: 2 sec / メモリ制限: 1024 MB
+配点 :
+200
+200
+2
+0
+0
+点
+問題文
+1
+1
+1
+から
+N
+N
+N
+までの番号がついた
+N
+N
+N
+人の選手がサッカーの試合をします。
+選手が反則を犯したとき、その選手には
+イエローカード
+と
+レッドカード
+のどちらかが提示されます。
+以下の条件のうち一方を満たした選手は
+退場処分
+と呼ばれるペナルティを受けます。
+イエローカードを累計 2 回提示される。
+レッドカードを提示される。
+なお、退場処分を受けた選手にそれ以降カードが提示されることはありません。
+あなたはこの試合を観戦します。はじめ、すべての選手はカードを 1 回も提示されていません。
+Q
+Q
+Q
+個のイベントが発生するので、イベントで聞かれる質問に正しく答えてください。
+イベントは 3 種類あり、
+c x
+(
+c
+c
+c
+は
+1
+,
+2
+,
+3
+1, 2, 3
+1
+,
+2
+,
+3
+のいずれか) という形式で入力から与えられます。イベントの説明は次の通りです。
+1 x
+: 選手
+x
+x
+x
+にイエローカードが提示される。
+2 x
+: 選手
+x
+x
+x
+にレッドカードが提示される。
+3 x
+: あなたは選手
+x
+x
+x
+が退場処分を受けたかを質問される。選手
+x
+x
+x
+が退場処分を受けていれば
+Yes
+と、そうでなければ
+No
+と答える。
+制約
+1
+≤
+N
+≤
+100
+1 leq N leq 100
+1
+≤
+N
+≤
+1
+0
+0
+1
+≤
+Q
+≤
+100
+1 leq Q leq 100
+1
+≤
+Q
+≤
+1
+0
+0
+全てのイベントにおいて
+1
+≤
+x
+≤
+N
+1 leq x leq N
+1
+≤
+x
+≤
+N
+3
+3
+3
+種類目のイベントは少なくとも
+1
+1
+1
+個以上存在する
+すでに退場処分を受けた選手にカードが提示されることはない
+入力される値はすべて整数
+入力
+入力は以下の形式で標準入力から与えられる。ただし、
+event
+i
+text{event}_i
+event
+i
+​
+は
+i
+i
+i
+番目に発生するイベントを意味する。
+N
+N
+N
+Q
+Q
+Q
+event
+1
+text{event}_1
+event
+1
+​
+event
+2
+text{event}_2
+event
+2
+​
+⋮
+vdots
+⋮
+event
+Q
+text{event}_Q
+event
+Q
+​
+イベントは次の 3 つのいずれかの形式で入力される。
+1
+x
+x
+x
+2
+x
+x
+x
+3
+x
+x
+x
+出力
+入力で与えられる
+3
+3
+3
+種類目のイベントの個数を
+X
+X
+X
+として、
+X
+X
+X
+行出力せよ。
+i
+i
+i
+行目には、
+3
+3
+3
+種類目のイベントのうち
+i
+i
+i
+番目のもので聞かれる質問について、選手
+x
+x
+x
+が退場処分を受けていれば
+Yes
+を、そうでなければ
+No
+を出力せよ。
+入力例 1
+Copy
+Copy
+3 9
+3 1
+3 2
+1 2
+2 1
+3 1
+3 2
+1 2
+3 2
+3 3
+出力例 1
+Copy
+Copy
+No
+No
+Yes
+No
+Yes
+No
+イベントを時系列順にすべて説明すると次の通りです。
+1 番目のイベントでは、あなたは選手
+1
+1
+1
+が退場処分を受けたかを質問されます。選手
+1
+1
+1
+は退場処分を受けていないので
+No
+を出力します。
+2 番目のイベントでは、あなたは選手
+2
+2
+2
+が退場処分を受けたかを質問されます。選手
+2
+2
+2
+は退場処分を受けていないので
+No
+を出力します。
+3 番目のイベントでは、選手
+2
+2
+2
+にイエローカードが提示されます。
+4 番目のイベントでは、選手
+1
+1
+1
+にレッドカードが提示されます。選手
+1
+1
+1
+は退場処分を受けます。
+5 番目のイベントでは、あなたは選手
+1
+1
+1
+が退場処分を受けたかを質問されます。選手
+1
+1
+1
+は退場処分を受けたので
+Yes
+を出力します。
+6 番目のイベントでは、あなたは選手
+2
+2
+2
+が退場処分を受けたかを質問されます。選手
+2
+2
+2
+は退場処分を受けていないので
+No
+を出力します。
+7 番目のイベントでは、選手
+2
+2
+2
+にイエローカードが提示されます。選手
+2
+2
+2
+は退場処分を受けます。
+8 番目のイベントでは、あなたは選手
+2
+2
+2
+が退場処分を受けたかを質問されます。選手
+2
+2
+2
+は退場処分を受けたので
+Yes
+を出力します。
+9 番目のイベントでは、あなたは選手
+3
+3
+3
+が退場処分を受けたかを質問されます。選手
+3
+3
+3
+は退場処分を受けていないので
+No
+を出力します。
+Score :
+200
+200
+2
+0
+0
+points
+Problem Statement
+N
+N
+N
+players numbered
+1
+1
+1
+to
+N
+N
+N
+will play a soccer game.
+When a player commits an offense, that player will receive a
+yellow card
+or a
+red card
+.
+A player who satisfies one of the following conditions will be
+removed
+from the game.
+Accumulates two yellow cards.
+Receives a red card.
+Once a player is removed, that player will no longer receive any cards.
+You will watch this game. Initially, the players have not received any cards.
+There will be
+Q
+Q
+Q
+events. Correctly answer the questions asked in the events.
+There are three kinds of events, which are given in the format
+c x
+from the input, where
+c
+c
+c
+is
+1
+1
+1
+,
+2
+2
+2
+, or
+3
+3
+3
+. The events are as follows.
+1 x
+: Player
+x
+x
+x
+receives a yellow card.
+2 x
+: Player
+x
+x
+x
+receives a red card.
+3 x
+: You are asked whether player
+x
+x
+x
+has been removed from the game. Answer
+Yes
+or
+No
+.
+Constraints
+1
+≤
+N
+≤
+100
+1 leq N leq 100
+1
+≤
+N
+≤
+1
+0
+0
+1
+≤
+Q
+≤
+100
+1 leq Q leq 100
+1
+≤
+Q
+≤
+1
+0
+0
+1
+≤
+x
+≤
+N
+1 leq x leq N
+1
+≤
+x
+≤
+N
+in all events.
+There is at least one event of the third kind.
+A player who has been removed will no longer receive any cards.
+All values in the input are integers.
+Input
+The input is given from Standard Input in the following format, where
+event
+i
+text{event}_i
+event
+i
+​
+denotes the
+i
+i
+i
+-th event.
+N
+N
+N
+Q
+Q
+Q
+event
+1
+text{event}_1
+event
+1
+​
+event
+2
+text{event}_2
+event
+2
+​
+⋮
+vdots
+⋮
+event
+Q
+text{event}_Q
+event
+Q
+​
+Each event is in one of the following formats:
+1
+x
+x
+x
+2
+x
+x
+x
+3
+x
+x
+x
+Output
+Print
+X
+X
+X
+lines, where
+X
+X
+X
+is the number of events of the third kind in the input.
+The
+i
+i
+i
+-th line should contain
+Yes
+if, for the
+i
+i
+i
+-th event of the third kind, player
+x
+x
+x
+has been removed from the game, and
+No
+otherwise.
+Sample Input 1
+Copy
+Copy
+3 9
+3 1
+3 2
+1 2
+2 1
+3 1
+3 2
+1 2
+3 2
+3 3
+Sample Output 1
+Copy
+Copy
+No
+No
+Yes
+No
+Yes
+No
+Here are all the events in chronological order.
+In the
+1
+1
+1
+-st event, you are asked whether player
+1
+1
+1
+has been removed from the game. Player
+1
+1
+1
+has not been removed, so you should print
+No
+.
+In the
+2
+2
+2
+-nd event, you are asked whether player
+2
+2
+2
+has been removed from the game. Player
+2
+2
+2
+has not been removed, so you should print
+No
+.
+In the
+3
+3
+3
+-rd event, player
+2
+2
+2
+receives a yellow card.
+In the
+4
+4
+4
+-th event, player
+1
+1
+1
+receives a red card and is removed from the game.
+In the
+5
+5
+5
+-th event, you are asked whether player
+1
+1
+1
+has been removed from the game. Player
+1
+1
+1
+has been removed, so you should print
+Yes
+.
+In the
+6
+6
+6
+-th event, you are asked whether player
+2
+2
+2
+has been removed from the game. Player
+2
+2
+2
+has not been removed, so you should print
+No
+.
+In the
+7
+7
+7
+-th event, player
+2
+2
+2
+receives a yellow card and is removed from the game.
+In the
+8
+8
+8
+-th event, you are asked whether player
+2
+2
+2
+has been removed from the game. Player
+2
+2
+2
+has been removed, so you should print
+Yes
+.
+In the
+9
+9
+9
+-th event, you are asked whether player
+3
+3
+3
+has been removed from the game. Player
+3
+3
+3
+has not been removed, so you should print
+No
+.
+Facebook
+Twitter
+Hatena
+共有
+ルール
+用語集
+利用規約
+プライバシーポリシー
+個人情報保護方針
+企業情報
+よくある質問
+お問い合わせ
+資料請求
+Copyright Since 2012 ©
+AtCoder Inc.
+All rights reserved.
+2024-03-20 (水)
+01:08:13 +09:00
+ページトップ
+✓
+共有ありがとう
+AddToAny
+もっと

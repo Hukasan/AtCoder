@@ -1,0 +1,803 @@
+E - Transitivity
+×
+コンテスト開始
+AtCoder Beginner Contest 292が開始されました。
+閉じる
+×
+コンテスト終了
+AtCoder Beginner Contest 292は終了しました。
+閉じる
+AtCoder Beginner Contest 292
+日本語
+日本語
+English
+新規登録
+ログイン
+コンテスト時間:
+2023-03-04(土) 21:00
+~
+2023-03-04(土) 22:40
+(100分)
+AtCoderホームへ戻る
+トップ
+問題
+質問
+提出結果
+すべての提出
+順位表
+バーチャル順位表
+解説
+E - Transitivity
+解説
+/
+実行時間制限: 2 sec / メモリ制限: 1024 MB
+配点 :
+500
+500
+5
+0
+0
+点
+問題文
+頂点に
+1
+1
+1
+から
+N
+N
+N
+の番号が、辺に
+1
+1
+1
+から
+M
+M
+M
+の番号がついた
+N
+N
+N
+頂点
+M
+M
+M
+辺の単純有向グラフが与えられます。辺
+i
+i
+i
+は頂点
+u
+i
+u_i
+u
+i
+​
+から頂点
+v
+i
+v_i
+v
+i
+​
+への有向辺です。
+また、あなたは次の操作を
+0
+0
+0
+回以上何度でも行えます。
+相異なる頂点
+x
+,
+y
+x,y
+x
+,
+y
+であって頂点
+x
+x
+x
+から頂点
+y
+y
+y
+への有向辺が存在しないようなものを選ぶ。そして、頂点
+x
+x
+x
+から頂点
+y
+y
+y
+への有向辺を追加する。
+このグラフが次の条件を満たす状態にするために最小で何回操作を行う必要があるかを求めてください。
+相異なる頂点
+a
+,
+b
+,
+c
+a,b,c
+a
+,
+b
+,
+c
+すべてについて、頂点
+a
+a
+a
+から頂点
+b
+b
+b
+への有向辺と頂点
+b
+b
+b
+から頂点
+c
+c
+c
+への有向辺がともに存在するならば頂点
+a
+a
+a
+から頂点
+c
+c
+c
+への有向辺も存在する。
+制約
+3
+≤
+N
+≤
+2000
+3 leq N leq 2000
+3
+≤
+N
+≤
+2
+0
+0
+0
+0
+≤
+M
+≤
+2000
+0 leq M leq 2000
+0
+≤
+M
+≤
+2
+0
+0
+0
+1
+≤
+u
+i
+,
+v
+i
+≤
+N
+1 leq u_i ,v_i leq N
+1
+≤
+u
+i
+​
+,
+v
+i
+​
+≤
+N
+u
+i
+≠
+v
+i
+u_i neq v_i
+u
+i
+​
+
+=
+v
+i
+​
+i
+≠
+j
+i neq j
+i
+
+=
+j
+ならば
+(
+u
+i
+,
+v
+i
+)
+≠
+(
+u
+j
+,
+v
+j
+)
+(u_i,v_i) neq (u_j,v_j)
+(
+u
+i
+​
+,
+v
+i
+​
+)
+
+=
+(
+u
+j
+​
+,
+v
+j
+​
+)
+入力はすべて整数
+入力
+入力は以下の形式で標準入力から与えられる。
+N
+N
+N
+M
+M
+M
+u
+1
+u_1
+u
+1
+​
+v
+1
+v_1
+v
+1
+​
+⋮
+vdots
+⋮
+u
+M
+u_M
+u
+M
+​
+v
+M
+v_M
+v
+M
+​
+出力
+答えを出力せよ。
+入力例 1
+Copy
+Copy
+4 3
+2 4
+3 1
+4 3
+出力例 1
+Copy
+Copy
+3
+初め、一例として頂点
+2
+,
+4
+,
+3
+2,4,3
+2
+,
+4
+,
+3
+について、頂点
+2
+2
+2
+から頂点
+4
+4
+4
+への有向辺と頂点
+4
+4
+4
+から頂点
+3
+3
+3
+への有向辺がともに存在するにもかかわらず、頂点
+2
+2
+2
+から頂点
+3
+3
+3
+への有向辺は存在せず、条件を満たさない状態です。
+そこで、以下の
+3
+3
+3
+本の有向辺を追加すると条件を満たす状態になります。
+頂点
+2
+2
+2
+から頂点
+3
+3
+3
+への有向辺
+頂点
+2
+2
+2
+から頂点
+1
+1
+1
+への有向辺
+頂点
+4
+4
+4
+から頂点
+1
+1
+1
+への有向辺
+一方、
+3
+3
+3
+本未満の追加で条件を満たす状態には出来ないため、答えは
+3
+3
+3
+です。
+入力例 2
+Copy
+Copy
+292 0
+出力例 2
+Copy
+Copy
+0
+入力例 3
+Copy
+Copy
+5 8
+1 2
+2 1
+1 3
+3 1
+1 4
+4 1
+1 5
+5 1
+出力例 3
+Copy
+Copy
+12
+Score :
+500
+500
+5
+0
+0
+points
+Problem Statement
+You are given a simple directed graph with
+N
+N
+N
+vertices numbered
+1
+1
+1
+to
+N
+N
+N
+and
+M
+M
+M
+edges numbered
+1
+1
+1
+to
+M
+M
+M
+. Edge
+i
+i
+i
+is a directed edge from vertex
+u
+i
+u_i
+u
+i
+​
+to vertex
+v
+i
+v_i
+v
+i
+​
+.
+You may perform the following operation zero or more times.
+Choose distinct vertices
+x
+x
+x
+and
+y
+y
+y
+such that there is no directed edge from vertex
+x
+x
+x
+to vertex
+y
+y
+y
+, and add a directed edge from vertex
+x
+x
+x
+to vertex
+y
+y
+y
+.
+Find the minimum number of times you need to perform the operation to make the graph satisfy the following condition.
+For every triple of distinct vertices
+a
+a
+a
+,
+b
+b
+b
+, and
+c
+c
+c
+, if there are directed edges from vertex
+a
+a
+a
+to vertex
+b
+b
+b
+and from vertex
+b
+b
+b
+to vertex
+c
+c
+c
+, there is also a directed edge from vertex
+a
+a
+a
+to vertex
+c
+c
+c
+.
+Constraints
+3
+≤
+N
+≤
+2000
+3 leq N leq 2000
+3
+≤
+N
+≤
+2
+0
+0
+0
+0
+≤
+M
+≤
+2000
+0 leq M leq 2000
+0
+≤
+M
+≤
+2
+0
+0
+0
+1
+≤
+u
+i
+,
+v
+i
+≤
+N
+1 leq u_i ,v_i leq N
+1
+≤
+u
+i
+​
+,
+v
+i
+​
+≤
+N
+u
+i
+≠
+v
+i
+u_i neq v_i
+u
+i
+​
+
+=
+v
+i
+​
+(
+u
+i
+,
+v
+i
+)
+≠
+(
+u
+j
+,
+v
+j
+)
+(u_i,v_i) neq (u_j,v_j)
+(
+u
+i
+​
+,
+v
+i
+​
+)
+
+=
+(
+u
+j
+​
+,
+v
+j
+​
+)
+if
+i
+≠
+j
+i neq j
+i
+
+=
+j
+.
+All values in the input are integers.
+Input
+The input is given from Standard Input in the following format:
+N
+N
+N
+M
+M
+M
+u
+1
+u_1
+u
+1
+​
+v
+1
+v_1
+v
+1
+​
+⋮
+vdots
+⋮
+u
+M
+u_M
+u
+M
+​
+v
+M
+v_M
+v
+M
+​
+Output
+Print the answer.
+Sample Input 1
+Copy
+Copy
+4 3
+2 4
+3 1
+4 3
+Sample Output 1
+Copy
+Copy
+3
+Initially, the condition is not satisfied because, for instance, for vertices
+2
+2
+2
+,
+4
+4
+4
+, and
+3
+3
+3
+, there are directed edges from vertex
+2
+2
+2
+to vertex
+4
+4
+4
+and from vertex
+4
+4
+4
+to vertex
+3
+3
+3
+, but not from vertex
+2
+2
+2
+to vertex
+3
+3
+3
+.
+You can make the graph satisfy the condition by adding the following three directed edges:
+one from vertex
+2
+2
+2
+to vertex
+3
+3
+3
+,
+one from vertex
+2
+2
+2
+to vertex
+1
+1
+1
+, and
+one from vertex
+4
+4
+4
+to vertex
+1
+1
+1
+.
+On the other hand, the condition cannot be satisfied by adding two or fewer edges, so the answer is
+3
+3
+3
+.
+Sample Input 2
+Copy
+Copy
+292 0
+Sample Output 2
+Copy
+Copy
+0
+Sample Input 3
+Copy
+Copy
+5 8
+1 2
+2 1
+1 3
+3 1
+1 4
+4 1
+1 5
+5 1
+Sample Output 3
+Copy
+Copy
+12
+Facebook
+Twitter
+Hatena
+共有
+ルール
+用語集
+利用規約
+プライバシーポリシー
+個人情報保護方針
+企業情報
+よくある質問
+お問い合わせ
+資料請求
+Copyright Since 2012 ©
+AtCoder Inc.
+All rights reserved.
+2024-03-20 (水)
+01:08:37 +09:00
+ページトップ
+✓
+共有ありがとう
+AddToAny
+もっと

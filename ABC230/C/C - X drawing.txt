@@ -1,0 +1,1763 @@
+C - X drawing
+×
+コンテスト開始
+AtCoder Beginner Contest 230が開始されました。
+閉じる
+×
+コンテスト終了
+AtCoder Beginner Contest 230は終了しました。
+閉じる
+AtCoder Beginner Contest 230
+日本語
+日本語
+English
+Hukasann11 (Guest)
+マイプロフィール
+基本設定
+アイコン設定
+パスワードの変更
+お気に入り管理
+ログアウト
+コンテスト時間:
+2021-12-03(金) 21:00
+~
+2021-12-03(金) 22:40
+(100分)
+AtCoderホームへ戻る
+トップ
+問題
+質問
+提出
+提出結果
+すべての提出
+自分の提出
+自分の得点状況
+順位表
+バーチャル順位表
+コードテスト
+解説
+C - X drawing
+解説
+/
+実行時間制限: 2 sec / メモリ制限: 1024 MB
+配点 :
+300
+300
+3
+0
+0
+点
+問題文
+上下左右に広がる
+N
+×
+N
+Ntimes N
+N
+×
+N
+のマス目があり、最初全てのマスは白く塗られています。このマス目の上から
+i
+i
+i
+行目、左から
+j
+j
+j
+列目のマスを
+(
+i
+,
+j
+)
+(i,j)
+(
+i
+,
+j
+)
+で表します。
+高橋君は
+1
+1
+1
+以上
+N
+N
+N
+以下の整数
+A
+A
+A
+,
+B
+B
+B
+を持っており、次のような操作を行います。
+max
+⁡
+(
+1
+−
+A
+,
+1
+−
+B
+)
+≤
+k
+≤
+min
+⁡
+(
+N
+−
+A
+,
+N
+−
+B
+)
+max(1-A,1-B)leq kleq min(N-A,N-B)
+max
+(
+1
+−
+A
+,
+1
+−
+B
+)
+≤
+k
+≤
+min
+(
+N
+−
+A
+,
+N
+−
+B
+)
+をみたす全ての整数
+k
+k
+k
+について、
+(
+A
++
+k
+,
+B
++
+k
+)
+(A+k,B+k)
+(
+A
++
+k
+,
+B
++
+k
+)
+を黒く塗る。
+max
+⁡
+(
+1
+−
+A
+,
+B
+−
+N
+)
+≤
+k
+≤
+min
+⁡
+(
+N
+−
+A
+,
+B
+−
+1
+)
+max(1-A,B-N)leq kleq min(N-A,B-1)
+max
+(
+1
+−
+A
+,
+B
+−
+N
+)
+≤
+k
+≤
+min
+(
+N
+−
+A
+,
+B
+−
+1
+)
+をみたす全ての整数
+k
+k
+k
+について、
+(
+A
++
+k
+,
+B
+−
+k
+)
+(A+k,B-k)
+(
+A
++
+k
+,
+B
+−
+k
+)
+を黒く塗る。
+この操作を行った後のマス目について、
+P
+≤
+i
+≤
+Q
+Pleq ileq Q
+P
+≤
+i
+≤
+Q
+かつ
+R
+≤
+j
+≤
+S
+Rleq jleq S
+R
+≤
+j
+≤
+S
+をみたす各マス
+(
+i
+,
+j
+)
+(i,j)
+(
+i
+,
+j
+)
+がそれぞれ何色で塗られているか求めてください。
+制約
+1
+≤
+N
+≤
+1
+0
+18
+1 leq N leq 10^{18}
+1
+≤
+N
+≤
+1
+0
+1
+8
+1
+≤
+A
+≤
+N
+1 leq A leq N
+1
+≤
+A
+≤
+N
+1
+≤
+B
+≤
+N
+1 leq B leq N
+1
+≤
+B
+≤
+N
+1
+≤
+P
+≤
+Q
+≤
+N
+1 leq P leq Q leq N
+1
+≤
+P
+≤
+Q
+≤
+N
+1
+≤
+R
+≤
+S
+≤
+N
+1 leq R leq S leq N
+1
+≤
+R
+≤
+S
+≤
+N
+(
+Q
+−
+P
++
+1
+)
+×
+(
+S
+−
+R
++
+1
+)
+≤
+3
+×
+1
+0
+5
+(Q-P+1)times(S-R+1)leq 3times 10^5
+(
+Q
+−
+P
++
+1
+)
+×
+(
+S
+−
+R
++
+1
+)
+≤
+3
+×
+1
+0
+5
+入力は全て整数である。
+入力
+入力は以下の形式で標準入力から与えられる。
+N
+N
+N
+A
+A
+A
+B
+B
+B
+P
+P
+P
+Q
+Q
+Q
+R
+R
+R
+S
+S
+S
+出力
+Q
+−
+P
++
+1
+Q-P+1
+Q
+−
+P
++
+1
+行出力せよ。
+各行は
+#
+と
+.
+のみからなる長さ
+S
+−
+R
++
+1
+S-R+1
+S
+−
+R
++
+1
+の文字列であり、
+i
+i
+i
+行目の文字列の
+j
+j
+j
+番目の文字が
+#
+であることは
+(
+P
++
+i
+−
+1
+,
+R
++
+j
+−
+1
+)
+(P+i-1,R+j-1)
+(
+P
++
+i
+−
+1
+,
+R
++
+j
+−
+1
+)
+が黒く塗られていることを、
+.
+であることは
+(
+P
++
+i
+−
+1
+,
+R
++
+j
+−
+1
+)
+(P+i-1,R+j-1)
+(
+P
++
+i
+−
+1
+,
+R
++
+j
+−
+1
+)
+が白く塗られていることをさす。
+入力例 1
+Copy
+Copy
+5 3 2
+1 5 1 5
+出力例 1
+Copy
+Copy
+...#.
+#.#..
+.#...
+#.#..
+...#.
+1
+1
+1
+つめの操作で
+(
+2
+,
+1
+)
+(2,1)
+(
+2
+,
+1
+)
+,
+(
+3
+,
+2
+)
+(3,2)
+(
+3
+,
+2
+)
+,
+(
+4
+,
+3
+)
+(4,3)
+(
+4
+,
+3
+)
+,
+(
+5
+,
+4
+)
+(5,4)
+(
+5
+,
+4
+)
+の
+4
+4
+4
+マスが、
+2
+2
+2
+つめの操作で
+(
+4
+,
+1
+)
+(4,1)
+(
+4
+,
+1
+)
+,
+(
+3
+,
+2
+)
+(3,2)
+(
+3
+,
+2
+)
+,
+(
+2
+,
+3
+)
+(2,3)
+(
+2
+,
+3
+)
+,
+(
+1
+,
+4
+)
+(1,4)
+(
+1
+,
+4
+)
+の
+4
+4
+4
+マスが黒く塗られます。
+よって、
+P
+=
+1
+P=1
+P
+=
+1
+,
+Q
+=
+5
+Q=5
+Q
+=
+5
+,
+R
+=
+1
+R=1
+R
+=
+1
+,
+S
+=
+5
+S=5
+S
+=
+5
+より、上のように出力します。
+入力例 2
+Copy
+Copy
+5 3 3
+4 5 2 5
+出力例 2
+Copy
+Copy
+#.#.
+...#
+操作によって、
+(
+1
+,
+1
+)
+(1,1)
+(
+1
+,
+1
+)
+,
+(
+1
+,
+5
+)
+(1,5)
+(
+1
+,
+5
+)
+,
+(
+2
+,
+2
+)
+(2,2)
+(
+2
+,
+2
+)
+,
+(
+2
+,
+4
+)
+(2,4)
+(
+2
+,
+4
+)
+,
+(
+3
+,
+3
+)
+(3,3)
+(
+3
+,
+3
+)
+,
+(
+4
+,
+2
+)
+(4,2)
+(
+4
+,
+2
+)
+,
+(
+4
+,
+4
+)
+(4,4)
+(
+4
+,
+4
+)
+,
+(
+5
+,
+1
+)
+(5,1)
+(
+5
+,
+1
+)
+,
+(
+5
+,
+5
+)
+(5,5)
+(
+5
+,
+5
+)
+の
+9
+9
+9
+マスが
+黒く塗られます。
+P
+=
+4
+P=4
+P
+=
+4
+,
+Q
+=
+5
+Q=5
+Q
+=
+5
+,
+R
+=
+2
+R=2
+R
+=
+2
+,
+S
+=
+5
+S=5
+S
+=
+5
+より、上のように出力します。
+入力例 3
+Copy
+Copy
+1000000000000000000 999999999999999999 999999999999999999
+999999999999999998 1000000000000000000 999999999999999998 1000000000000000000
+出力例 3
+Copy
+Copy
+#.#
+.#.
+#.#
+入力が
+32
+32
+3
+2
+bit 整数型に収まらないことがあることに注意してください。
+Score :
+300
+300
+3
+0
+0
+points
+Problem Statement
+There is an
+N
+×
+N
+Ntimes N
+N
+×
+N
+grid with horizontal rows and vertical columns, where all squares are initially painted white. Let
+(
+i
+,
+j
+)
+(i,j)
+(
+i
+,
+j
+)
+denote the square at the
+i
+i
+i
+-th row and
+j
+j
+j
+-th column.
+Takahashi has integers
+A
+A
+A
+and
+B
+B
+B
+, which are between
+1
+1
+1
+and
+N
+N
+N
+(inclusive). He will do the following operations.
+For every integer
+k
+k
+k
+such that
+max
+⁡
+(
+1
+−
+A
+,
+1
+−
+B
+)
+≤
+k
+≤
+min
+⁡
+(
+N
+−
+A
+,
+N
+−
+B
+)
+max(1-A,1-B)leq kleq min(N-A,N-B)
+max
+(
+1
+−
+A
+,
+1
+−
+B
+)
+≤
+k
+≤
+min
+(
+N
+−
+A
+,
+N
+−
+B
+)
+, paint
+(
+A
++
+k
+,
+B
++
+k
+)
+(A+k,B+k)
+(
+A
++
+k
+,
+B
++
+k
+)
+black.
+For every integer
+k
+k
+k
+such that
+max
+⁡
+(
+1
+−
+A
+,
+B
+−
+N
+)
+≤
+k
+≤
+min
+⁡
+(
+N
+−
+A
+,
+B
+−
+1
+)
+max(1-A,B-N)leq kleq min(N-A,B-1)
+max
+(
+1
+−
+A
+,
+B
+−
+N
+)
+≤
+k
+≤
+min
+(
+N
+−
+A
+,
+B
+−
+1
+)
+, paint
+(
+A
++
+k
+,
+B
+−
+k
+)
+(A+k,B-k)
+(
+A
++
+k
+,
+B
+−
+k
+)
+black.
+In the grid after these operations, find the color of each square
+(
+i
+,
+j
+)
+(i,j)
+(
+i
+,
+j
+)
+such that
+P
+≤
+i
+≤
+Q
+Pleq ileq Q
+P
+≤
+i
+≤
+Q
+and
+R
+≤
+j
+≤
+S
+Rleq jleq S
+R
+≤
+j
+≤
+S
+.
+Constraints
+1
+≤
+N
+≤
+1
+0
+18
+1 leq N leq 10^{18}
+1
+≤
+N
+≤
+1
+0
+1
+8
+1
+≤
+A
+≤
+N
+1 leq A leq N
+1
+≤
+A
+≤
+N
+1
+≤
+B
+≤
+N
+1 leq B leq N
+1
+≤
+B
+≤
+N
+1
+≤
+P
+≤
+Q
+≤
+N
+1 leq P leq Q leq N
+1
+≤
+P
+≤
+Q
+≤
+N
+1
+≤
+R
+≤
+S
+≤
+N
+1 leq R leq S leq N
+1
+≤
+R
+≤
+S
+≤
+N
+(
+Q
+−
+P
++
+1
+)
+×
+(
+S
+−
+R
++
+1
+)
+≤
+3
+×
+1
+0
+5
+(Q-P+1)times(S-R+1)leq 3times 10^5
+(
+Q
+−
+P
++
+1
+)
+×
+(
+S
+−
+R
++
+1
+)
+≤
+3
+×
+1
+0
+5
+All values in input are integers.
+Input
+Input is given from Standard Input in the following format:
+N
+N
+N
+A
+A
+A
+B
+B
+B
+P
+P
+P
+Q
+Q
+Q
+R
+R
+R
+S
+S
+S
+Output
+Print
+Q
+−
+P
++
+1
+Q-P+1
+Q
+−
+P
++
+1
+lines.
+Each line should contain a string of length
+S
+−
+R
++
+1
+S-R+1
+S
+−
+R
++
+1
+consisting of
+#
+and
+.
+.
+The
+j
+j
+j
+-th character of the string in the
+i
+i
+i
+-th line should be
+#
+to represent that
+(
+P
++
+i
+−
+1
+,
+R
++
+j
+−
+1
+)
+(P+i-1, R+j-1)
+(
+P
++
+i
+−
+1
+,
+R
++
+j
+−
+1
+)
+is painted black, and
+.
+to represent that
+(
+P
++
+i
+−
+1
+,
+R
++
+j
+−
+1
+)
+(P+i-1, R+j-1)
+(
+P
++
+i
+−
+1
+,
+R
++
+j
+−
+1
+)
+is white.
+Sample Input 1
+Copy
+Copy
+5 3 2
+1 5 1 5
+Sample Output 1
+Copy
+Copy
+...#.
+#.#..
+.#...
+#.#..
+...#.
+The first operation paints the four squares
+(
+2
+,
+1
+)
+(2,1)
+(
+2
+,
+1
+)
+,
+(
+3
+,
+2
+)
+(3,2)
+(
+3
+,
+2
+)
+,
+(
+4
+,
+3
+)
+(4,3)
+(
+4
+,
+3
+)
+,
+(
+5
+,
+4
+)
+(5,4)
+(
+5
+,
+4
+)
+black, and the second paints the four squares
+(
+4
+,
+1
+)
+(4,1)
+(
+4
+,
+1
+)
+,
+(
+3
+,
+2
+)
+(3,2)
+(
+3
+,
+2
+)
+,
+(
+2
+,
+3
+)
+(2,3)
+(
+2
+,
+3
+)
+,
+(
+1
+,
+4
+)
+(1,4)
+(
+1
+,
+4
+)
+black.
+Thus, the above output should be printed, since
+P
+=
+1
+P=1
+P
+=
+1
+,
+Q
+=
+5
+Q=5
+Q
+=
+5
+,
+R
+=
+1
+R=1
+R
+=
+1
+,
+S
+=
+5
+S=5
+S
+=
+5
+.
+Sample Input 2
+Copy
+Copy
+5 3 3
+4 5 2 5
+Sample Output 2
+Copy
+Copy
+#.#.
+...#
+The operations paint the nine squares
+(
+1
+,
+1
+)
+(1,1)
+(
+1
+,
+1
+)
+,
+(
+1
+,
+5
+)
+(1,5)
+(
+1
+,
+5
+)
+,
+(
+2
+,
+2
+)
+(2,2)
+(
+2
+,
+2
+)
+,
+(
+2
+,
+4
+)
+(2,4)
+(
+2
+,
+4
+)
+,
+(
+3
+,
+3
+)
+(3,3)
+(
+3
+,
+3
+)
+,
+(
+4
+,
+2
+)
+(4,2)
+(
+4
+,
+2
+)
+,
+(
+4
+,
+4
+)
+(4,4)
+(
+4
+,
+4
+)
+,
+(
+5
+,
+1
+)
+(5,1)
+(
+5
+,
+1
+)
+,
+(
+5
+,
+5
+)
+(5,5)
+(
+5
+,
+5
+)
+.
+Thus, the above output should be printed, since
+P
+=
+4
+P=4
+P
+=
+4
+,
+Q
+=
+5
+Q=5
+Q
+=
+5
+,
+R
+=
+2
+R=2
+R
+=
+2
+,
+S
+=
+5
+S=5
+S
+=
+5
+.
+Sample Input 3
+Copy
+Copy
+1000000000000000000 999999999999999999 999999999999999999
+999999999999999998 1000000000000000000 999999999999999998 1000000000000000000
+Sample Output 3
+Copy
+Copy
+#.#
+.#.
+#.#
+Note that the input may not fit into a
+32
+32
+3
+2
+-bit integer type.
+言語
+C++ 20 (gcc 12.2)
+Go (go 1.20.6)
+C# 11.0 (.NET 7.0.7)
+Kotlin (Kotlin/JVM 1.8.20)
+Java (OpenJDK 17)
+Nim (Nim 1.6.14)
+V (V 0.4)
+Zig (Zig 0.10.1)
+JavaScript (Node.js 18.16.1)
+JavaScript (Deno 1.35.1)
+R (GNU R 4.2.1)
+D (DMD 2.104.0)
+D (LDC 1.32.2)
+Swift (swift 5.8.1)
+Dart (Dart 3.0.5)
+PHP (php 8.2.8)
+C (gcc 12.2.0)
+Ruby (ruby 3.2.2)
+Crystal (Crystal 1.9.1)
+Brainfuck (bf 20041219)
+F# 7.0 (.NET 7.0.7)
+Julia (Julia 1.9.2)
+Bash (bash 5.2.2)
+Text (cat 8.32)
+Haskell (GHC 9.4.5)
+Fortran (gfortran 12.2)
+Lua (LuaJIT 2.1.0-beta3)
+C++ 23 (gcc 12.2)
+Common Lisp (SBCL 2.3.6)
+COBOL (Free) (GnuCOBOL 3.1.2)
+C++ 23 (Clang 16.0.6)
+Zsh (Zsh 5.9)
+SageMath (SageMath 9.5)
+Sed (GNU sed 4.8)
+bc (bc 1.07.1)
+dc (dc 1.07.1)
+Perl (perl  5.34)
+AWK (GNU Awk 5.0.1)
+なでしこ (cnako3 3.4.20)
+Assembly x64 (NASM 2.15.05)
+Pascal (fpc 3.2.2)
+C# 11.0 AOT (.NET 7.0.7)
+Lua (Lua 5.4.6)
+Prolog (SWI-Prolog 9.0.4)
+PowerShell (PowerShell 7.3.1)
+Scheme (Gauche 0.9.12)
+Scala 3.3.0 (Scala Native 0.4.14)
+Visual Basic 16.9 (.NET 7.0.7)
+Forth (gforth 0.7.3)
+Clojure (babashka 1.3.181)
+Erlang (Erlang 26.0.2)
+TypeScript 5.1 (Deno 1.35.1)
+C++ 17 (gcc 12.2)
+Rust (rustc 1.70.0)
+Python (CPython 3.11.4)
+Scala (Dotty 3.3.0)
+Koka (koka 2.4.0)
+TypeScript 5.1 (Node.js 18.16.1)
+OCaml (ocamlopt 5.0.0)
+Raku (Rakudo 2023.06)
+Vim (vim 9.0.0242)
+Emacs Lisp (Native Compile) (GNU Emacs 28.2)
+Python (Mambaforge / CPython 3.10.10)
+Clojure (clojure 1.11.1)
+プロデル (mono版プロデル 1.9.1182)
+ECLiPSe (ECLiPSe 7.1_13)
+Nibbles (literate form) (nibbles 1.01)
+Ada (GNAT 12.2)
+jq (jq 1.6)
+Cyber (Cyber v0.2-Latest)
+Carp (Carp 0.5.5)
+C++ 17 (Clang 16.0.6)
+C++ 20 (Clang 16.0.6)
+LLVM IR (Clang 16.0.6)
+Emacs Lisp (Byte Compile) (GNU Emacs 28.2)
+Factor (Factor 0.98)
+D (GDC 12.2)
+Python (PyPy 3.10-v7.3.12)
+Whitespace (whitespacers 1.0.0)
+><> (fishr 0.1.0)
+ReasonML (reason 3.9.0)
+Python (Cython 0.29.34)
+Octave (GNU Octave 8.2.0)
+Haxe (JVM) (Haxe 4.3.1)
+Elixir (Elixir 1.15.2)
+Mercury (Mercury 22.01.6)
+Seed7 (Seed7 3.2.1)
+Emacs Lisp (No Compile) (GNU Emacs 28.2)
+Unison (Unison M5b)
+COBOL (GnuCOBOL(Fixed) 3.1.2)
+-
+ソースコード
+ファイルを開く
+カスタマイズ
+エディタ切り替え
+高さ自動調節
+1
+הההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההה
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+※ 512 KiB まで
+※ ソースコードは「Main.
+拡張子
+」で保存されます
+提出
+Facebook
+Twitter
+Hatena
+共有
+ルール
+用語集
+利用規約
+プライバシーポリシー
+個人情報保護方針
+企業情報
+よくある質問
+お問い合わせ
+資料請求
+Copyright Since 2012 ©
+AtCoder Inc.
+All rights reserved.
+2024-03-20 (水)
+20:36:46 +09:00
+ページトップ
+✓
+共有ありがとう
+AddToAny
+もっと

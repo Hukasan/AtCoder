@@ -1,0 +1,266 @@
+F - Regular Triangle Inside a Rectangle
+×
+コンテスト開始
+AtCoder Beginner Contest 292が開始されました。
+閉じる
+×
+コンテスト終了
+AtCoder Beginner Contest 292は終了しました。
+閉じる
+AtCoder Beginner Contest 292
+日本語
+日本語
+English
+新規登録
+ログイン
+コンテスト時間:
+2023-03-04(土) 21:00
+~
+2023-03-04(土) 22:40
+(100分)
+AtCoderホームへ戻る
+トップ
+問題
+質問
+提出結果
+すべての提出
+順位表
+バーチャル順位表
+解説
+F - Regular Triangle Inside a Rectangle
+解説
+/
+実行時間制限: 2 sec / メモリ制限: 1024 MB
+配点 :
+500
+500
+5
+0
+0
+点
+問題文
+縦の長さが
+A
+A
+A
+、横の長さが
+B
+B
+B
+の長方形の内部に描ける正三角形の一辺の長さの最大値を求めてください。
+制約
+1
+≤
+A
+,
+B
+≤
+1000
+1 leq A,B leq 1000
+1
+≤
+A
+,
+B
+≤
+1
+0
+0
+0
+A
+,
+B
+A,B
+A
+,
+B
+は整数
+入力
+入力は以下の形式で標準入力から与えられる。
+A
+A
+A
+B
+B
+B
+出力
+答えを出力せよ。
+なお、真の値との絶対誤差または相対誤差が
+1
+0
+−
+9
+10^{-9}
+1
+0
+−
+9
+以下であれば正解として扱われる。
+入力例 1
+Copy
+Copy
+1 1
+出力例 1
+Copy
+Copy
+1.03527618041008295791
+下図のように描くのが最適で、一辺の長さが
+6
+−
+2
+sqrt{6} - sqrt{2}
+6
+​
+−
+2
+​
+になります。
+なお、この出力例の値は
+6
+−
+2
+sqrt{6}- sqrt{2}
+6
+​
+−
+2
+​
+と厳密には一致しませんが、誤差が
+1
+0
+−
+9
+10^{-9}
+1
+0
+−
+9
+以下なので正解として扱われます。
+Score :
+500
+500
+5
+0
+0
+points
+Problem Statement
+Find the maximum side length of a regular triangle that can be drawn within a rectangle whose side lengths are
+A
+A
+A
+and
+B
+B
+B
+.
+Constraints
+1
+≤
+A
+,
+B
+≤
+1000
+1 leq A,B leq 1000
+1
+≤
+A
+,
+B
+≤
+1
+0
+0
+0
+A
+A
+A
+and
+B
+B
+B
+are integers.
+Input
+The input is given from Standard Input in the following format:
+A
+A
+A
+B
+B
+B
+Output
+Print the answer.
+Your output is considered correct if the absolute or relative error from the true answer is at most
+1
+0
+−
+9
+10^{-9}
+1
+0
+−
+9
+.
+Sample Input 1
+Copy
+Copy
+1 1
+Sample Output 1
+Copy
+Copy
+1.03527618041008295791
+The following figure shows an optimal drawing, with the side length of
+6
+−
+2
+sqrt{6} - sqrt{2}
+6
+​
+−
+2
+​
+.
+Note that the sample output does not strictly match
+6
+−
+2
+sqrt{6}- sqrt{2}
+6
+​
+−
+2
+​
+, but the error is within
+1
+0
+−
+9
+10^{-9}
+1
+0
+−
+9
+, so it is considered correct.
+Facebook
+Twitter
+Hatena
+共有
+ルール
+用語集
+利用規約
+プライバシーポリシー
+個人情報保護方針
+企業情報
+よくある質問
+お問い合わせ
+資料請求
+Copyright Since 2012 ©
+AtCoder Inc.
+All rights reserved.
+2024-03-20 (水)
+01:08:45 +09:00
+ページトップ
+✓
+共有ありがとう
+AddToAny
+もっと

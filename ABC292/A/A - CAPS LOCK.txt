@@ -1,0 +1,207 @@
+A - CAPS LOCK
+×
+コンテスト開始
+AtCoder Beginner Contest 292が開始されました。
+閉じる
+×
+コンテスト終了
+AtCoder Beginner Contest 292は終了しました。
+閉じる
+AtCoder Beginner Contest 292
+日本語
+日本語
+English
+新規登録
+ログイン
+コンテスト時間:
+2023-03-04(土) 21:00
+~
+2023-03-04(土) 22:40
+(100分)
+AtCoderホームへ戻る
+トップ
+問題
+質問
+提出結果
+すべての提出
+順位表
+バーチャル順位表
+解説
+A - CAPS LOCK
+解説
+/
+実行時間制限: 2 sec / メモリ制限: 1024 MB
+配点 :
+100
+100
+1
+0
+0
+点
+問題文
+英小文字のみからなる文字列
+S
+S
+S
+が与えられます。
+S
+S
+S
+の各文字を英大文字に変換して得られる文字列
+T
+T
+T
+を出力してください。
+制約
+S
+S
+S
+は英小文字のみからなる、長さが
+1
+1
+1
+以上
+100
+100
+1
+0
+0
+以下の文字列
+入力
+入力は以下の形式で標準入力から与えられる。
+S
+S
+S
+出力
+T
+T
+T
+を出力せよ。
+入力例 1
+Copy
+Copy
+abc
+出力例 1
+Copy
+Copy
+ABC
+abc
+の各文字を英大文字に変換すると
+ABC
+になります。
+入力例 2
+Copy
+Copy
+a
+出力例 2
+Copy
+Copy
+A
+入力例 3
+Copy
+Copy
+abcdefghjiklnmoqprstvuwxyz
+出力例 3
+Copy
+Copy
+ABCDEFGHJIKLNMOQPRSTVUWXYZ
+Score :
+100
+100
+1
+0
+0
+points
+Problem Statement
+You are given a string
+S
+S
+S
+consisting of lowercase English letters.
+Uppercase each character of
+S
+S
+S
+and print the resulting string
+T
+T
+T
+.
+Constraints
+S
+S
+S
+is a string consisting of lowercase English letters whose length is between
+1
+1
+1
+and
+100
+100
+1
+0
+0
+, inclusive.
+Input
+The input is given from Standard Input in the following format:
+S
+S
+S
+Output
+Print
+T
+T
+T
+.
+Sample Input 1
+Copy
+Copy
+abc
+Sample Output 1
+Copy
+Copy
+ABC
+Uppercase each character of
+abc
+, and you have
+ABC
+.
+Sample Input 2
+Copy
+Copy
+a
+Sample Output 2
+Copy
+Copy
+A
+Sample Input 3
+Copy
+Copy
+abcdefghjiklnmoqprstvuwxyz
+Sample Output 3
+Copy
+Copy
+ABCDEFGHJIKLNMOQPRSTVUWXYZ
+Facebook
+Twitter
+Hatena
+共有
+ルール
+用語集
+利用規約
+プライバシーポリシー
+個人情報保護方針
+企業情報
+よくある質問
+お問い合わせ
+資料請求
+Copyright Since 2012 ©
+AtCoder Inc.
+All rights reserved.
+2024-03-20 (水)
+01:08:05 +09:00
+ページトップ
+✓
+共有ありがとう
+AddToAny
+もっと

@@ -1,0 +1,1063 @@
+D - Destroyer Takahashi
+×
+コンテスト開始
+AtCoder Beginner Contest 230が開始されました。
+閉じる
+×
+コンテスト終了
+AtCoder Beginner Contest 230は終了しました。
+閉じる
+AtCoder Beginner Contest 230
+日本語
+日本語
+English
+Hukasann11 (Guest)
+マイプロフィール
+基本設定
+アイコン設定
+パスワードの変更
+お気に入り管理
+ログアウト
+コンテスト時間:
+2021-12-03(金) 21:00
+~
+2021-12-03(金) 22:40
+(100分)
+AtCoderホームへ戻る
+トップ
+問題
+質問
+提出
+提出結果
+すべての提出
+自分の提出
+自分の得点状況
+順位表
+バーチャル順位表
+コードテスト
+解説
+D - Destroyer Takahashi
+解説
+/
+実行時間制限: 2 sec / メモリ制限: 1024 MB
+配点 :
+400
+400
+4
+0
+0
+点
+問題文
+N
+N
+N
+行
+1
+0
+9
+10^9
+1
+0
+9
+列の格子状の区画に区切られた街に
+N
+N
+N
+枚の壁があり、
+1
+1
+1
+から
+N
+N
+N
+までの番号が割り振られています。
+壁
+i
+i
+i
+は上から
+i
+i
+i
+行目、左から
+L
+i
+L_i
+L
+i
+​
+列目から
+R
+i
+R_i
+R
+i
+​
+列目の範囲にあります。(入出力例
+1
+1
+1
+の図も参考にしてください。)
+高橋君は
+N
+N
+N
+枚の壁をすべて破壊することにしました。
+超人的な腕力を持つ高橋君は、
+1
+1
+1
+回のパンチで連続する
+D
+D
+D
+列にまとめてダメージを与えることができます。
+より厳密に言い換えると、
+1
+1
+1
+以上
+1
+0
+9
+−
+D
++
+1
+10^9 - D + 1
+1
+0
+9
+−
+D
++
+1
+以下の
+整数
+x
+x
+x
+を選んで、
+x
+x
+x
+列目から
+x
++
+D
+−
+1
+x + D - 1
+x
++
+D
+−
+1
+列目に (一部でも) 存在するすべての破壊されていない壁にパンチによるダメージを与えることができます。
+壁は一部分でもダメージを受けると、パンチの衝撃波により全体が木っ端みじんに破壊されてしまいます。
+(入出力例
+1
+1
+1
+の説明も参考にしてください。)
+高橋君がすべての壁を破壊するには、少なくとも何回のパンチを放つ必要がありますか？
+制約
+1
+≤
+N
+≤
+2
+×
+1
+0
+5
+1 leq N leq 2 times 10^5
+1
+≤
+N
+≤
+2
+×
+1
+0
+5
+1
+≤
+D
+≤
+1
+0
+9
+1 leq D leq 10^9
+1
+≤
+D
+≤
+1
+0
+9
+1
+≤
+L
+i
+≤
+R
+i
+≤
+1
+0
+9
+1 leq L_i leq R_i leq 10^9
+1
+≤
+L
+i
+​
+≤
+R
+i
+​
+≤
+1
+0
+9
+入力はすべて整数である。
+入力
+入力は以下の形式で標準入力から与えられる。
+N
+N
+N
+D
+D
+D
+L
+1
+L_1
+L
+1
+​
+R
+1
+R_1
+R
+1
+​
+L
+2
+L_2
+L
+2
+​
+R
+2
+R_2
+R
+2
+​
+⋮
+vdots
+⋮
+L
+N
+L_N
+L
+N
+​
+R
+N
+R_N
+R
+N
+​
+出力
+すべての壁を破壊するのに必要なパンチの最少回数を出力せよ。
+入力例 1
+Copy
+Copy
+3 3
+1 2
+4 7
+5 9
+出力例 1
+Copy
+Copy
+2
+入力例
+1
+1
+1
+に対応する壁の配置を図示したものが下図です。
+たとえば次のようにパンチを放つことで、
+2
+2
+2
+回のパンチですべての壁を破壊することができます。(以下の説明では、
+a
+a
+a
+列目から
+b
+b
+b
+列目までの範囲を
+[
+a
+,
+b
+]
+lbrack a, b rbrack
+[
+a
+,
+b
+]
+と表記します。)
+まず、
+[
+2
+,
+4
+]
+lbrack 2, 4 rbrack
+[
+2
+,
+4
+]
+にパンチを放つ。
+[
+2
+,
+4
+]
+lbrack 2, 4 rbrack
+[
+2
+,
+4
+]
+に存在する壁である壁
+1
+1
+1
+と壁
+2
+2
+2
+はダメージを受け、破壊される。
+次に
+[
+5
+,
+7
+]
+lbrack 5, 7rbrack
+[
+5
+,
+7
+]
+にパンチを放つ。
+[
+5
+,
+7
+]
+lbrack 5, 7rbrack
+[
+5
+,
+7
+]
+に存在する壁
+3
+3
+3
+はダメージを受け、破壊される。
+また、次の方法でもすべての壁を
+2
+2
+2
+回のパンチで破壊することができます。
+まず、
+[
+7
+,
+9
+]
+lbrack 7, 9 rbrack
+[
+7
+,
+9
+]
+にパンチを放ち、壁
+2
+2
+2
+と壁
+3
+3
+3
+を破壊する。
+次に、
+[
+1
+,
+3
+]
+lbrack 1, 3 rbrack
+[
+1
+,
+3
+]
+にパンチを放ち、壁
+1
+1
+1
+を破壊する。
+入力例 2
+Copy
+Copy
+3 3
+1 2
+4 7
+4 9
+出力例 2
+Copy
+Copy
+1
+入出力例
+1
+1
+1
+と比べると、壁
+3
+3
+3
+の範囲が
+[
+5
+,
+9
+]
+lbrack 5, 9 rbrack
+[
+5
+,
+9
+]
+から
+[
+4
+,
+9
+]
+lbrack 4, 9 rbrack
+[
+4
+,
+9
+]
+に変わりました。
+この場合は
+[
+2
+,
+4
+]
+lbrack 2, 4 rbrack
+[
+2
+,
+4
+]
+にパンチを放つことで
+1
+1
+1
+回ですべての壁を破壊できます。
+入力例 3
+Copy
+Copy
+5 2
+1 100
+1 1000000000
+101 1000
+9982 44353
+1000000000 1000000000
+出力例 3
+Copy
+Copy
+3
+Score :
+400
+400
+4
+0
+0
+points
+Problem Statement
+In a town divided into a grid with
+N
+N
+N
+rows and
+1
+0
+9
+10^9
+1
+0
+9
+columns, there are
+N
+N
+N
+walls, numbered
+1
+1
+1
+to
+N
+N
+N
+.
+Wall
+i
+i
+i
+ranges from the
+L
+i
+L_i
+L
+i
+​
+-th column to the
+R
+i
+R_i
+R
+i
+​
+-th column from the left in the
+i
+i
+i
+-th row from the top. (See also the figure at Sample Input and Output
+1
+1
+1
+.)
+Takahashi has decided to destroy all
+N
+N
+N
+walls.
+With his superhuman strength, his one punch can damage consecutive
+D
+D
+D
+columns at once.
+More formally, he can choose an
+integer
+x
+x
+x
+between
+1
+1
+1
+and
+1
+0
+9
+−
+D
++
+1
+10^9 - D + 1
+1
+0
+9
+−
+D
++
+1
+(inclusive) to damage all walls that exist (or partly exist) in the
+x
+x
+x
+-th through
+(
+x
++
+D
+−
+1
+)
+(x + D - 1)
+(
+x
++
+D
+−
+1
+)
+-th columns and are not yet destroyed.
+When a part of a wall is damaged, that whole wall will be destroyed by the impact of the punch.
+(See also the figure at Sample Input and Output
+1
+1
+1
+.)
+At least how many times does Takahashi need to punch to destroy all walls?
+Constraints
+1
+≤
+N
+≤
+2
+×
+1
+0
+5
+1 leq N leq 2 times 10^5
+1
+≤
+N
+≤
+2
+×
+1
+0
+5
+1
+≤
+D
+≤
+1
+0
+9
+1 leq D leq 10^9
+1
+≤
+D
+≤
+1
+0
+9
+1
+≤
+L
+i
+≤
+R
+i
+≤
+1
+0
+9
+1 leq L_i leq R_i leq 10^9
+1
+≤
+L
+i
+​
+≤
+R
+i
+​
+≤
+1
+0
+9
+All values in input are integers.
+Input
+Input is given from Standard Input in the following format:
+N
+N
+N
+D
+D
+D
+L
+1
+L_1
+L
+1
+​
+R
+1
+R_1
+R
+1
+​
+L
+2
+L_2
+L
+2
+​
+R
+2
+R_2
+R
+2
+​
+⋮
+vdots
+⋮
+L
+N
+L_N
+L
+N
+​
+R
+N
+R_N
+R
+N
+​
+Output
+Print the minimum number of punches needed to destroy all walls.
+Sample Input 1
+Copy
+Copy
+3 3
+1 2
+4 7
+5 9
+Sample Output 1
+Copy
+Copy
+2
+The figure below describes the arrangements of walls in Sample Input
+1
+1
+1
+.
+He can destroy all walls with two punches, such as the following. (Below,
+[
+a
+,
+b
+]
+lbrack a, b rbrack
+[
+a
+,
+b
+]
+denotes the range from the
+a
+a
+a
+-th through
+b
+b
+b
+-th columns.)
+First, punch
+[
+2
+,
+4
+]
+lbrack 2, 4 rbrack
+[
+2
+,
+4
+]
+. The walls existing in
+[
+2
+,
+4
+]
+lbrack 2, 4 rbrack
+[
+2
+,
+4
+]
+― Walls
+1
+1
+1
+and
+2
+2
+2
+― are damaged and destroyed.
+Second, punch
+[
+5
+,
+7
+]
+lbrack 5, 7 rbrack
+[
+5
+,
+7
+]
+. The wall existing in
+[
+5
+,
+7
+]
+lbrack 5, 7 rbrack
+[
+5
+,
+7
+]
+― Wall
+3
+3
+3
+― is damaged and destroyed.
+It is also possible to destroy all walls with two punches in this way:
+First, punch
+[
+7
+,
+9
+]
+lbrack 7, 9 rbrack
+[
+7
+,
+9
+]
+to destroy Walls
+2
+2
+2
+and
+3
+3
+3
+.
+Second, punch
+[
+1
+,
+3
+]
+lbrack 1, 3 rbrack
+[
+1
+,
+3
+]
+to destroy Wall
+1
+1
+1
+.
+Sample Input 2
+Copy
+Copy
+3 3
+1 2
+4 7
+4 9
+Sample Output 2
+Copy
+Copy
+1
+The difference from Sample Input/Output
+1
+1
+1
+is that Wall
+3
+3
+3
+now covers
+[
+4
+,
+9
+]
+lbrack 4, 9 rbrack
+[
+4
+,
+9
+]
+, not
+[
+5
+,
+9
+]
+lbrack 5, 9 rbrack
+[
+5
+,
+9
+]
+.
+In this case, he can punch
+[
+2
+,
+4
+]
+lbrack 2, 4 rbrack
+[
+2
+,
+4
+]
+to destroy all walls with one punch.
+Sample Input 3
+Copy
+Copy
+5 2
+1 100
+1 1000000000
+101 1000
+9982 44353
+1000000000 1000000000
+Sample Output 3
+Copy
+Copy
+3
+言語
+C++ 20 (gcc 12.2)
+Go (go 1.20.6)
+C# 11.0 (.NET 7.0.7)
+Kotlin (Kotlin/JVM 1.8.20)
+Java (OpenJDK 17)
+Nim (Nim 1.6.14)
+V (V 0.4)
+Zig (Zig 0.10.1)
+JavaScript (Node.js 18.16.1)
+JavaScript (Deno 1.35.1)
+R (GNU R 4.2.1)
+D (DMD 2.104.0)
+D (LDC 1.32.2)
+Swift (swift 5.8.1)
+Dart (Dart 3.0.5)
+PHP (php 8.2.8)
+C (gcc 12.2.0)
+Ruby (ruby 3.2.2)
+Crystal (Crystal 1.9.1)
+Brainfuck (bf 20041219)
+F# 7.0 (.NET 7.0.7)
+Julia (Julia 1.9.2)
+Bash (bash 5.2.2)
+Text (cat 8.32)
+Haskell (GHC 9.4.5)
+Fortran (gfortran 12.2)
+Lua (LuaJIT 2.1.0-beta3)
+C++ 23 (gcc 12.2)
+Common Lisp (SBCL 2.3.6)
+COBOL (Free) (GnuCOBOL 3.1.2)
+C++ 23 (Clang 16.0.6)
+Zsh (Zsh 5.9)
+SageMath (SageMath 9.5)
+Sed (GNU sed 4.8)
+bc (bc 1.07.1)
+dc (dc 1.07.1)
+Perl (perl  5.34)
+AWK (GNU Awk 5.0.1)
+なでしこ (cnako3 3.4.20)
+Assembly x64 (NASM 2.15.05)
+Pascal (fpc 3.2.2)
+C# 11.0 AOT (.NET 7.0.7)
+Lua (Lua 5.4.6)
+Prolog (SWI-Prolog 9.0.4)
+PowerShell (PowerShell 7.3.1)
+Scheme (Gauche 0.9.12)
+Scala 3.3.0 (Scala Native 0.4.14)
+Visual Basic 16.9 (.NET 7.0.7)
+Forth (gforth 0.7.3)
+Clojure (babashka 1.3.181)
+Erlang (Erlang 26.0.2)
+TypeScript 5.1 (Deno 1.35.1)
+C++ 17 (gcc 12.2)
+Rust (rustc 1.70.0)
+Python (CPython 3.11.4)
+Scala (Dotty 3.3.0)
+Koka (koka 2.4.0)
+TypeScript 5.1 (Node.js 18.16.1)
+OCaml (ocamlopt 5.0.0)
+Raku (Rakudo 2023.06)
+Vim (vim 9.0.0242)
+Emacs Lisp (Native Compile) (GNU Emacs 28.2)
+Python (Mambaforge / CPython 3.10.10)
+Clojure (clojure 1.11.1)
+プロデル (mono版プロデル 1.9.1182)
+ECLiPSe (ECLiPSe 7.1_13)
+Nibbles (literate form) (nibbles 1.01)
+Ada (GNAT 12.2)
+jq (jq 1.6)
+Cyber (Cyber v0.2-Latest)
+Carp (Carp 0.5.5)
+C++ 17 (Clang 16.0.6)
+C++ 20 (Clang 16.0.6)
+LLVM IR (Clang 16.0.6)
+Emacs Lisp (Byte Compile) (GNU Emacs 28.2)
+Factor (Factor 0.98)
+D (GDC 12.2)
+Python (PyPy 3.10-v7.3.12)
+Whitespace (whitespacers 1.0.0)
+><> (fishr 0.1.0)
+ReasonML (reason 3.9.0)
+Python (Cython 0.29.34)
+Octave (GNU Octave 8.2.0)
+Haxe (JVM) (Haxe 4.3.1)
+Elixir (Elixir 1.15.2)
+Mercury (Mercury 22.01.6)
+Seed7 (Seed7 3.2.1)
+Emacs Lisp (No Compile) (GNU Emacs 28.2)
+Unison (Unison M5b)
+COBOL (GnuCOBOL(Fixed) 3.1.2)
+-
+ソースコード
+ファイルを開く
+カスタマイズ
+エディタ切り替え
+高さ自動調節
+1
+הההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההה
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+※ 512 KiB まで
+※ ソースコードは「Main.
+拡張子
+」で保存されます
+提出
+Facebook
+Twitter
+Hatena
+共有
+ルール
+用語集
+利用規約
+プライバシーポリシー
+個人情報保護方針
+企業情報
+よくある質問
+お問い合わせ
+資料請求
+Copyright Since 2012 ©
+AtCoder Inc.
+All rights reserved.
+2024-03-20 (水)
+20:36:55 +09:00
+ページトップ
+✓
+共有ありがとう
+AddToAny
+もっと
